@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> 운영관리 | 하위 매장 상세보기 </title>
+
+<!-- style -->
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="../css/base.css" />
+<link rel="stylesheet" type="text/css" href="../css/lc_switch.css" />
+<link rel="stylesheet" type="text/css" href="../css/lightslider.css" />
+<link rel="stylesheet" type="text/css" href="../css/flatpickr.min.css" />
+<link rel="stylesheet" type="text/css" href="../css/select2.min.css" />
+<link rel="stylesheet" type="text/css" href="../css/page.css?20190108" />
+<!-- javascript -->
+<script type="text/javascript" src="../js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/lc_switch.js"></script>
+<script type="text/javascript" src="../js/lightslider.js"></script>
+<script type="text/javascript" src="../js/flatpickr.js"></script>
+<script type="text/javascript" src="../js/select2.full.min.js"></script>
+<script type="text/javascript" src="../js/page.js?21081208"></script>
+
+
+
+</head>
+<body>
+	<div id="wrap">
+		<div class="wrapper">
+			<!-- 상단로고 시작 -->
+			<div class="top_nav">
+				<div class="top_nav_wrap">
+					<h1>
+						<a href="dashboard.html">
+							<img src="../images/common/dashboard_logo.png" alt="auton logo" />
+						</a>
+						<span>가맹점명</span>
+					</h1>
+					<ul class="top_right">
+						<li class="alarm"><span class="alarm_new"></span><a href="javascript:;"><img src="../images/icon/icon_alarm.png" alt="" /></a></li>
+						<li><a href="login.html"><img src="../images/icon/icon_logout.png" alt="" /></a></li>
+						<li class="store_page"><a href="javascript:;"><img src="../images/icon/icon_go_store.png" alt="" /></a></li>
+						<li>
+							<div class="dropdown">
+								<a href="javascript:;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="select_language">한글</a>
+								<ul class="dropdown-menu language_menu" role="menu" aria-labelledby="dLabel">
+									<li><a href="javascript:;" id="kr">한글</a></li>
+									<li><a href="javascript:;" id="en">ENGLISH</a></li>
+									<li><a href="javascript:;" id="cn">中文(简体)</a></li>
+									<li><a href="javascript:;" id="jp">日本語</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+					<div class="alarm_list">
+						<h4>2018-09-01</h4>
+						<ul>
+							<li><a href="javascript:;">메시지내용 노출메시지내용 노출</a></li>
+							<li><a href="javascript:;">메시지내용 노출</a></li>
+							<li><a href="javascript:;">메시지내용 노출</a></li>
+							<li><a href="javascript:;">메시지내용 노출</a></li>
+							<li><a href="javascript:;">메시지내용 노출</a></li>
+						</ul>
+						<h4>2018-09-01</h4>
+						<ul>
+							<li><a href="javascript:;">메시지내용 노출메시지내용 노출메시지내용 노출메시지내용 노출메시지내용 노출메시지내용 노출</a></li>
+							<li><a href="javascript:;">메시지내용 노출</a></li>
+							<li><a href="javascript:;">메시지내용 노출</a></li>
+							<li><a href="javascript:;">메시지내용 노출</a></li>
+							<li><a href="javascript:;">메시지내용 노출</a></li>
+						</ul>
+					</div>
+					<a href="javascript:goNav()" class="m_hambuger"><img src="../images/icon/icon_hambuger.png" alt="" /></a>
+				</div>
+			</div>
+			<!-- 상단로고 끝 -->
+			<!-- 메뉴 시작 -->
+			<nav id="gnbMenu">
+				<div class="main_menu">
+					<ul>
+						<li class="menu"><a href="dashboard.html">대시보드</a></li>
+						<li class="menu slide_sub"><a href="javascript:;">가맹점관리</a></li>
+						<li class="menu slide_sub"><a href="javascript:;">상품관리</a></li>
+						<li class="menu slide_sub"><a href="javascript:;">판매관리</a></li>
+						<li class="menu slide_sub"><a href="javascript:;">정산관리</a></li>
+						<li class="menu slide_sub"><a href="javascript:;">게시판</a></li>
+					</ul>
+				</div>
+				<div class="sub_menu_group">
+					<div class="sub_menu_box">
+						<ul class="sub_menu sub_menu_0"><li>&nbsp;</li></ul>
+						<ul class="sub_menu sub_menu_1">
+							<li><a href="my_information.html">판매자정보</a></li>
+							<li><a href="information_change.html">정보변경신청</a></li>
+							<li><a href="settingday.html">영업일 설정</a></li>
+							<li><a href="publicity.html">홍보관리</a></li>
+							<li><a href="department.html">가맹관리</a></li>
+						</ul>
+						<ul class="sub_menu sub_menu_2">
+							<li><a href="product_list.html">상품관리</a></li>
+							<li><a href="category.html">카테고리 관리</a></li>
+							<li><a href="service_day.html">서비스날짜 관리</a></li>
+							<li><a href="information_sttings.html">이용안내설정</a></li>
+						</ul>
+						<ul class="sub_menu sub_menu_3">
+							<li><a href="order_status.html">주문관리</a></li>
+							<li><a href="send_service.html">서비스 예약전송</a></li>
+							<li><a href="shipment.html">발주/발송관리</a></li>
+							<li><a href="cancel.html">취소관리</a></li>
+							<li><a href="return.html">반품관리</a></li>
+						</ul>
+						<ul class="sub_menu sub_menu_4">
+							<li><a href="my_sales.html">매출내역</a></li>
+							<li><a href="company_sales.html">하위매장 매출내역</a></li>
+						</ul>
+						<ul class="sub_menu sub_menu_5">
+							<li><a href="notice.html">공지사항</a></li>
+							<li><a href="review.html">후기관리</a></li>
+							<li><a href="talkn.html">1:1 문의(톡앤)</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<!-- 메뉴 끝 -->
+			<!-- 내정보수정 시작 -->
+			<div class="content_wrap">
+				<div class="content_box">
+					<div class="site_map">
+						<ul>
+							<li>HOME</li>
+							<li class="bar">&gt;</li>
+							<li>운영관리</li>
+							<li class="bar">&gt;</li>
+							<li>매장관리</li>
+							<li class="bar">&gt;</li>
+							<li>매장 상세보기</li>
+						</ul>
+					</div>
+					<h2 class="page_title">매장관리</h2>
+					<!-- 본문 시작 -->
+					<div class="accordion_wrap down_company_accordion">
+						<form class="form-horizontal">
+							<div class="accordion_box">
+								<div class="accordion">매장정보</div>
+								<!-- 매장정보 -->
+								<div class="panels">
+									<div class="form-group">
+										<label for="storeId" class="col-sm-3 control-label">아이디</label>
+										<div class="col-sm-8 inline_element">auton_test</div>
+									</div>
+									<div class="form-group">
+										<label for="" class="col-sm-3 control-label">비밀번호</label>
+										<div class="col-sm-8 inline_element temp_btn">
+											<a href="javascript:;">임시비밀번호 발송</a>
+											<a href="javascript:;">계정차단 해제</a>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="storeName" class="col-sm-3 control-label">매장명</label>
+										<div class="col-sm-8">
+											<input type="text" class="form-control" id="storeName" placeholder="" readonly>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="useName" class="col-sm-3 control-label">대표자명</label>
+										<div class="col-sm-8">
+											<input type="text" class="form-control" id="useName" placeholder="" readonly>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="" class="col-sm-3 control-label">매장 구분</label>
+										<div class="col-sm-9">
+											<label for="store" class="label_padding"><input type="radio" name="store" value="" id="store" checked/><span></span>가맹점</label>
+											<label for="ConstructionPoint" class="label_padding"><input type="radio" name="store" value="" id="ConstructionPoint" /><span></span>시공점</label>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="" class="col-sm-3 control-label">사업자 구분</label>
+										<div class="col-sm-8 inline_element">법인사업자</div>
+									</div>
+									<div class="form-group">
+										<label for="bizNumber" class="col-sm-3 control-label">사업자 번호</label>
+										<div class="col-sm-8">
+											<input type="text" class="form-control" id="bizNumber" placeholder="" readonly>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="useName" class="col-sm-3 control-label">업태/업종</label>
+										<div class="col-sm-8 col-md-6">
+											<div class="form-inline">
+												<label for="" class="">업태</label>
+												<input type="text" class="form-control" id="" placeholder="" readonly>
+												<label for="" class="">업종</label>
+												<input type="text" class="form-control" id="" placeholder="" readonly>
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="reportNumber" class="col-sm-3 control-label">통신판매업신고번호</label>
+										<div class="col-sm-8">
+											<input type="text" class="form-control" id="reportNumber" placeholder="" readonly>
+										</div>
+									</div>
+									<div class="addr_group">
+										<div class="form-group">
+											<label for="" class="col-sm-3 control-label">사업자 주소</label>
+											<div class="form-inline">
+												<div class="col-xs-6 col-sm-4 addr_input">
+													<input type="text" class="form-control" id="" placeholder="" readonly>
+												</div>
+											</div>
+										</div>
+										<div class="form-group">
+											<label for="" class="col-sm-3 control-label"></label>
+											<div class="col-sm-8 addr_input addr_input2">
+												<input type="text" class="form-control addr_input" id="" placeholder="" readonly>
+												<input type="text" class="form-control" id="" placeholder="" readonly>
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="phoneNumber" class="col-sm-3 control-label">대표 전화번호</label>
+										<div class="col-sm-8">
+											<input type="text" class="form-control" id="phoneNumber" placeholder="" readonly>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="faxNumber" class="col-sm-3 control-label">팩스번호</label>
+										<div class="col-sm-8">
+											<input type="text" class="form-control" id="faxNumber" placeholder="" readonly>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="Email" class="col-sm-3 control-label">이메일 주소</label>
+										<div class="col-sm-8">
+											<input type="email" class="form-control" id="Email" placeholder="" readonly>
+											<span class="helpblock">※ 비밀번호를 잊어버렸을 시 입력한 이메일로 임시 비밀번호가 발송됩니다.</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="accordion_box">
+								<div class="accordion">매장 그룹 정보</div>
+								<!-- 매장그룹 -->
+								<div class="panels">
+									<div class="form-group">
+										<label for="storeGroup" class="col-sm-3 control-label">그룹명</label>
+										<div class="col-sm-8">테스트그룹</div>
+									</div>
+								</div>
+							</div>
+							<div class="accordion_box">
+								<div class="accordion">담당자 정보</div>
+								<!-- 담당자정보 -->
+								<div class="panels">
+									<div class="form-group">
+										<label for="personName" class="col-sm-3 control-label">담당자명</label>
+										<div class="col-sm-8">
+											<input type="text" class="form-control" id="personName" placeholder="" readonly>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="personPhone" class="col-sm-3 control-label">담당자 연락처</label>
+										<div class="col-sm-8">
+											<input type="text" class="form-control" id="personPhone" placeholder="" readonly>
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="personEmail" class="col-sm-3 control-label">담당자 이메일</label>
+										<div class="col-sm-8">
+											<input type="text" class="form-control" id="personEmail" placeholder="" readonly>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="accordion_box">
+								<div class="accordion">부가 정보</div>
+								<!-- 기타정보 -->
+								<div class="panels">
+									<div class="form-group">
+										<label for="storeGroup" class="col-sm-3 control-label">은행 정보</label>
+										<div class="col-sm-8">국민은행  123456-01-123456  / 오토앤㈜</div>
+									</div>
+									<div class="form-group">
+										<label for="personEmail" class="col-sm-3 control-label">통장 사본</label>
+										<div class="col-sm-8">
+											<input type="text" class="form-control" id="" readonly value="첨부파일명.jpg (000kb)" />
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="personEmail" class="col-sm-3 control-label">사업자 등록증</label>
+										<div class="col-sm-8">
+											<input type="text" class="form-control" id="" readonly value="첨부파일명.jpg (000kb)" />
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="personEmail" class="col-sm-3 control-label">통신판매업신고증</label>
+										<div class="col-sm-8">
+											<input type="text" class="form-control" id="" readonly value="첨부파일명.jpg (000kb)" />
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="accordion_box">
+								<div class="accordion">운영 여부</div>
+								<!-- 운영여부 -->
+								<div class="panels">
+									<div class="form-group">
+										<label for="" class="col-sm-3 control-label">운영여부</label>
+										<div class="col-sm-9">
+											<label for="operation" class="label_padding"><input type="radio" name="OperateInformation" value="" id="operation" checked/><span></span>운영</label>
+											<label for="end" class="label_padding"><input type="radio" name="OperateInformation" value="" id="end" /><span></span>중지</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="btn_group_center">
+								<a href="javascript:;" class="btn btn-success">목록</a>
+								<a href="javascript:;" class="btn btn-default">수정</a>
+							</div>
+						</form>
+					</div>
+					<!-- 본문 끝 -->
+				</div>
+			</div>
+			<!-- 내정보수정 끝 -->
+		</div>
+	</div>
+</body>
+</html>

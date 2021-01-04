@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="pragma" content="no-cache">
+
+		<!-- style -->
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/base.css?20200923">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/lc_switch.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/lightslider.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/flatpickr.min.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/select2.min.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/page.css?20201029">
+
+		<!-- javascript -->
+		<script type="text/javascript" src="../../../resources/js/jquery-1.10.1.min.js"></script>
+		<script type="text/javascript" src="../../../resources/js/bootstrap.min.js"></script>
+
+		<!-- 추가 되는 부분 -->
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/slick.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/travel_center.css">
+
+		<script type="text/javascript" src="../../../resources/js/slick.min.js"></script>
+		<script type="text/javascript" src="../../../resources/js/travel_center.js"></script>
+		<!-- 추가 되는 부분 -->
+
+		<title> 입점사 관리 | 판매자 정보 </title>
+	</head>
+	<body>
+		<!--  #wrap 부분 추가
+		-->
+		<div id="wrap" class="">
+      <c:import url="/layout/header" />
+			<!-- 본문 시작 -->
+			<div class="content_button_box">
+				<div class="tit_type02"><a href="#" onclick="goBack()" class="fl"><em class="icon_more gray left"></em></a>기본설정 </div>
+			</div>
+			<div class="content_wrap">
+
+					<h4 class="schedule_tit">내정보수정</h4>
+					<div class="content_box">
+							<div class="sell_wrap mt10">
+								<p class="fl">아이디</p>
+								<p class="fr">
+									<input type="text" name="" value="auton 가맹점" class="form-control hsm" readonly>
+								</p>
+							</div>
+							<div class="sell_wrap">
+								<p class="fl">비밀번호</p>
+								<p class="fr">
+									<a href="19_비밀번호변경.html" class="btn btn-danger hsm">변경하기</a>
+								</p>
+							</div>
+							<div class="sell_wrap">
+								<p class="fl">사용자이름</p>
+								<p class="fr">
+									<input type="text" name="" value="홍길동" class="form-control hsm" readonly>
+								</p>
+							</div>
+							<div class="sell_wrap">
+								<p class="fl">이메일 주소</p>
+								<p class="fr">
+									<input type="text" name="" value="auton11@auton.co.kr" class="form-control hsm" readonly>
+									<a href="#" onclick="emailChangeBtn()" class="btn btn-danger hsm mt05 btn_email_change">수정하기</a>
+								</p>
+							</div>
+							<div class="sell_wrap box_gray email_changebox">
+								<p>변경할 이메일 주소</p>
+								<p><input type="text" name="" class="form-control hsm"></p>
+								<p class="btn_wrap center mt10"><a href="#" class="btn btn_white hsm" onclick="emailChangeNone()">수정 취소</a><a href="#" class="btn btn_blue hsm ml15">수정 완료</a></p>
+							</div>
+							<div class="sell_wrap mb10">
+								<p class="fl">운전면허</p>
+								<p class="fr">
+									<input type="text" name="" value="미등록" class="form-control hsm" readonly>
+									<a href="20_운전면허등록.html" class="btn btn-danger hsm mt05">등록하기</a>
+								</p>
+							</div>
+
+						</div>
+
+
+			</div>
+			<!-- content_wrap -->
+
+
+
+
+
+
+			<!-- 본문 끝 -->
+		</div>
+		<!-- #wrap 끝 -->
+		<!-- 팝업 -->
+		<div class="bim"></div>
+
+	</body>
+</html>

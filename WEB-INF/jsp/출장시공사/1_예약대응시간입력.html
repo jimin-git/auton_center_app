@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="pragma" content="no-cache">
+
+		<!-- style -->
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/base.css?20200923">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/lc_switch.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/lightslider.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/flatpickr.min.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/select2.min.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/page.css?20201029">
+
+		<!-- javascript -->
+		<script type="text/javascript" src="../../../resources/js/jquery-1.10.1.min.js"></script>
+		<script type="text/javascript" src="../../../resources/js/bootstrap.min.js"></script>
+
+		<!-- 추가 되는 부분 -->
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/slick.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/travel_center.css">
+
+		<script type="text/javascript" src="../../../resources/js/slick.min.js"></script>
+		<script type="text/javascript" src="../../../resources/js/travel_center.js"></script>
+		<!-- 추가 되는 부분 -->
+
+		<title> 입점사 관리 | 영업 설정 </title>
+	</head>
+	<body>
+		<!--  #wrap 부분 추가
+		-->
+		<div id="wrap" class="">
+      <c:import url="/layout/header" />
+			<!-- 본문 시작 -->
+			<div class="content_wrap">
+					<div class="site_map">
+						<ul>
+							<li>HOME</li>
+							<li class="bar">&gt;</li>
+							<li data-i18n="gnb.1.4">입점사 관리</li>
+							<li class="bar">&gt;</li>
+							<li>영업 설정</li>
+						</ul>
+					</div>
+					<h2 class="page_title">영업 설정</h2>
+					<!-- 검색 시작 -->
+					<div class="content_box">
+
+							<div class="accordion on">
+								영업일 설정 <span class="sub_txt ml40">※ 기본 영업일을 설정하세요.</span>
+							</div>
+							<div class=" con_tit_type01">
+									<h4 class="col-xs-12 tit_section">요일설정</h4>
+									<div class="col-xs-12 con_box">
+										<h5 class="tit_type01 mb20">영업일</h5>
+										<div class="checkbox_con">
+												<label for="listdateALL"><input type="checkbox" id="listdateALL">평일<span class="ml10"></span></label>
+												<label for="listdateWeekEND" class="ml10"><input type="checkbox" id="listdateWeekEND">주말<span class="ml10"></span></label><br />
+												<label for="listdateMON"><input type="checkbox" id="listdateMON">월<span class="ml10"></span></label>
+												<label for="listdateTUE" class="ml10"><input type="checkbox" id="listdateTUE">화<span class="ml10"></span></label>
+												<label for="listdateWED" class="ml10"><input type="checkbox" id="listdateWED">수<span class="ml10"></span></label>
+												<label for="listdateTHU" class="ml10"><input type="checkbox" id="listdateTHU">목<span class="ml10"></span></label>
+												<label for="listdateFRI" class="ml10"><input type="checkbox" id="listdateFRI">금<span class="ml10"></span></label><br />
+												<label for="listdateSAT"><input type="checkbox" id="listdateSAT">토<span class="ml10"></span></label>
+												<label for="listdateSUN" class="ml10"><input type="checkbox" id="listdateSUN">일<span class="ml10"></span></label>
+										</div>
+									</div>
+									<h4 class="col-xs-12 tit_section">영업시간설정</h4>
+									<div class="col-xs-12 con_box">
+										<div class="time_set">
+											<h5 class="tit_type01 inline">시작시간</h5>
+											<select name="selectPageSize" id="selectPageSize" class="basic_select x_4 ml05">
+												<option>오전</option>
+												<option>오후</option>
+											</select>
+											<select name="selectPageSize" id="selectPageSize" class="basic_select x_4 ml05">
+												<option>10시</option>
+											</select>
+											<select name="selectPageSize" id="selectPageSize" class="basic_select x_4 ml05">
+												<option>00분</option>
+											</select>
+										</div>
+										<div class="time_set mt10 mb10">
+											<h5 class="tit_type01 inline">종료시간</h5>
+											<select name="selectPageSize" id="selectPageSize" class="basic_select x_4 ml05">
+												<option>오전</option>
+												<option>오후</option>
+											</select>
+											<select name="selectPageSize" id="selectPageSize" class="basic_select x_4 ml05">
+												<option>10시</option>
+											</select>
+											<select name="selectPageSize" id="selectPageSize" class="basic_select x_4 ml05">
+												<option>00분</option>
+											</select>
+										</div>
+										<label for="full"><input type="checkbox" id="full"><span class="mr10"></span>24시간 운영</label>
+
+
+									</div>
+								</div>
+								<!---->
+					</div>
+					<div class="content_box">
+							<div class="accordion on">
+								예약대응시간 설정(영업일 기준)
+							</div>
+							<div class="col-xs-12 con_box"style="padding-top:0;">
+								<p><input type="text" name="" value="" class="form-control wd150 mr10" style="display:inline-block;">시간 이후 예약가능</p>
+								<p class="mt10 sub_txt">예) 2시간 이후 예약 가능으로 설정시,<br />
+									<span class="ml20" style="display:inline-block;">
+										영업일이 월~금 이고, 영업시간이 오전 9시부터 오후 6시일 경우
+										<br />일요일 오전 7시에 고객이 월요일에 세차를 예약하고 싶을 경우 영업시간의 2시간 이후인 11시부터 예약이 가능하다.
+									</span>
+								</p>
+							</div>
+					</div>
+			</div>
+			<!-- 본문 끝 -->
+		</div>
+		<!-- #wrap 끝 -->
+	</body>
+</html>

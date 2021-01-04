@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+header{width:100%;}
+#content{width:100%;}
+/* ------------------------------------------------------------------------------------ */
+/* 硫붿씤移댄뀒怨좊━ 遺�遺� */
+.main_category_wrap{width:100%;}
+.main_category_list{width:100%;text-align:center;border-bottom:1px solid #dbdbda;position:relative;background:#fff;}
+.main_category_list span{height:61px;font-size:22px;line-height:61px;font-family:"KiaB";}
+.main_category_list .category_btn{height:61px;font-size:22px;display:inline-block;line-height:61px;font-weight:bold;font-family:"KiaB";}
+.main_category_list .category_btn img{width:14px;vertical-align:middle;margin-left:5px;margin-bottom:4px;-webkit-transition:0.5s;transition:0.5s;}
+.main_category_list .category_btn.on img{-ms-transform: rotate(-180deg);-webkit-transform: rotate(-180deg);transform: rotate(-180deg);}
+ul.main_category_btn{width:100%;position:absolute;z-index:333;background:#ececec;overflow:hidden;display:none;}
+ul.main_category_btn.on{display:block;}
+ul.main_category_btn li{width:50%;height:42px;line-height:42px;float:left;border-bottom:1px solid #ccc;box-sizing:border-box;text-align:center;color:#000;background:#fff;}
+ul.main_category_btn li:nth-child(even){border-left:1px solid #ccc;}
+ul.main_category_btn li.on a{color:#bb162b;}
+.main_category_list .btn_left{float:left;line-height:62px;position:absolute;left:10px;top:0;}
+.main_category_list .btn_right{line-height:62px;position:absolute;top:0;right:10px;}
+.main_category_list .btn_left a img, .main_category_list .btn_right a img{width:20px;vertical-align:middle;}
+.main_category_list .btn_right a{margin:0 5px;}
+/* ------------------------------------------------------------------------------------ */
+/* �긽�떒 移댄뀒怨좊━ 遺�遺� */
+.content_wrap{width:100%;}
+.content_top{width:100%;}
+.category2_line{overflow:hidden;}
+.category2_line li{width:100%;}
+.category2_line li{float:left;text-align:center;height:50px;}
+.category2_line li a{display:block;line-height:50px;color:#262626;font-size:18px;font-weight:normal;font-family:"KiaM";}
+.category2_line li.on a{color:#b91629;Font-weight:Bold;}
+.category2_1_line{overflow:hidden;}
+.category2_1_line li{width:33%;float:left;}
+.category2_1_line li:first-child,
+.category2_1_line li:nth-child(2){margin-right:0.5%;}
+.category2_1_line li{float:left;text-align:center;height:50px;}
+.category2_1_line li a{display:block;line-height:50px;color:#262626;}
+.category2_1_line li.on a{color:#b91629;}
+/* ------------------------------------------------------------------------------------ */
+/* 留덉씠 移댁븻�씪�씠�봽 */
+.my_carlife{width:100%;overflow:hidden;background:#ececec;position:relative;top:-17px;padding:0 15px;}
+.my_carlife a{width:100%;line-height:58px;display:inline-block;}
+.my_carlife a p{font-size:20px;font-weight:bold;float:left;font-family:"KiaB";}
+.my_carlife a p span{font-size:20px;font-weight:bold;color:#ba172a;}
+.my_carlife a img{width:10px;float:right;margin-top:20px;}
+/* ------------------------------------------------------------------------------------ */
+/* �긽�떒 �씠踰ㅽ듃 諛곕꼫 遺�遺� */
+.category_banner_wrap{width:100%;}
+.category_banner_wrap ul li{width:100%;overflow:hidden;}
+.category_banner_wrap ul li img{width:100%;;}
+.bx-pager_num {position:relative;bottom:35px;margin-left:15px;}
+.bx-pager_num a{width:16px;float:left;margin:0 5px;display: block;font-size:14px;font-weight:bold;text-align:center;color:#adadab;text-decoration:line-through;}
+.bx-pager_num a.active{color:#c61f31;}
+/* ------------------------------------------------------------------------------------ */
+/* �긽�떒 寃��깋遺�遺� */
+.search_wrap{width:100%;}
+.search_text{width:100%;padding:14px 15px;height:75px;overflow:hidden;position:relative;top:-17px;}
+.search_text input{position:relative;height:36px;width:100%;border:none;border-bottom:1px solid #494d58;top:10px;}
+.search_text a{position:relative;width:18px;height:18px;top:-16px;left:90%;display:block;}
+.search_text a img{width:100%;width:18px;height:18px;}
+.best_category_name{width:100%;padding:0 15px;height:45px;overflow:hidden;position:relative;}
+.best_category_name ul{width:100%;}
+.best_category_name ul li{float:left;margin-right:5px;line-height:25px;}
+.best_category_name ul li:first-child{margin-left:10px;}
+.best_category_name ul li:last-child{margin-right:none;}
+.best_category_name ul li a{font-size:12px;padding:5px 10px;border:1px solid #dbdbda;border-radius:15px;font-family:"KiaL";}
+/* ------------------------------------------------------------------------------------ */
+/* 吏��룄遺�遺� */
+.map_wrap{width:100%;}
+.map_layout {background:#ececec;width:100%;padding:15px 15px 0 15px;}
+.map_layout .layout_title {text-align:left;display:inline-block;}
+.map_layout .layout_title a {width:75px;line-height:1.8em;font-size:12px;display:inline-block;float:right;font-weight:normal;background:url('/resources/m/img/ico/my_location_off.png') 0 0 no-repeat;background-size:20px 20px;margin-top:5px;text-align:right;margin-left:20px;}
+.map_layout .layout_title a.active {background:url('/resources/m/img/ico/my_location_on.png') 0 0 no-repeat;background-size:20px 20px;}
+.map_list {padding-top:20px;clear:both;}
+.map_list ul li.map_range {float:left;position:relative;}
+.map_list ul li.store_list {float:right;}
+.map_range input.sel_map_range {border:1px solid #fff;background:#fff;height:28px;line-height:28px;width:98px;padding-left:10px;background:#fff url('/resources/m/img/ico/ico_map_km.png') 82px 7px no-repeat;background-size:15px 15px;}
+.map_range span {font-size:12px;color:#16181a;}
+.map_range .map_range_list {display:none;}
+.map_range .map_range_list.on {display:block;}
+.map_range_list {width:110px;border:1px solid #000;background:#fff;position:absolute;top:35px;left:0;z-index:33;}
+.map_range_list a {display:block;padding:5px 0 10px 10px;border-bottom:1px solid #dbdbda;font-size:12px;}
+.map_range_list a:last-child {border-bottom:none;}
+#map {height:350px;width:100%;clear:both;padding-top:10px;position:relative;}
+#map .root_daum_roughmap {width:auto !important;}
+#map .wrap_controllers {display:none;}
+.map_zoom {position:absolute;bottom:37px;right:0;z-index:10;}
+.map_zoom img {width:50px;}
+/* ------------------------------------------------------------------------------------ */
+/* 異붿쿇留ㅼ옣 遺�遺� */
+.push_store_wrap{width:100%;background:#ececec;}
+.menu_title{padding:26px 15px;font-size:18px;font-family:"KiaM";}
+.push_store_list{width:100%;padding-left:15px;padding-bottom:26px;}
+.push_store_list ul{width:100%;}
+.push_store_list ul li{float:left;background:#fff;}
+.push_store_img{width:70%;margin:0 auto;padding:15px 0;}
+.push_store_name{width:70%;margin:0 auto;font-size:14px;margin-bottom:10px;}
+.push_store_starnum{width:80%;margin:0 auto;margin-bottom:12px;}
+.push_store_starnum ul{width:80%;float:left;margin-top:2px;}
+.push_store_starnum ul li{float:left;width:18%;}
+.push_store_starnum ul li:last-child{margin-right:5px;}
+.push_store_starnum ul li img{width:100%;}
+.push_store_starnum .push_store_num{font-size:12px;line-height:19px;;}
+.push_store_best_name{width:80%;margin:0 auto;overflow:hidden;height:44px;}
+.push_store_best_name ul{width:100%;}
+.push_store_best_name ul li{float:left;padding:2px 5px;border:1px solid #dbdbda;font-size:10px;border-radius:10px;margin-right:4px;margin-bottom:4px;}
+.push_store_icon{width:40%;margin:0 auto;overflow:hidden;margin-bottom:14px;}
+.push_store_icon img{width:16px;float:left;}
+.push_store_icon span{font-size:10px;float:right;line-height:18px;}
+.event_banner_num {width:15px;position:relative;bottom:64px;left:95%;}
+.event_banner_num a{width:7px;height:7px;display: block;border:1px solid #dbdbda;border-radius:15px;margin:3px 0;}
+.event_banner_num a.active{background:#c61f31;}
+/* ------------------------------------------------------------------------------------ */
+/* �뀒留덉뿬�뻾 遺�遺� */
+.travel_wrap{width:100%;background:#fff;overflow:hidden;margin-top:-39px;}
+
+.travel_list{width:100%;padding-left:15px;padding-bottom:26px;}
+.travel_list ul{width:100%;}
+.travel_list ul li{float:left;background:#fff;}
+.travel_list ul li a{display:block;}
+.travel_img{margin-bottom:10px;}
+.travel_img img{width:100%;}
+.travel_name{width:100%;}
+.travel_name h5{width:100%;font-size:14px;margin-bottom:20px;}
+.travel_name p{font-size:12px;}
+.travel_name p span{float:left;}
+.travel_name p img{width:7px;margin-left:10px;vertical-align:middle;display:inline-block;}
+/* ------------------------------------------------------------------------------------ */
+/* 異붿쿇�긽�뭹 遺�遺� */
+.push_product_wrap{width:100%;margin-top:-39px;}
+.produxt_list{width:100%;padding:0 15px;}
+.produxt_list ul{width:100%;overflow:hidden;}
+.produxt_list ul li{width:49%;float:left;border:1px solid #dbdbda;box-sizing:border-box;margin-bottom:20px;}
+.produxt_list ul li a{display:block;overflow:hidden;}
+.produxt_list ul li:nth-child(even){margin-left:2%;}
+.produxt_list ul li a img{width:100%;}
+.product_sub_name{width:100%;height:18px;line-height:18px;padding:0 3px;font-size:13px;color:#7e7e80;text-overflow: ellipsis;-o-text-overflow: ellipsis;overflow:hidden;white-space:nowrap;}
+.produxt_list .product_name{width:100%;height:40px;padding:0 3px;font-size:15px;color:#161719;margin-top:5px;display:-webkit-box;overflow:hidden;text-overflow:ellipsis;-webkit-line-clamp:2;-webkit-box-orient: vertical;line-height:19px;}
+.product_price{width:100%;}
+.product_price_title{width:30%;height:40px;padding:0 3px;font-size:16px;font-weight:bold;color:#bc162c;float:left;margin-top:18px;}
+.product_price_all{width:70%;height:40px;padding:0 3px;float:right;text-align:right;}
+.product_price_all .origin_price{width:100%;display:inline-block;font-size:12px;color:#7f7f81;text-decoration:line-through;}
+.product_price_all .sale_price{width:100%;display:inline-block;font-size:16px;color:#17181a;}
+.plus_view{width:100%;background:#ececec;}
+.plus_view p{font-size:14px;text-align:center;line-height:52px;}
+.plus_view p .now_item{margin-left:5px;}
+.plus_view p span{color:#909090;}
+/* ------------------------------------------------------------------------------------ */
+/* footer 遺�遺� */
+.footer_wrap{width:100%;background:#7f8084;padding:40px 30px 80px;overflow:hidden;}
+.footer_info{width:100%;}
+.footer_title{text-align:center;color:#fff;margin-bottom:15px;}
+.footer_title span:first-child{font-size:16px;}
+.footer_title span:last-child{margin-left:5px;vertical-align:middle;}
+.footer_title span img{width:16px;height:16px;}
+.footer_info_tab{width:100%;margin-bottom:15px;display:none;}
+.footer_info_tab > p{font-size:12px;text-align:center;color:#fff;}
+.footer_info > p{font-size:14px;color:#dadadc;text-align:center;}
+/* �듬찓�돱 */
+.quick_wrap{width:56px;position:fixed;bottom:30px;right:15px;z-index:9999;}
+.quick_wrap ul{width:100%;overflow:hidden;}
+.quick_wrap ul li{width:100%;display:none;border-radius:56px;}
+.quick_wrap ul li a{display:block;}
+.quick_wrap ul li.on{display:block;}
+.quick_wrap ul li.on_2{display:block;}
+.quick_wrap ul li img{width:100%;}
+.quick_wrap ul li:last-child img{-webkit-transition:0.5s;transition:0.5s;}
+.quick_wrap ul li:last-child.on img{-ms-transform: rotate(-45deg);-webkit-transform: rotate(-45deg);transform: rotate(-45deg);}
+
+/* 개인정보처리방침 & 이용약관 */
+.provision_contents {border-top:1px solid #dbdbda;background:#fff;}
+.provision_contents > ul {padding:15px 0;width:95%;margin:0 auto;}
+.provision_contents > ul > li {float:left;font-family:"KiaL";font-size:13px;box-sizing:border-box;}
+.provision_contents > ul:after {content:'';display:block;clear:both;}
+.provision_contents > ul > li.provision_text {width:32%;text-align:center;}
+.provision_contents > ul > li.provision_text2 {width:20%;text-align:center;}
+.provision_contents > ul > li.provision_text3 {width:46%;text-align:center;}

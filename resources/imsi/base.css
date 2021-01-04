@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: 'KiaM';
+	src: url('/t3/resources/RED/m/fonts/KiaM.eot');
+	src: url('/t3/resources/RED/m/fonts/KiaM.woff2') format('woff2'),
+		 url('/t3/resources/RED/m/fonts/KIAM.woff') format('woff'),
+		 url('/t3/resources/RED/m/fonts/KiaM.ttf') format('truetype'),
+		 url('/t3/resources/RED/m/fonts/KiaM.svg#KiaM') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: "KiaB";
+	src: url('/t3/resources/RED/m/fonts/KiaB.eot');
+	src: url('/t3/resources/RED/m/fonts/KIAB.woff') format('woff'),
+		 url('/t3/resources/RED/m/fonts/KiaB.ttf') format('truetype'),
+		 url('/t3/resources/RED/m/fonts/KiaB.svg#KiaB') format('svg');
+	font-weight: 600;
+	font-style: bold;
+}
+@font-face {
+	font-family: "KiaM";
+	src: url('/t3/resources/RED/m/fonts/KiaM.eot');
+	src: url('/t3/resources/RED/m/fonts/KIAM.woff') format('woff'),
+		 url('/t3/resources/RED/m/fonts/KiaM.ttf') format('truetype'),
+		 url('/t3/resources/RED/m/fonts/KiaM.svg#KiaM') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: "KiaL";
+	src: url("/t3/resources/RED/m/fonts/KiaL.eot");
+	src: url("/t3/resources/RED/m/fonts/KIAL.woff") format("woff"),
+		 url("/t3/resources/RED/m/fonts/KiaL.woff2") format("woff2"),
+		 url("/t3/resources/RED/m/fonts/KiaL.otf") format("opentype"),
+		 url("/t3/resources/RED/m/fonts/KiaL.svg") format("svg");
+	font-weight:100;
+	font-style:thin;
+}
+
+
+html,body{ margin:0; padding:0;font-family:KiaM; width:100%; -webkit-text-size-adjust:auto;text-shadow:none; }
+html.active,body.active{position:fixed;}
+h1,h2,h3,h4,h5,h6 {margin:0; padding:0;}
+dl,dt,dd,p{font-family:KiaL; margin:0; padding:0;}
+input,select,textarea,iframe{font-family:KiaM; }
+::-webkit-input-placeholder{color:#b4b4b4;}
+::-moz-placeholder{color:#b4b4b4;}
+:-ms-input-placeholder{color:#b4b4b4;}
+:-moz-placeholder{color:#b4b4b4;}
+*{margin:0;padding:0;letter-spacing:-1px;}
+a{text-decoration:none;color:#000;}
+li{list-style:none;}
+div{box-sizing:border-box;}
+select{-webkit-appearance: inherit;outline: none;}
+.border_bar{width:40%;height:2px;margin:8px auto;background:#000;}
+.mt_0{margin-top:0 !important;}
+.ml_15{margin-left:15px !important;}
+.top_0{top:0 !important;}
+.r_color{color:#bb1529;}
+.h_color{color:#aaa;}
+.call_btn{background:#7f8084;}
+.call_btn a{color:#fff !important;}
+.f_norm{font-weight:normal;}
+.h_auto{height:auto !important;}
+.pad_15_bottom{padding-bottom:15px !important;}
+.h_158{height:158px;line-height:156px !important;}
+.pos_r{position:relative;}
+.bg_g_2{background:#e1e1e1 !important;}
+.boder_gray_c{border:1px solid #ccc;}
+.wth_48{width:48% !important;}
+.top_14{top:14px !important;}
+.lh_18{line-height:18px !important;}
+
+
+/*checkbox*/
+input[type="checkbox"]{display:none;}
+input[type="checkbox"] + label{color:#333;font-size:15px;}
+input[type="checkbox"] + label span{display:inline-block;width:21px;height:21px;margin:-1px 4px 0 0;vertical-align:middle;background:url('../img/ico/ico_checkbox_off.png') no-repeat 0 0; cursor:pointer; }
+input[type="checkbox"] + label span.one_check{display:inline-block;width:21px;height:21px;margin:-1px 4px 0 0;vertical-align:middle;background:url('../img/ico/ico_checkbox_2_off.png') no-repeat 0 0; cursor:pointer; }
+input[type="checkbox"] + label span.line_check{display:inline-block;width:21px;height:21px;margin:-1px 4px 0 0;vertical-align:middle;background:url('../img/ico/ico_checkbox_3_off.png') no-repeat 0 0; cursor:pointer; }
+input[type="checkbox"]:checked + label span{background:url('../img/ico/ico_checkbox_on.png')no-repeat 0 0;background-position:0 0;}
+input[type="checkbox"]:checked + label span.one_check{background:url('../img/ico/ico_checkbox_on.png')no-repeat 0 0;background-position:0 0;}
+input[type="checkbox"]:checked + label span.line_check{background:url('../img/ico/ico_checkbox_on.png')no-repeat 0 0;background-position:0 0;}
+
+/*  */
+input::placeholder {color:#999;opacity:1;}

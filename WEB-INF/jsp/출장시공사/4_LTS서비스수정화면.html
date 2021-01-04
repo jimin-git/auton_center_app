@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="pragma" content="no-cache">
+
+		<!-- style -->
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/base.css?20200923">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/lc_switch.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/lightslider.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/flatpickr.min.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/select2.min.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/page.css?20201029">
+
+		<!-- javascript -->
+		<script type="text/javascript" src="../../../resources/js/jquery-1.10.1.min.js"></script>
+		<script type="text/javascript" src="../../../resources/js/bootstrap.min.js"></script>
+
+		<!-- 추가 되는 부분 -->
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/slick.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/travel_center.css">
+
+		<script type="text/javascript" src="../../../resources/js/slick.min.js"></script>
+		<script type="text/javascript" src="../../../resources/js/travel_center.js"></script>
+		<!-- 추가 되는 부분 -->
+
+		<title> 입점사 관리 | 영업 설정 </title>
+	</head>
+	<body>
+
+		<!--  #wrap 부분 추가
+		-->
+		<div id="wrap" class="">
+      <c:import url="/layout/header" />
+			<!-- 본문 시작 -->
+			<style type="text/css">
+				.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control{background-color: #eee !important;}
+			</style>
+			<div class="content_wrap">
+					<div class="site_map">
+						<ul>
+							<li>HOME</li>
+							<li class="bar">&gt;</li>
+							<li data-i18n="gnb.1.4">상품관리</li>
+							<li class="bar">&gt;</li>
+							<li>LTS 서비스 관리</li>
+						</ul>
+					</div>
+					<h2 class="page_title">LTS 서비스 관리</h2>
+					<!-- 검색 시작 -->
+					<div class="content_box">
+						<!--
+							<div class="content_title con_box">
+								LTS 서비스 등록
+							</div>
+						-->
+							<h4 class="col-xs-12 tit_section"><span class="color_red">*</span> 서비스 선택</h4>
+							<div class="col-xs-12 con_box">
+								<!--
+								<select class="basic_select x_1" name="">
+									<option>서비스를 선택해주세요.</option>
+								</select>
+								-->
+								<input class="form-control x_1 " type="text" name="" value="[엔진오일교환]"  disabled>
+							</div>
+							<div class="col-xs-12 con_box line">
+								<p><span class="color_red">*</span> 시간당 공임비 (정가)</p>
+								<p class="mt10"><input type="number" name="" class="form-control number x_90 inline mr10" >원</p>
+								<p class="mt20"><span class="color_red">*</span> 시간당 공임비 (판매가)</p>
+								<p class="mt10"><input type="number" name="" class="form-control number x_90 inline mr10" >원</p>
+							</div>
+							<h4 class="col-xs-12 tit_section"><span class="color_red">*</span> 가맹점 선택</h4>
+							<div class="col-xs-12 con_box ">
+								<p class="btn_search_wrap">
+									<input type="text" name="" value="" class="form-control x_1 mt10" placeholder="가맹점 검색">
+									<a href="#" class="btn_search"></a>
+								</p>
+								<div class="line_dotted mt15">
+									<a href="#" class="btn_list_type">서울 관악구</a><a href="#" class="btn_list_type">서울 관악구</a><a href="#" class="btn_list_type">서울 관악구</a><a href="#" class="btn_list_type">서울 관악구</a>
+								</div>
+								<div class="btn_wrap center mt10">
+									<a href="#" class="btn btn_white hsm wd160">전체 삭제</a>
+								</div>
+							</div>
+
+					</div>
+					<div class="content_box">
+								<h4 class="col-xs-12 tit_section"><span class="color_red">*</span> 서비스 가능차종 설정</h4>
+								<!-- 기존과 동일 -->
+								<div class="vehicle_select">
+									<div class="vehicle_select_box first">
+										<h3 class="select_box_title">[1레벨] 국내외</h3>
+										<div class="checkbox_list domestic_box">
+											<ul class="on">
+												 		<li>
+															<label for="domesticProduction_1">
+																<input type="checkbox" id="domesticProduction_1" class="production_country" name="depth1" value="1" checked="">
+															<span></span>
+															</label>
+															<a href="javascript:depthselect('1');" class="active" id="1" data-id="1">국산</a>
+														</li>
+												 		<li>
+															<label for="domesticProduction_1905">
+																<input type="checkbox" id="domesticProduction_1905" class="production_country" name="depth1" value="1905" checked="">
+															<span></span>
+															</label>
+															<a href="javascript:depthselect('1905');" class="active" id="1905" data-id="1">수입</a>
+														</li>
+												 		<li>
+															<label for="domesticProduction_8400">
+																<input type="checkbox" id="domesticProduction_8400" class="production_country" name="depth1" value="8400" checked="">
+															<span></span>
+															</label>
+															<a href="javascript:depthselect('8400');" class="active" id="8400" data-id="1">.aa</a>
+														</li>
+											</ul>
+										</div>
+									</div>
+									<div class="vehicle_select_box short_box">
+											<h3 class="select_box_title">[2레벨] 제조사</h3>
+											<div class="checkbox_list manu_facturer_box">
+											  		<ul class="depth2 facturer_list_box phase_1">
+															<li class="phase_1">
+																<label for="manuFacturer_1587">
+																	<input type="checkbox" id="manuFacturer_1587" class="phaseType_1" name="depth2" value="1587"><span></span>
+																</label>
+																<a href="javascript:depthselect('1587');" class="active" id="1587" data-id="2">쉐보레(GM대우)</a>
+																<span class="hide_box"><input type="hidden" value="국산"></span>
+															</li>
+											  		</ul>
+														<ul class="depth2 facturer_list_box phase_1905">
+															<li class="phase_1905">
+																<label for="manuFacturer_4209"><input type="checkbox" id="manuFacturer_4209" class="phaseType_1905" name="depth2" value="4209"><span></span></label>
+																<a href="javascript:depthselect('4209');" class="active" id="4209" data-id="2">벤츠</a>
+																<span class="hide_box"><input type="hidden" value="수입"></span>
+															</li>
+														</ul>
+											  </div>
+									</div>
+									<div class="vehicle_select_box">
+												<h3 class="select_box_title">[3레벨] 차종</h3>
+												<div class="checkbox_list car_name_box">
+														<ul class="depth3 car_list_box phase_2">
+															<li>
+																<label class="model_393" for="carName_393"><input type="checkbox" id="carName_393" class="phaseType_2" name="depth3" value="393" checked=""><span></span></label>
+																<a href="javascript:depthselect('393');" class="active" id="393" data-id="3">아반떼</a>
+																<span class="hide_box_2"></span>
+																<span class="hide_box_3"></span>
+															</li>
+														</ul>
+										  	</div>
+									</div>
+									<div class="vehicle_select_box ">
+												<h3 class="select_box_title">[4레벨] 세부차종(연식)</h3>
+												<div class="checkbox_list fuel_box">
+										  		<ul class="depth4 car_list_box phase_3">
+														<li>
+															<label class="model_33" for="carName_33"><input type="checkbox" id="carName_33" class="phaseType_3" name="depth4" value="33" checked=""><span></span></label>
+															<a href="javascript:depthselect('33');" class="active" id="33" data-id="4">i30 PD (16년~현재)</a>
+															<span class="hide_box_2"></span>
+															<span class="hide_box_3"></span>
+														</li>
+										  		</ul>
+									  		</div>
+									</div>
+							</div>
+						</div>
+
+					<div class="btn_wrap fix">
+						<a href="#" class="btn btn_white x_2">초기화</a><a href="#" class="btn btn_blue x_2">공임비조회</a>
+					</div>
+			</div>
+			<!-- 본문 끝 -->
+			<!-- 팝업 -->
+			<div class="bim"></div>
+
+			<!--입점사선택_팝업-->
+			<div class="popup_wrap layer_pop_con">
+				<h3 class="popup_tit">
+					시공사선택 <a class="add_close" href="">닫기</a>
+				</h3>
+				<div class="popup_con ">
+					<p class="btn_search_wrap mb10">
+						<input type="text" name="" value="" class="form-control x_1 mt10" placeholder="가맹점 검색">
+						<a href="#" class="btn_search"></a>
+					</p>
+					<div class="type02">
+							<table class="shipment_table">
+									<colgroup>
+										<col style="width:22px;">
+										<col style="width:;">
+										<col style="width:98px;">
+									</colgroup>
+									<thead>
+											<tr>
+													<th><label><input type="checkbox"><span></span></label></th>
+													<th>매장명</th>
+													<th>대표전화번호</th>
+											</tr>
+									</thead>
+									<tbody>
+											<tr>
+													<td><label><input type="checkbox"><span></span></label></td>
+													<td>오상서비스셀러B10 (osang21_9)</td>
+													<td>010-3465-0817</td>
+											</tr>
+											<tr>
+													<td><label><input type="checkbox"><span></span></label></td>
+													<td>오상서비스셀러B9 (osang21_8)</td>
+													<td>010-3465-0817</td>
+											</tr>
+											<tr>
+													<td><label><input type="checkbox"><span></span></label></td>
+													<td>오상서비스셀러B8 (osang21_7)</td>
+													<td>010-3465-0817</td>
+											</tr>
+											<tr>
+													<td><label><input type="checkbox"><span></span></label></td>
+													<td>오상서비스셀러B7 (osang21_6)</td>
+													<td>010-3465-0817</td>
+											</tr>
+											<tr>
+													<td><label><input type="checkbox"><span></span></label></td>
+													<td>오상서비스셀러B6 (osang21_5)</td>
+													<td>010-3465-0817</td>
+											</tr>
+											<tr>
+													<td><label><input type="checkbox"><span></span></label></td>
+													<td>오상서비스셀러B5 (osang21_4)</td>
+													<td>010-3465-0817</td>
+											</tr>
+											<tr>
+													<td><label><input type="checkbox"><span></span></label></td>
+													<td>오상서비스셀러B4 (osang21_3)</td>
+													<td>010-3465-0817</td>
+											</tr>
+									</tbody>
+							</table>
+					</div>
+					<div class="paging_type01">
+						<a class="paging_prev">prev</a>
+						<div class="paging_num">
+								<a class="active">1</a>
+								<!--<a class="">2</a>-->
+						</div>
+						<a class="paging_next">next</a>
+					</div>
+				</div>
+				<div class="btn_wrap center mt15">
+					<a href="#" class="btn btn_blue ">추가</a><a href="#" class="btn btn_white ml20">취소</a>
+				</div>
+			</div>
+			<!--//입점사선택_팝업-->
+		</div>
+		<!-- #wrap 끝 -->
+	</body>
+</html>

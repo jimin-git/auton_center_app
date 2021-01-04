@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> 사장님 센터 | 로그인 </title>
+
+<!-- style -->
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="../css/base.css" />
+<link rel="stylesheet" type="text/css" href="../css/lc_switch.css" />
+<link rel="stylesheet" type="text/css" href="../css/lightslider.css" />
+<link rel="stylesheet" type="text/css" href="../css/flatpickr.min.css" />
+<link rel="stylesheet" type="text/css" href="../css/select2.min.css" />
+<link rel="stylesheet" type="text/css" href="../css/login.css?20190108" />
+<!-- javascript -->
+<script type="text/javascript" src="../js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/lc_switch.js"></script>
+<script type="text/javascript" src="../js/lightslider.js"></script>
+<script type="text/javascript" src="../js/flatpickr.js"></script>
+<script type="text/javascript" src="../js/select2.full.min.js"></script>
+<script type="text/javascript" src="../editor/js/service/HuskyEZCreator.js"></script>
+<script type="text/javascript" src="../js/page.js?20190108"></script>
+
+
+</head>
+<body>
+	<div id="wrap">
+		<!-- Language -->
+		<div id="Language">
+			<select name="" id="">
+				<option value="KOREAN">한글</option>
+				<option value="ENGLISH">ENGLISH</option>
+				<option value="CHINA">中文(简体)</option>
+				<option value="JAPAN">日本語</option>
+			</select>
+		</div>
+		<!-- // Language -->
+		<!-- login_wrap -->
+		<div class="login_wrap">
+			<div class="login_contents">
+				<h1>
+					<img src="../images/common/auton_logo.png" alt="auton" />
+					<span>사장님 센터</span>
+				</h1>
+				<div id="login" class="tab_panel active">
+					<form method="" name="" action="" >
+						<ul class="form_group">
+							<li><input type="text" placeholder="아이디를 입력하세요." value="" name="" id="id" /></li>
+							<li>
+								<input type="password" placeholder="비밀번호를 입력하세요." value="" name="" id="password" />
+								<a href="javascript:;" class="icon_view_pw"><img src="../images/icon/icon_password_off.png" alt="" /></a>
+							</li>
+						</ul>
+						<p class="required">입력하신 정보가 다릅니다. 확인하여 주시기 바랍니다.</p>
+						<a href="dashboard.html" class="btn_login">로그인</a>
+						<div class="checkbox">
+							<label for="idSave"><input type="checkbox" id="idSave"/><span></span>아이디 저장</label>
+						</div>
+					</form>
+				</div>
+				<div id="forgot" class="tab_panel">
+					<form method="" name="" action="" >
+						<ul class="form_group">
+							<li><input type="text" placeholder="담당자 이메일을 입력해주세요." value="" name="" id="id" /></li>
+						</ul>
+						<p class="required">입력하신 이메일로 임시비밀번호가 발송되었습니다.</p>
+						<a href="javascript:;" class="btn_login">비밀번호 초기화</a>
+					</form>
+				</div>
+				<div class="find_idpw">
+					<ul>
+						<li><a href="#login" class="login_form">로그인 하기</a></li>
+						<li class="li_line">|</li>
+						<li><a href="#forgot" class="forgot_form">비밀번호 찾기</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- // login_wrap -->
+	</div>
+</body>
+</html>

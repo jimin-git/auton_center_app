@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="pragma" content="no-cache">
+
+		<!-- style -->
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/base.css?20200923">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/lc_switch.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/lightslider.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/flatpickr.min.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/select2.min.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/page.css?20201029">
+
+		<!-- javascript -->
+		<script type="text/javascript" src="../../../resources/js/jquery-1.10.1.min.js"></script>
+		<script type="text/javascript" src="../../../resources/js/bootstrap.min.js"></script>
+
+		<!-- 추가 되는 부분 -->
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/slick.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/travel_center.css">
+
+		<script type="text/javascript" src="../../../resources/js/slick.min.js"></script>
+		<script type="text/javascript" src="../../../resources/js/travel_center.js"></script>
+		<!-- 추가 되는 부분 -->
+
+		<title> 입점사 관리 | 판매자 정보 </title>
+	</head>
+	<body>
+		<!--  #wrap 부분 추가
+		-->
+		<div id="wrap" class="">
+      <c:import url="/layout/header" />
+			<!-- 본문 시작 -->
+			<div class="content_wrap">
+					<div class="site_map">
+						<ul>
+							<li>HOME</li>
+							<li class="bar">&gt;</li>
+							<li data-i18n="gnb.1.4">입점사 관리</li>
+							<li class="bar">&gt;</li>
+							<li>판매자 정보</li>
+						</ul>
+					</div>
+					<h2 class="page_title">판매자 정보</h2>
+					<!-- 검색 시작 -->
+					<div class="content_box">
+							<div class="accordion on">
+								기본설정
+							</div>
+							<div class=" con_tit_type01 con_box">
+									<div class="">
+										<h5 class="tit_type01 inline mr10">아이디</h5>
+										<input type="text" name="" value="osang01" class="form-control wd260 inline" disabled >
+									</div>
+									<div class=" mt18">
+										<h5 class="tit_type01 mt18 mr10 mb10"><span class="required">*</span>비밀번호</h5>
+										<input type="text" name="" value="" class="form-control x_1 inline">
+									</div>
+									<div class=" mt18">
+										<h5 class="tit_type01 mr10 mb10"><span class="required">*</span>비밀번호 확인</h5>
+										<input type="text" name="" value="" class="form-control x_1 inline">
+									</div>
+									<div class=" mt18">
+										<h5 class="tit_type01 mr10 mb10"><span class="required">*</span>혜택푸시수신 동의</h5>
+										<label for="AgreeEventY" class="label_padding"><input type="radio" name="AgreeEvent" value="" id="AgreeEventY" checked=""><span></span><span>동의</span></label>
+										<label for="AgreeEventN" class="label_padding ml20"><input type="radio" name="AgreeEvent" value="" id="AgreeEventN"><span></span><span>거부</span></label>
+									</div>
+									<div class="mt18 ">
+										<h5 class="tit_type01 mr10 mb10 layer_pop_wrap inline"><span class="required">*</span>ARS 수신 동의
+											<a href="#" class="layer_pop_btn ml10"><img src="../../../resources/images/icon/icon_info.png" alt=""></a>
+											<p class="layer_pop"><em></em>
+													출장서비스 시작하기 <span>1</span>시간 전에 서비스 정보(서비스 명, 날짜, 시간 등)가 ARS로 발송됩니다.
+											</p>
+										</h5>
+										</br>
+										<label for="AgreeARSY" class="label_padding"><input type="radio" name="AgreeARS" value="" id="AgreeARSY" checked=""><span></span><span>동의</span></label>
+										<label for="AgreeARSN" class="label_padding ml20"><input type="radio" name="AgreeARS" value="" id="AgreeARSN"><span></span><span>거부</span></label>
+
+									</div>
+									<div class=" mt18 mb18">
+										<h5 class="tit_type01 mr10 mb10"><span class="required">*</span>운영여부</h5>
+										<label for="AgreeManageY" class="label_padding"><input type="radio" name="AgreeManage" value="" id="AgreeManageY" checked=""><span></span><span>동의</span></label>
+										<label for="AgreeManageN" class="label_padding ml20"><input type="radio" name="AgreeManage" value="" id="AgreeManageN"><span></span><span>거부</span></label>
+									</div>
+
+							</div>
+							<!---->
+					</div>
+
+			</div>
+			<!-- 본문 끝 -->
+		</div>
+		<!-- #wrap 끝 -->
+	</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="pragma" content="no-cache">
+
+		<!-- style -->
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/base.css?20200923">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/lc_switch.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/lightslider.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/flatpickr.min.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/select2.min.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/page.css?20201029">
+
+		<!-- javascript -->
+		<script type="text/javascript" src="../../../resources/js/jquery-1.10.1.min.js"></script>
+		<script type="text/javascript" src="../../../resources/js/bootstrap.min.js"></script>
+
+		<!-- 추가 되는 부분 -->
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/slick.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/travel_center.css">
+
+		<script type="text/javascript" src="../../../resources/js/slick.min.js"></script>
+		<script type="text/javascript" src="../../../resources/js/travel_center.js"></script>
+		<!-- 추가 되는 부분 -->
+
+		<title> 입점사 관리 | 판매자 정보 </title>
+	</head>
+	<body>
+		<!--  #wrap 부분 추가
+		-->
+		<div id="wrap" class="">
+      <c:import url="/layout/header" />
+			<!-- 본문 시작 -->
+			<div class="content_button_box">
+				<h4 class="tit_type04 mt05">로그인</h4>
+				<div class="tit_type02">auton_가맹점 <a href="#" class="sub_txt">로그아웃<em class="icon_more gray right"></em></a></div>
+			</div>
+			<div class="content_button_box mt10">
+				<h4 class="tit_type04 mt05">설정</h4>
+				<a href="#" class="tit_type02">기본설정<em class="icon_more gray right"></em></a>
+				<a href="#" class="tit_type02">내비게이션설정<em class="icon_more gray right"></em></a>
+			</div>
+			<div class="content_button_box mt10">
+				<h4 class="tit_type04 mt05">알림 설정</h4>
+				<div class="tit_type02">PUSH
+					<label for="PushCk" class="fr btn_toggle mt10"> <input type="checkbox" name="" value="" id="PushCk" class=""><span></label>
+				</div>
+				<div class="tit_type02">
+					<div class="layer_pop_wrap">
+						ARS<a href="#" class="layer_pop_btn ml10"><img src="../../../resources/images/icon/icon_info.png" alt=""></a>
+						<p class="layer_pop"><em></em>
+								서비스 시작 <span>1</span>시간 전에 서비스 정보(서비스 명, 날짜, 시간 등)가 ARS로 발송됩니다.
+						</p>
+					</div>
+					<label for="ArsCk" class="fr btn_toggle mt10"> <input type="checkbox" name="" value="" id="ArsCk" class=""><span></label>
+				</div>
+			</div>
+			<div class="content_button_box mt10">
+				<h4 class="tit_type04 mt05">최신버전 V1.0</h4>
+				<a href="#" class="tit_type02">현제버전<span class="sub_txt">v1.1</span></a>
+				<a href="#" class="tit_type02">현제버전<span class="sub_txt">iPhone12.1</span></a>
+			</div>
+
+
+
+
+			<!-- 본문 끝 -->
+		</div>
+		<!-- #wrap 끝 -->
+		<!-- 팝업 -->
+		<div class="bim"></div>
+		<!--기본 내비게이션 설정 팝업-->
+		<div class="popup_wrap layer_pop_con">
+			<div class="popup_con">
+				<h4 class="mb20">기본 내비게이션 설정</h4>
+				<div class="nav_control mb20">
+						<label for="nav_kakao"><input type="radio" name="nav_control" value="" id="nav_kakao" class="type01"><span></span><span>카카오 내비</span></label>
+						<label for="nav_google"><input type="radio" name="nav_control" value="" id="nav_google" class="type01"><span></span><span>구글 내비</span></label>
+						<label for="nav_naver"><input type="radio" name="nav_control" value="" id="nav_naver" class="type01"><span></span><span>네이버 지도</span></label>
+						<label for="nav_tmap"><input type="radio" name="nav_control" value="" id="nav_tmap" class="type01"><span></span><span>T map</span></label>
+				</div>
+			</div>
+			<div class="btn_wrap">
+				<a href="#" class="btn btn_blue x_2">확인</a><a href="#" class="btn btn_white x_2">취소</a>
+			</div>
+		</div>
+		<!--//기본 내비게이션 설정 팝업-->
+	</body>
+</html>

@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> 게시판 | 공지사항 </title>
+
+<!-- style -->
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="../css/base.css" />
+<link rel="stylesheet" type="text/css" href="../css/lc_switch.css" />
+<link rel="stylesheet" type="text/css" href="../css/lightslider.css" />
+<link rel="stylesheet" type="text/css" href="../css/flatpickr.min.css" />
+<link rel="stylesheet" type="text/css" href="../css/select2.min.css" />
+<link rel="stylesheet" type="text/css" href="../css/page.css?20190108" />
+<!-- javascript -->
+<script type="text/javascript" src="../js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/lc_switch.js"></script>
+<script type="text/javascript" src="../js/lightslider.js"></script>
+<script type="text/javascript" src="../js/flatpickr.js"></script>
+<script type="text/javascript" src="../js/select2.full.min.js"></script>
+<script type="text/javascript" src="../js/page.js?21081208"></script>
+
+
+</head>
+<body>
+	<div id="wrap">
+		<div class="wrapper">
+			<!-- 상단로고 시작 -->
+			<div class="top_nav">
+				<div class="top_nav_wrap">
+					<h1>
+						<a href="dashboard.html">
+							<img src="../images/common/dashboard_logo.png" alt="auton logo" />
+						</a>
+						<span>가맹점명</span>
+					</h1>
+					<ul class="top_right">
+						<li class="alarm"><span class="alarm_new"></span><a href="javascript:;"><img src="../images/icon/icon_alarm.png" alt="" /></a></li>
+						<li><a href="login.html"><img src="../images/icon/icon_logout.png" alt="" /></a></li>
+						<li class="store_page"><a href="javascript:;"><img src="../images/icon/icon_go_store.png" alt="" /></a></li>
+						<li>
+							<div class="dropdown">
+								<a href="javascript:;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="select_language">한글</a>
+								<ul class="dropdown-menu language_menu" role="menu" aria-labelledby="dLabel">
+									<li><a href="javascript:;" id="kr">한글</a></li>
+									<li><a href="javascript:;" id="en">ENGLISH</a></li>
+									<li><a href="javascript:;" id="cn">中文(简体)</a></li>
+									<li><a href="javascript:;" id="jp">日本語</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+					<div class="alarm_list">
+						<h4>2018-09-01</h4>
+						<ul>
+							<li><a href="javascript:;">메시지내용 노출메시지내용 노출</a></li>
+							<li><a href="javascript:;">메시지내용 노출</a></li>
+							<li><a href="javascript:;">메시지내용 노출</a></li>
+							<li><a href="javascript:;">메시지내용 노출</a></li>
+							<li><a href="javascript:;">메시지내용 노출</a></li>
+						</ul>
+						<h4>2018-09-01</h4>
+						<ul>
+							<li><a href="javascript:;">메시지내용 노출메시지내용 노출메시지내용 노출메시지내용 노출메시지내용 노출메시지내용 노출</a></li>
+							<li><a href="javascript:;">메시지내용 노출</a></li>
+							<li><a href="javascript:;">메시지내용 노출</a></li>
+							<li><a href="javascript:;">메시지내용 노출</a></li>
+							<li><a href="javascript:;">메시지내용 노출</a></li>
+						</ul>
+					</div>
+					<a href="javascript:goNav()" class="m_hambuger"><img src="../images/icon/icon_hambuger.png" alt="" /></a>
+				</div>
+			</div>
+			<!-- 상단로고 끝 -->
+			<!-- 메뉴 시작 -->
+			<nav id="gnbMenu">
+				<div class="main_menu">
+					<ul>
+						<li class="menu"><a href="dashboard.html">대시보드</a></li>
+						<li class="menu slide_sub"><a href="javascript:;">가맹점관리</a></li>
+						<li class="menu slide_sub"><a href="javascript:;">상품관리</a></li>
+						<li class="menu slide_sub"><a href="javascript:;">판매관리</a></li>
+						<li class="menu slide_sub"><a href="javascript:;">정산관리</a></li>
+						<li class="menu slide_sub"><a href="javascript:;">게시판</a></li>
+					</ul>
+				</div>
+				<div class="sub_menu_group">
+					<div class="sub_menu_box">
+						<ul class="sub_menu sub_menu_0"><li>&nbsp;</li></ul>
+						<ul class="sub_menu sub_menu_1">
+							<li><a href="my_information.html">판매자정보</a></li>
+							<li><a href="information_change.html">정보변경신청</a></li>
+							<li><a href="settingday.html">영업일 설정</a></li>
+							<li><a href="publicity.html">홍보관리</a></li>
+							<li><a href="department.html">가맹관리</a></li>
+						</ul>
+						<ul class="sub_menu sub_menu_2">
+							<li><a href="product_list.html">상품관리</a></li>
+							<li><a href="category.html">카테고리 관리</a></li>
+							<li><a href="service_day.html">서비스날짜 관리</a></li>
+							<li><a href="information_sttings.html">이용안내설정</a></li>
+						</ul>
+						<ul class="sub_menu sub_menu_3">
+							<li><a href="order_status.html">주문관리</a></li>
+							<li><a href="send_service.html">서비스 예약전송</a></li>
+							<li><a href="shipment.html">발주/발송관리</a></li>
+							<li><a href="cancel.html">취소관리</a></li>
+							<li><a href="return.html">반품관리</a></li>
+						</ul>
+						<ul class="sub_menu sub_menu_4">
+							<li><a href="my_sales.html">매출내역</a></li>
+							<li><a href="company_sales.html">하위매장 매출내역</a></li>
+						</ul>
+						<ul class="sub_menu sub_menu_5">
+							<li><a href="notice.html">공지사항</a></li>
+							<li><a href="review.html">후기관리</a></li>
+							<li><a href="talkn.html">1:1 문의(톡앤)</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<!-- 메뉴 끝 -->
+			<!-- 내정보수정 시작 -->
+			<div class="content_wrap">
+				<div class="content_box">
+					<div class="site_map">
+						<ul>
+							<li>HOME</li>
+							<li class="bar">&gt;</li>
+							<li>게시판</li>
+							<li class="bar">&gt;</li>
+							<li>공지사항</li>
+						</ul>
+					</div>
+					<h2 class="page_title">공지사항</h2>
+					<!-- 검색 시작 -->
+					<div class="search_wrap">
+						<form action="">
+							<div class="form-horizontal">
+								<div class="col-xs-12 col-sm-6">
+									<div class="form-group">
+										<label for="searchNotice" class="col-sm-3 control-label">검색어</label>
+										<div class="col-sm-9 select_input">
+											<select name="" id="">
+												<option value="">전체</option>
+												<option value="">제목</option>
+												<option value="">내용</option>
+											</select>
+											<input type="text" class="form-control search_keyword" id="searchNotice" placeholder="">
+										</div>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-6">
+									<div class="form-group">
+										<label class="col-sm-3 control-label">등록일</label>
+										<div class="col-sm-9">
+											<input type="text" class="flatpickr"/> ~ <input type="text" class="flatpickr" />
+										</div>
+									</div>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="btn_group_center">
+								<a href="javascript:;" class="btn btn-lg btn-default">초기화</a>
+								<a href="javascript:;" class="btn btn-lg btn-success">조회</a>
+							</div>
+						</form>
+					</div>
+					<!-- 검색 끝 -->
+					<!-- 본문 시작 -->
+					<div class="notice_list_box">
+						<ul class="select_views">
+							<li class="all_list"><span>'검색어'</span> 총<span> 99 </span>건</li>
+							<li>
+								<select name="" id="" class="basic_select">
+									<option value="">10건씩 조회</option>
+									<option value="">20건씩 조회</option>
+									<option value="">50건씩 조회</option>
+									<option value="">100건씩 조회</option>
+								</select>
+							</li>
+						</ul>
+						<div class="notice_table_box">
+							<div class="table-responsive">
+								<table class="table notice_table">
+									<colgroup>
+										<col width=""/>
+										<col width=""/>
+										<col width=""/>
+									</colgroup>
+									<thead>
+										<tr>
+											<th>번호</th>
+											<th>제목</th>
+											<th>등록일</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td align="center"><span class="notice">공지</span></td>
+											<td align="left"><a href="notice_view.html">고정된 공지사항 제목입니다.</a></td>
+											<td align="center">YYYY-MM-DD</td>
+										</tr>
+										<tr>
+											<td align="center">99</td>
+											<td align="left"><a href="notice_view.html">공지사항 제목입니다.</a></td>
+											<td align="center">YYYY-MM-DD</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<!-- 본문 끝 -->
+					<!-- 페이징 -->
+					<div class="paging">
+						<a href="javascript:;" class="first"><img src="../images/icon/icon_prev_02.png" alt=""></a>
+						<a href="javascript:;"><img src="../images/icon/icon_prev_01.png" alt=""></a>
+						<a href="javascript:;" class="active">1</a>
+						<a href="javascript:;">2</a>
+						<a href="javascript:;">3</a>
+						<a href="javascript:;">4</a>
+						<a href="javascript:;">5</a>
+						<a href="javascript:;"><img src="../images/icon/icon_next_01.png" alt=""></a>
+						<a href="javascript:;"><img src="../images/icon/icon_next_02.png" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+
+<!--  시작 -->
+<!--  끝 -->

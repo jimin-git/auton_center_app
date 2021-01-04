@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="pragma" content="no-cache">
+
+		<!-- style -->
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/base.css?20200923">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/lc_switch.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/lightslider.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/flatpickr.min.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/select2.min.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/page.css?20201029">
+
+		<!-- javascript -->
+		<script type="text/javascript" src="../../../resources/js/jquery-1.10.1.min.js"></script>
+		<script type="text/javascript" src="../../../resources/js/bootstrap.min.js"></script>
+
+		<!-- 추가 되는 부분 -->
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/slick.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/travel_center.css">
+
+		<script type="text/javascript" src="../../../resources/js/slick.min.js"></script>
+		<script type="text/javascript" src="../../../resources/js/travel_center.js"></script>
+
+		<!-- 달력  -->
+	  <link rel="stylesheet" href="../../../resources/css/jquery-ui.css" type="text/css" />
+	  <script src="../../../resources/js/jquery-ui.js"></script>
+
+		<!-- 추가 되는 부분 -->
+
+		<title> 가맹점관리 | 영업일 설정 </title>
+	</head>
+	<body>
+		<!--  #wrap 시작
+		흰색 배경의 경우 class 추가 bg_white
+
+		-->
+		<div id="wrap" class="bg_white">
+      <!--
+			헤더 <c:import url="/layout/header" />
+			-->
+			<div class="calender_control_box">
+				<div class="calender_ck box_gray">
+					2020년 11월 16일(월) 08:00
+				</div>
+			</div>
+			<!-- calender_control_box -->
+			<!--리스트 있을때 -->
+			<div class="content_wrap" >
+					<div class="schedule_box">
+							<div class="schedule_info">
+								<h5>출장정보</h5>
+								<p class="">일정 : 2020-11-16 오전 11:00 까지</p>
+								<p class="">요청사항 : </p>
+							</div>
+					</div>
+					<div class="schedule_box">
+							<div class="schedule_info">
+								<h5>차량정보</h5>
+								<p class="">차량번호 : 11하1111</p>
+								<p class="">차종 : 소나타흰색</p>
+							</div>
+							<div class="schedule_info box_gray">
+								<h5>출발지정보</h5>
+								<p class="">출발지 : ABC아파트</p>
+								<p class="">주소 : 경기도 안양시 만안구 안양동</p>
+							</div>
+							<div class="schedule_info box_gray">
+								<h5>도착지정보</h5>
+								<p class="">도착지 : 오토앤 세차장</p>
+								<p class="">주소 : 경기도 안양시 동안구 호계 1동</p>
+							</div>
+					</div>
+					<div class="schedule_box">
+							<div class="schedule_info">
+								<h5>고객정보</h5>
+								<p class="">예약자 : 홍길동</p>
+								<p class="">전화번호 : 010-0101-0101</p>
+							</div>
+					</div>
+			</div>
+			<!-- content_wrap -->
+			<div class="btn_wrap fix">
+				<!--시작/ 예약취소-->
+				<a href="#" class="btn x_2 btn_blue">시작</a><a href="#" class="btn x_2 btn_white">예약취소</a>
+				<!--//시작/ 예약취소-->
+				<!--서비스  중-->
+				<a href="#" class="btn x_1 btn_blue" style="display:none;">서비스 중</a>
+				<!--//서비스 중-->
+				<!--  예약 취소 / 서비스 중
+				메인 상품 또는 출장 (단일 상품일 경우 예약 취소 버튼 노출)-->
+				<a href="#" class="btn x_2 btn_white" style="display:none">예약취소</a><a href="#" class="btn x_2 btn_blue" style="display:none">서비스 중</a>
+				<!-- //예약 취소 / 서비스 중-->
+				<!--완료-->
+				<a href="#" class="btn x_1 btn_blue" style="display:none">완료</a>
+				<!--완료-->
+			</div>
+			<!-- 팝업 -->
+			<div class="bim"></div>
+			<!--기본 내비게이션 설정 팝업-->
+			<div class="popup_wrap layer_pop_con">
+				<div class="popup_con">
+					<h4 class="mb20">기본 내비게이션 설정</h4>
+					<div class="nav_control mb20">
+							<label for="nav_kakao"><input type="radio" name="nav_control" value="" id="nav_kakao" class="type01"><span></span><span>카카오 내비</span></label>
+							<label for="nav_google"><input type="radio" name="nav_control" value="" id="nav_google" class="type01"><span></span><span>구글 내비</span></label>
+							<label for="nav_naver"><input type="radio" name="nav_control" value="" id="nav_naver" class="type01"><span></span><span>네이버 지도</span></label>
+							<label for="nav_tmap"><input type="radio" name="nav_control" value="" id="nav_tmap" class="type01"><span></span><span>T map</span></label>
+					</div>
+					<strong>
+					해당 설정 수정은 설정 > <br/>
+					마이페이지에서 가능합니다.
+				</strong>
+				</div>
+				<div class="btn_wrap">
+					<a href="#" class="btn btn_blue x_2">확인</a><a href="#" class="btn btn_white x_2">취소</a>
+				</div>
+			</div>
+			<!--//기본 내비게이션 설정 팝업-->
+			<!--예약메시지 팝업-->
+			<div class="popup_wrap layer_pop_con">
+				<div class="popup_con center">
+					예약 취소 시,<br />
+					다음 예약이 <strong class="color_red">제한</strong>될 수 있습니다.<br />
+					예약을 <strong class="color_red">취소</strong>하시겠습니까?<br />
+					<br />
+					누적 제안 횟수 : <strong class="color_red">2</strong>회<br/>
+					<strong class="color_red" style="display:none">2020.11.15 17:00 이후 예약 가능</strong>
+				</div>
+				<div class="btn_wrap">
+					<a href="#" class="btn btn_white x_2">취소</a><a href="#" class="btn btn_blue x_2">확인</a>
+				</div>
+			</div>
+			<!--//예약메시지 팝업-->
+
+
+			<!-- 본문 끝 -->
+		</div>
+		<!-- #wrap 끝 -->
+	</body>
+</html>

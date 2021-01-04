@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> 운영센터 | 대시보드 </title>
+
+<!-- style -->
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="../css/base.css" />
+<link rel="stylesheet" type="text/css" href="../css/mobile_nav.css?20181012" />
+
+<!-- javascript -->
+<script type="text/javascript" src="../js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		// 상단 언어 선택
+		$('.select_language').on('click',function(){
+			$('.dropdown-menu').toggleClass('on');
+		});
+		$('.language_menu li a').on('click',function(){
+			$('.select_language').text($(this).html());
+			$('.dropdown-menu').toggleClass('on');
+			
+		});
+
+		// 메뉴 아코디언
+		$('.mmenu').on('click',function(){
+			if($(this).hasClass('on')){
+				$(this).removeClass('on');
+				$(this).children('.msub_menu').slideUp();
+			}else{
+				$('.msub_menu').removeClass('on');
+				$('.msub_menu').children('.msub_menu').slideUp();
+				$(this).addClass('on');
+				$(this).children('.msub_menu').slideDown();
+			}
+		});
+	});
+
+	function goDash(){
+		location.href="dashboard.html"; 
+	}
+
+	function viewAlarm(){
+		$('#setTimeBlind').show();
+		$('#viewAlarm').show();
+	}
+
+	function viewAlarmClose(){
+		$('#setTimeBlind').hide();
+		$('#viewAlarm').hide();
+	}
+</script>
+
+</head>
+<body class="nav_bg">
+
+	<div id="mobileNav">
+		<a href="javascript:goDash()" class="m_close"><img src="../images/icon/icon_m_close.jpg" alt="" /></a>
+		<ul class="top_right">
+			<li><span class="alarm_new"></span><a href="javascript:;" onclick="viewAlarm()"><img src="../images/icon/icon_alarm.png" alt="" /></a></li>
+			<li><a href="javascript:;"><img src="../images/icon/icon_logout.png" alt="" /></a></li>
+			<li class="store_page"><a href="javascript:;"><img src="../images/icon/icon_go_store.png" alt="" /></a></li>
+			<li>
+				<div class="dropdown">
+					<a href="javascript:;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="select_language">한글</a>
+					<ul class="dropdown-menu language_menu" role="menu" aria-labelledby="dLabel">
+						<li><a href="javascript:;" id="kr">한글</a></li>
+						<li><a href="javascript:;" id="en">ENGLISH</a></li>
+						<li><a href="javascript:;" id="cn">中文(简体)</a></li>
+						<li><a href="javascript:;" id="jp">日本語</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+		<nav id="mGnbMenu">
+			<ul>
+				<li class="">
+					<a href="dashboard.html">대시보드</a>
+				</li>
+				<li class="mmenu">
+					<a href="javascript:;">가맹점관리</a>
+					<ul class="msub_menu">
+						<li><a href="my_information.html">· 판매자정보</a></li>
+						<li><a href="information_change.html">· 정보변경신청</a></li>
+						<li><a href="settingday.html">· 영업일 설정</a></li>
+						<li><a href="publicity.html">· 홍보관리</a></li>
+						<li><a href="department.html">· 가맹관리</a></li>
+					</ul>
+				</li>
+				<li class="mmenu">
+					<a href="javascript:;">상품관리</a>
+					<ul class="msub_menu">
+						<li><a href="product_list.html">· 상품관리</a></li>
+						<li><a href="category.html">· 카테고리 관리</a></li>
+						<li><a href="service_day.html">· 서비스날짜 관리</a></li>
+						<li><a href="javascript:;">· 이용안내설정</a></li>
+					</ul>
+				</li>
+				<li class="mmenu">
+					<a href="javascript:;">판매관리</a>
+					<ul class="msub_menu">
+						<li><a href="order_status.html">· 주문관리</a></li>
+						<li><a href="send_service.html">· 서비스 예약전송</a></li>
+						<li><a href="javascript:;">· 발주/발송관리</a></li>
+						<li><a href="cancel.html">· 취소관리</a></li>
+						<li><a href="return.html">· 반품관리</a></li>
+					</ul>
+				</li>
+				<li class="mmenu">
+					<a href="javascript:;">정산관리</a>
+					<ul class="msub_menu">
+						<li><a href="my_sales.html">· 매출내역</a></li>
+						<li><a href="company_sales.html">· 하위매장 매출내역</a></li>
+					</ul>
+				</li>
+				<li class="mmenu">
+					<a href="javascript:;">게시판</a>
+					<ul class="msub_menu">
+						<li><a href="notice.html">· 공지사항</a></li>
+						<li><a href="review.html">· 후기관리</a></li>
+						<li class=""><a href="talkn.html">1:1 문의(톡앤)</a></li>
+					</ul>
+				</li>
+				
+			</ul>
+		</nav>
+	</div>
+	
+	<!-- 알림 클릭 팝업 -->
+	<div id="setTimeBlind"></div>
+	<div id="viewAlarm">
+		<a href="javascript:viewAlarmClose();" class="close_popup"><img src="../images/icon/icon_close.png" alt="" /></a>
+		<div class="alarm_list">
+			<h4>2018-09-01</h4>
+			<ul>
+				<li><a href="javascript:;">메시지내용 노출메시지내용 노출</a></li>
+				<li><a href="javascript:;">메시지내용 노출</a></li>
+				<li><a href="javascript:;">메시지내용 노출</a></li>
+				<li><a href="javascript:;">메시지내용 노출</a></li>
+				<li><a href="javascript:;">메시지내용 노출</a></li>
+			</ul>
+			<h4>2018-09-01</h4>
+			<ul>
+				<li><a href="javascript:;">메시지내용 노출메시지내용 노출메시지내용 노출메시지내용 노출메시지내용 노출메시지내용 노출</a></li>
+				<li><a href="javascript:;">메시지내용 노출</a></li>
+				<li><a href="javascript:;">메시지내용 노출</a></li>
+				<li><a href="javascript:;">메시지내용 노출</a></li>
+				<li><a href="javascript:;">메시지내용 노출</a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

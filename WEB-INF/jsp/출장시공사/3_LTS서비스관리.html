@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="pragma" content="no-cache">
+
+		<!-- style -->
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/base.css?20200923">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/lc_switch.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/lightslider.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/flatpickr.min.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/select2.min.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/page.css?20201029">
+
+		<!-- javascript -->
+		<script type="text/javascript" src="../../../resources/js/jquery-1.10.1.min.js"></script>
+		<script type="text/javascript" src="../../../resources/js/bootstrap.min.js"></script>
+
+		<!-- 추가 되는 부분 -->
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/slick.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/travel_center.css">
+
+		<script type="text/javascript" src="../../../resources/js/slick.min.js"></script>
+		<script type="text/javascript" src="../../../resources/js/travel_center.js"></script>
+		<!-- 추가 되는 부분 -->
+
+		<title> 입점사 관리 | 영업 설정 </title>
+	</head>
+	<body>
+		<!--  #wrap 부분 추가
+		-->
+		<div id="wrap" class="">
+      <c:import url="/layout/header" />
+			<!-- 본문 시작 -->
+			<div class="content_wrap pb10">
+					<div class="site_map">
+						<ul>
+							<li>HOME</li>
+							<li class="bar">&gt;</li>
+							<li data-i18n="gnb.1.4">상품관리</li>
+							<li class="bar">&gt;</li>
+							<li>LTS 서비스 관리</li>
+						</ul>
+					</div>
+					<h2 class="page_title">LTS 서비스 관리</h2>
+					<!-- 검색 시작 -->
+					<div class="content_box">
+							<div class="con_box">
+									<h4 class="tit_type02 mb10">서비스명</h4>
+									<P class="btn_search_wrap type01">
+										<input type="text" class="form-control search_keyword" id="searchKeyword1" name="orderNo" value=""><em href="#" class="btn_search">조회</em>
+									</P>
+							</div>
+					</div>
+			</div>
+
+			<ul class="select_views con_box">
+				<li class="all_list">전체<span> 0 </span>건</li>
+				<li class="search_select">
+					<select name="selectPageSize" id="selectPageSize" class="basic_select">
+						<option value="10" data-i18n="common.button.condition.selectPageSize.10">10건씩 조회</option>
+						<option value="20" data-i18n="common.button.condition.selectPageSize.20">20건씩 조회</option>
+						<option value="30" data-i18n="common.button.condition.selectPageSize.30">30건씩 조회</option>
+						<option value="50" data-i18n="common.button.condition.selectPageSize.50">50건씩 조회</option>
+						<option value="100" data-i18n="common.button.condition.selectPageSize.100">100건씩 조회</option>
+					</select>
+				</li>
+			</ul>
+			<div class="list_box pt0">
+					<div class="schedule_box ">
+							<h4 class="schedule_tit">[엔진오일 교환]</h4>
+							<div class="schedule_info">
+								<p class="">시간당 공임비 30,000원</p>
+								<p class="mt10">
+									<label for="use1" class="fl">
+										<input type="checkbox" name="" value="" id="use1"><span></span> 사용
+									</label>
+									<span class="btn_wrap inline fr">
+										<a href="5_시공사별서비스목록.html" class="btn btn_blue hsm wd150">공임비 상세보기</a><a href="4_LTS서비스수정화면.html" class="btn btn_white hsm ml10">수정</a>
+									</span>
+								</p>
+							</div>
+					</div>
+					<div class="schedule_box mt05">
+							<h4 class="schedule_tit">[엔진오일 교환]</h4>
+							<div class="schedule_info">
+								<p class="">시간당 공임비 30,000원</p>
+								<p class="mt10">
+									<label for="use2" class="fl">
+										<input type="checkbox" name="" value="" id="use2"><span></span> 사용
+									</label>
+									<span class="btn_wrap inline fr">
+										<a href="5_시공사별서비스목록.html" class="btn btn_blue hsm wd150">공임비 상세보기</a><a href="4_LTS서비스수정화면.html" class="btn btn_white hsm ml10">수정</a>
+									</span>
+								</p>
+							</div>
+					</div>
+
+			</div>
+			<!-- 본문 끝 -->
+
+		</div>
+		<!-- #wrap 끝 -->
+	</body>
+</html>

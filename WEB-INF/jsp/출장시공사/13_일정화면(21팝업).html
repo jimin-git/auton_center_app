@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="pragma" content="no-cache">
+
+		<!-- style -->
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/base.css?20200923">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/lc_switch.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/lightslider.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/flatpickr.min.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/select2.min.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/page.css?20201029">
+
+		<!-- javascript -->
+		<script type="text/javascript" src="../../../resources/js/jquery-1.10.1.min.js"></script>
+		<script type="text/javascript" src="../../../resources/js/bootstrap.min.js"></script>
+
+		<!-- 추가 되는 부분 -->
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/slick.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/travel_center.css">
+
+		<script type="text/javascript" src="../../../resources/js/slick.min.js"></script>
+		<script type="text/javascript" src="../../../resources/js/travel_center.js"></script>
+
+		<!-- 달력  -->
+	  <link rel="stylesheet" href="../../../resources/css/jquery-ui.css" type="text/css" />
+	  <script src="../../../resources/js/jquery-ui.js"></script>
+
+		<!-- 추가 되는 부분 -->
+
+		<title> 가맹점관리 | 영업일 설정 </title>
+	</head>
+	<body>
+		<!--  #wrap 시작
+		흰색 배경의 경우 class 추가 bg_white
+
+		-->
+		<div id="wrap" class="bg_white">
+      <!--
+			헤더 <c:import url="/layout/header" />
+			-->
+			<div class="calender_control_box">
+				<div class="calender_ck box_gray accordion">
+					<span id="tbCalendarY">2020</span>년 <span class="date_month" >11</span>월 <span class="date_day">16</span>일(<span class="date_week">월</span>) <span class="date_time">08:00</span>
+				</div>
+				<div class="calender_setting" >
+						<div class="calender_date">
+							<ul class="">
+								<li><p>월</p><a href="javascript:void(0)">09</a></li>
+								<li><p>화</p><a href="javascript:void(0)">10</a></li>
+								<li><p>수</p><a href="javascript:void(0)">11</a></li>
+								<li><p>목</p><a href="javascript:void(0)">12</a></li>
+								<li><p>금</p><a href="javascript:void(0)">13</a></li>
+								<li class="color_blue"><p>토</p><a href="javascript:void(0)">14</a></li>
+								<li class="color_red"><p>일</p><a href="javascript:void(0)">15</a></li>
+							</ul>
+							<ul class="">
+								<li><p>월</p><a href="javascript:void(0)">16</a></li>
+								<li><p>화</p><a href="javascript:void(0)">17</a></li>
+								<li><p>수</p><a href="javascript:void(0)">18</a></li>
+								<li><p>목</p><a href="javascript:void(0)">19</a></li>
+								<li><p>금</p><a href="javascript:void(0)">20</a></li>
+								<li class="color_blue"><p>토</p><a href="javascript:void(0)">21</a></li>
+								<li class="color_red"><p>일</p><a href="javascript:void(0)">22</a></li>
+							</ul>
+						</div>
+						<!--calender_date -->
+						<div class="calender_time">
+							<ul class="">
+								<li><a href="javascript:void(0);" value="03:00">03시</a></li>
+								<li><a href="javascript:void(0);" value="04:00">04시</a></li>
+								<li><a href="javascript:void(0);" value="05:00">05시</a></li>
+								<li><a href="javascript:void(0);" value="06:00">06시</a></li>
+								<li><a href="javascript:void(0);" value="07:00">07시</a></li>
+								<li><a href="javascript:void(0);" value="08:00">08시</a></li>
+								<li><a href="javascript:void(0);" value="09:00">09시</a></li>
+								<li><a href="javascript:void(0);" value="10:00">10시</a></li>
+								<li><a href="javascript:void(0);" value="11:00">11시</a></li>
+								<li><a href="javascript:void(0);" value="12:00">12시</a></li>
+							</ul>
+						</div>
+						<!-- calender_time -->
+						<div class="btn_group_center mt20">
+								<a href="#" onClick="DatePickerShow();" class="btn btn_blue wd160">달력에서 선택하기</a>
+						</div>
+				</div>
+			</div>
+			<!-- calender_control_box -->
+			<!--리스트 있을때 -->
+			<div class="list_box" >
+				<div class="select_views">
+					<select class="basic_select wd100 fr" name="">
+						<option value="">시간순</option>
+						<option value="">거리순</option>
+					</select>
+				</div>
+
+					<div class="schedule_box">
+						<a href="#">
+							<h4 class="schedule_tit">출장 세차 <span>오전 10:00</span></h4>
+							<div class="schedule_info">
+								<p class="">도착지 : 경기도 안양시 동안구 경수대</p>
+								<p class="distance">나와의 거리 : 2km</p>
+							</div>
+						</a>
+					</div>
+					<div class="schedule_box">
+						<a href="#">
+							<h4 class="schedule_tit">픽업 <span>오전 10:00</span></h4>
+							<div class="schedule_info">
+								<p class="">출발지 : 경기도 군포시 고산로724번길</p>
+								<p class="">도착지 : 경기도 군포시 고산로724번길 군포세차장</p>
+								<p class="distance">나와의 거리 : 2km</p>
+							</div>
+						</a>
+					</div>
+					<div class="schedule_box">
+						<a href="#">
+							<h4 class="schedule_tit">딜리버리 <span>오전 10:00</span></h4>
+							<div class="schedule_info">
+								<p class="">출발지 : 경기도 군포시 고산로724번길</p>
+								<p class="">도착지 : 경기도 군포시 고산로724번길 군포세차장</p>
+								<p class="distance">나와의 거리 : 2km</p>
+							</div>
+						</a>
+					</div>
+			</div>
+			<!--리스트 있을때 -->
+			<!--리스트 없을때 -->
+			<div class="list_none mt50" style="display:none">
+				현재 가능한 서비스가 없습니다.
+			</div>
+
+			<!-- 팝업 -->
+			<div class="bim"></div>
+
+			<!--취소된 서비스 팝업-->
+			<div class="popup_wrap layer_pop_con">
+				<div class="popup_con center">
+					<span class="color_red">취소</span>된 서비스입니다.</br>
+					<strong>다른 서비스를 확인</strong>해주세요.
+				</div>
+				<div class="btn_wrap center">
+					<a href="#" class="btn btn_blue x_2">확인</a>
+				</div>
+			</div>
+			<!--//취소된 서비스 팝업-->
+			<!--달력 -->
+			<div id="datepicker" class="layer_pop_con">
+				<div class="btn_wrap">
+					<a href="#" onclick="DatePickerHide()" class="btn x_2">취소</a><a href="#" class="btn btn_blue x_2">확인</a>
+				</div>
+			</div>
+			<!--//달력 -->
+
+			<!-- 본문 끝 -->
+		</div>
+		<!-- #wrap 끝 -->
+	</body>
+</html>

@@ -1,0 +1,677 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> 판매관리 | 발주/발송관리 </title>
+
+<!-- style -->
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="../css/base.css" />
+<link rel="stylesheet" type="text/css" href="../css/lc_switch.css" />
+<link rel="stylesheet" type="text/css" href="../css/lightslider.css" />
+<link rel="stylesheet" type="text/css" href="../css/flatpickr.min.css" />
+<link rel="stylesheet" type="text/css" href="../css/select2.min.css" />
+<link rel="stylesheet" type="text/css" href="../css/page.css?20190131" />
+<!-- javascript -->
+<script type="text/javascript" src="../js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/lc_switch.js"></script>
+<script type="text/javascript" src="../js/lightslider.js"></script>
+<script type="text/javascript" src="../js/flatpickr.js"></script>
+<script type="text/javascript" src="../js/select2.full.min.js"></script>
+<script type="text/javascript" src="../js/page.js?20190122"></script>
+
+
+</head>
+<body>
+	<div id="wrap">
+		<div class="wrapper">
+			<!-- 상단로고 시작 -->
+			<div class="top_nav">
+				<div class="top_nav_wrap">
+					<h1>
+						<a href="dashboard.html">
+							<img src="../images/common/dashboard_logo.png" alt="auton logo" />
+						</a>
+						<span>가맹점명</span>
+					</h1>
+					<ul class="top_right">
+						<li class="alarm"><span class="alarm_new"></span><a href="javascript:;"><img src="../images/icon/icon_alarm.png" alt="" title="새로운 1:1문의가 있습니다."/></a></li>
+						<li><a href="login.html"><img src="../images/icon/icon_logout.png" alt="" title="로그아웃"/></a></li>
+						<li class="store_page"><a href="javascript:;"><img src="../images/icon/icon_go_store.png" alt="" title="메타몰"/></a></li>
+						<li>
+							<div class="dropdown">
+								<a href="javascript:;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="select_language" title="다국어 지원">한글</a>
+								<ul class="dropdown-menu language_menu" role="menu" aria-labelledby="dLabel">
+									<li><a href="javascript:;" id="kr">한글</a></li>
+									<li><a href="javascript:;" id="en">ENGLISH</a></li>
+									<li><a href="javascript:;" id="cn">中文(简体)</a></li>
+									<li><a href="javascript:;" id="jp">日本語</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+					<div class="alarm_list">
+						<h4>2018-09-01</h4>
+						<ul>
+							<li><a href="javascript:;" title="메시지내용 말풍선 노출">메시지내용 노출메시지내용 노출</a></li>
+							<li><a href="javascript:;" title="메시지내용 말풍선 노출">메시지내용 노출</a></li>
+							<li><a href="javascript:;" title="메시지내용 말풍선 노출">메시지내용 노출</a></li>
+							<li><a href="javascript:;" title="메시지내용 말풍선 노출">메시지내용 노출</a></li>
+							<li><a href="javascript:;" title="메시지내용 말풍선 노출">메시지내용 노출</a></li>
+						</ul>
+						<h4>2018-09-01</h4>
+						<ul>
+							<li><a href="javascript:;" title="메시지내용 말풍선 노출">메시지내용 노출메시지내용 노출메시지내용 노출메시지내용 노출메시지내용 노출메시지내용 노출</a></li>
+							<li><a href="javascript:;" title="메시지내용 말풍선 노출">메시지내용 노출</a></li>
+							<li><a href="javascript:;" title="메시지내용 말풍선 노출">메시지내용 노출</a></li>
+							<li><a href="javascript:;" title="메시지내용 말풍선 노출">메시지내용 노출</a></li>
+							<li><a href="javascript:;" title="메시지내용 말풍선 노출">메시지내용 노출</a></li>
+						</ul>
+					</div>
+					<a href="javascript:goNav()" class="m_hambuger"><img src="../images/icon/icon_hambuger.png" alt="" /></a>
+				</div>
+			</div>
+			<!-- 상단로고 끝 -->
+			<!-- 메뉴 시작 -->
+			<nav id="gnbMenu">
+				<div class="main_menu">
+					<ul>
+						<li class="menu"><a href="dashboard.html">대시보드</a></li>
+						<li class="menu slide_sub"><a href="javascript:;">가맹점관리</a></li>
+						<li class="menu slide_sub"><a href="javascript:;">상품관리</a></li>
+						<li class="menu slide_sub"><a href="javascript:;">판매관리</a></li>
+						<li class="menu slide_sub"><a href="javascript:;">정산관리</a></li>
+						<li class="menu slide_sub"><a href="javascript:;">게시판</a></li>
+					</ul>
+				</div>
+				<div class="sub_menu_group">
+					<div class="sub_menu_box">
+						<ul class="sub_menu sub_menu_0"><li>&nbsp;</li></ul>
+						<ul class="sub_menu sub_menu_1">
+							<li><a href="my_information.html">판매자정보</a></li>
+							<li><a href="information_change.html">정보변경신청</a></li>
+							<li><a href="settingday.html">영업일 설정</a></li>
+							<li><a href="publicity.html">홍보관리</a></li>
+							<li><a href="department.html">가맹관리</a></li>
+						</ul>
+						<ul class="sub_menu sub_menu_2">
+							<li><a href="product_list.html">상품관리</a></li>
+							<li><a href="category.html">카테고리 관리</a></li>
+							<li><a href="service_day.html">서비스날짜 관리</a></li>
+							<li><a href="information_sttings.html">이용안내설정</a></li>
+						</ul>
+						<ul class="sub_menu sub_menu_3">
+							<li><a href="order_status.html">주문관리</a></li>
+							<li><a href="send_service.html">서비스 예약전송</a></li>
+							<li><a href="shipment.html">발주/발송관리</a></li>
+							<li><a href="cancel.html">취소관리</a></li>
+							<li><a href="return.html">반품관리</a></li>
+						</ul>
+						<ul class="sub_menu sub_menu_4">
+							<li><a href="my_sales.html">매출내역</a></li>
+							<li><a href="company_sales.html">하위매장 매출내역</a></li>
+						</ul>
+						<ul class="sub_menu sub_menu_5">
+							<li><a href="notice.html">공지사항</a></li>
+							<li><a href="review.html">후기관리</a></li>
+							<li><a href="talkn.html">1:1 문의(톡앤)</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<!-- 메뉴 끝 -->
+			<!-- 내정보수정 시작 -->
+			<div class="content_wrap">
+				<div class="content_box">
+					<div class="site_map">
+						<ul>
+							<li>HOME</li>
+							<li class="bar">&gt;</li>
+							<li>판매관리</li>
+							<li class="bar">&gt;</li>
+							<li>발주/발송관리</li>
+						</ul>
+					</div>
+					<h2 class="page_title">발주/발송관리</h2>
+					<!-- 검색 시작 -->
+					<div class="search_wrap order_search_wrap">
+						<form action="">
+							<div class="form-horizontal">
+								<div class="form-group">
+									<label class="col-sm-3 control-label">기간선택</label>
+									<div class="col-sm-9">
+										<select name="" id="">
+											<option value="">전체</option>
+											<option value="">오늘</option>
+											<option value="">최근 7일</option>
+											<option value="">1개월</option>
+											<option value="">3개월</option>
+										</select>
+										<input type="text" class="flatpickr"/> ~ <input type="text" class="flatpickr" />
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="storeName" class="col-sm-3 control-label">검색</label>
+									<div class="col-sm-9">
+										<select name="" id="">
+											<option value="">전체</option>
+											<option value="">매장명</option>
+											<option value="">아이디</option>
+											<option value="">연락처</option>
+											<option value="">이메일</option>
+										</select>
+										<input type="text" class="form-control search_keyword" />
+									</div>
+								</div>
+								<div class="form-group search_details">
+									<label class="col-sm-3 control-label">상세조건<a href="javascript:;" class="details_info" role="button" data-html="true" data-placement="bottom" data-toggle="popover" title="" data-content="구매완료 처리가 된 데이터는 2가지 이상의 조건을 검색해야 고객정보를 볼 수 있습니다.<br/> 검색조건과 다른 조건을 선택하여 검색하세요!" data-original-title="! 개인정보보호법으로 인해">!</a></label>
+									<div class="col-sm-9">
+										<select name="" id="">
+											<option value=""> ---- </option>
+											<option value="">주문번호</option>
+											<option value="">송장번호</option>
+											<option value="">주문자명</option>
+											<option value="">주문자연락처</option>
+											<option value="">수취인명</option>
+											<option value="">수취인연락처</option>
+											<option value="">상품명</option>
+										</select>
+										<input type="text" class="form-control search_keyword">
+									</div>
+								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="btn_group_center">
+								<a href="javascript:;" class="btn btn-lg btn-default">초기화</a>
+								<a href="javascript:;" class="btn btn-lg btn-success">조회</a>
+							</div>
+						</form>
+					</div>
+					<!-- 검색 끝 -->
+					<!-- 본문 시작 -->
+					<div class="store_list_box">
+						<div id="tabs">
+							<ul class="store_tabs">
+								<li class="first active"><a href="javascrip:;" data-id="shipPanel1" class="">발송대기</a></li>
+								<li class="second"><a href="javascrip:;" data-id="shipPanel2">배송중</a></li>
+								<li class="second"><a href="javascrip:;" data-id="shipPanel3">배송완료</a></li>
+							</ul>
+							<div class="store_panel">
+								<!-- 발송대기 -->
+								<div id="shipPanel1" class="panel_contents">
+									<ul class="select_views">
+										<li class="all_list">총<span> 99 </span>건</li>
+										<li>
+											<select name="" id="" class="basic_select">
+												<option value="">10건씩 조회</option>
+												<option value="">20건씩 조회</option>
+												<option value="">50건씩 조회</option>
+												<option value="">100건씩 조회</option>
+											</select>
+										</li>
+									</ul>
+									<div class="table_layout">
+										<div class="table-responsive">
+											<table class="shipment_table">
+												<colgroup>
+													<col width=""/>
+													<col width=""/>
+													<col width=""/>
+													<col width=""/>
+													<col width=""/>
+													<col width=""/>
+													<col width=""/>
+													<col width=""/>
+													<col width=""/>
+													<col width=""/>
+													<col width=""/>
+													<col width=""/>
+													<col width=""/>
+													<col width=""/>
+													<col width=""/>
+													<col width=""/>
+													<col width=""/>
+													<col width=""/>
+													<col width=""/>
+													<col width=""/>
+													<col width=""/>
+													<col width=""/>
+												</colgroup>
+												<thead>
+													<tr>
+														<th><label for="listAllOk"><input type="checkbox" id="listAllOk"/><span></span></label></th>
+														<th>주문번호</th>
+														<th>택배사</th>
+														<th>송장번호</th>
+														<th>진행상태</th>
+														<th>주문자명</th>
+														<th>주문자ID</th>
+														<th>주문자연락처</th>
+														<th>상품정보</th>
+														<th>수량</th>
+														<th>결제금액</th>
+														<th>결제방식</th>
+														<th>결제일시</th>
+														<th>수취인명</th>
+														<th>수취인연락처</th>
+														<th>배송지</th>
+														<th>우편번호</th>
+														<th>배송메시지</th>
+														<th>발송구분</th>
+														<th>발송기한</th>
+														<th>배송비</th>
+														<th>배송비유형</th>
+														<th>제주도서산간<br />추가배송비</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="mnone"><label for="listItem"><input type="checkbox" id="listItem" name="listItem" value="" class="check_single"/><span></span></label></td>
+														<td class="organisationnumber"><a href="shipment_view.html">TAiq172487333</a></td>
+														<td data-label="택배사" class="parcel_service">
+															<select name="" id="">
+																<option value="">동원로엑스-로엑스택배(구:아주)</option>
+																<option value="">동원로엑스-로엑스택배(구:아주)</option>
+															</select>
+														</td>
+														<td data-label="송장번호" class="parcel_number"><input type="text" class="form-control invoice_number"/></td>
+														<td class="mnone">진행상태</td>
+														<td class="mmode name">주문자명</td>
+														<td class="mmode userid">주문자ID</td>
+														<td class="mnone">000-0000-0000</td>
+														<td class="thumbnail_name">
+															<ul>
+																<li><img src="../images/sample/thum.jpg" alt="" /></li>
+																<li>
+																	<p class="product_info_name">상품명 노출상품명 노출 상품명 노출상품명 노출</p>
+																	<p class="product_info_name">옵션 노출 옵션 노출 옵션 노출 옵션 노출</p>
+																</li>
+															</ul>
+														</td>
+														<td class="mmode amount">1</td>
+														<td class="mmode payment">00,000 원</td>
+														<td class="mnone">결제방식</td>
+														<td class="mnone">YYYY-MM-DD HH:MM:SS</td>
+														<td class="mnone">수취인명</td>
+														<td class="mnone">000-0000-0000</td>
+														<td class="mnone">배송지</td>
+														<td class="mnone">우편번호</td>
+														<td class="mnone">배송메시지</td>
+														<td class="mnone">지점발송</td>
+														<td class="mnone">발송기한</td>
+														<td class="mnone">00,000 원</td>
+														<td class="mnone">조건부무료</td>
+														<td class="mnone">00,000 원</td>
+													</tr>
+													<tr>
+														<td class="mnone"><label for="listItem"><input type="checkbox" id="listItem" name="listItem" value="" class="check_single"/><span></span></label></td>
+														<td class="organisationnumber"><a href="shipment_view.html">TAiq172487333</a></td>
+														<td data-label="택배사" class="parcel_service">
+															<select name="" id="">
+																<option value="">동원로엑스-로엑스택배(구:아주)</option>
+																<option value="">동원로엑스-로엑스택배(구:아주)</option>
+															</select>
+														</td>
+														<td data-label="송장번호" class="parcel_number"><input type="text" class="form-control invoice_number"/></td>
+														<td class="mnone">진행상태</td>
+														<td class="mmode name">주문자명</td>
+														<td class="mmode userid">주문자ID</td>
+														<td class="mnone">000-0000-0000</td>
+														<td class="thumbnail_name">
+															<ul>
+																<li><img src="../images/sample/thum.jpg" alt="" /></li>
+																<li>
+																	<p class="product_info_name">상품명 노출상품명 노출 상품명 노출상품명 노출</p>
+																	<p class="product_info_name">옵션 노출 옵션 노출 옵션 노출 옵션 노출</p>
+																</li>
+															</ul>
+														</td>
+														<td class="mmode amount">1</td>
+														<td class="mmode payment">00,000 원</td>
+														<td class="mnone">결제방식</td>
+														<td class="mnone">YYYY-MM-DD HH:MM:SS</td>
+														<td class="mnone">수취인명</td>
+														<td class="mnone">000-0000-0000</td>
+														<td class="mnone">배송지</td>
+														<td class="mnone">우편번호</td>
+														<td class="mnone">배송메시지</td>
+														<td class="mnone">지점발송</td>
+														<td class="mnone">발송기한</td>
+														<td class="mnone">00,000 원</td>
+														<td class="mnone">조건부무료</td>
+														<td class="mnone">00,000 원</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<div class="btn_group_right">
+											<span>★ 선택한 주문을</span>
+											<select name="" id="">
+												<option value="">배송준비</option>
+												<option value="">배송중</option>
+												<option value="">취소신청</option>
+											</select>
+											<a href="javascript:;" class="btn2 btn-danger">일괄처리</a>
+										</div>
+									</div>
+								</div>
+								<!-- 배송중 -->
+								<div id="shipPanel2" class="panel_contents">
+									<ul class="select_views">
+										<li class="all_list">총<span> 99 </span>건</li>
+										<li>
+											<select name="" id="" class="basic_select">
+												<option value="">10건씩 조회</option>
+												<option value="">20건씩 조회</option>
+												<option value="">50건씩 조회</option>
+												<option value="">100건씩 조회</option>
+											</select>
+										</li>
+									</ul>
+									<div class="table_layout">
+										<div class="table-responsive">
+											<table class="shipment_table">
+												<colgroup>
+													<col width=""/>
+													<col width=""/>
+													<col width=""/>
+													<col width=""/>
+													<col width=""/>
+													<col width=""/>
+													<col width=""/>
+													<col width=""/>
+													<col width=""/>
+													<col width=""/>
+													<col width=""/>
+													<col width=""/>
+													<col width=""/>
+													<col width=""/>
+													<col width=""/>
+													<col width=""/>
+													<col width=""/>
+													<col width=""/>
+													<col width=""/>
+													<col width=""/>
+													<col width=""/>
+													<col width=""/>
+													<col width=""/>
+												</colgroup>
+												<thead>
+													<tr>
+														<th><label for="listAllOk"><input type="checkbox" id="listAllOk"/><span></span></label></th>
+														<th>주문번호</th>
+														<th>택배사</th>
+														<th>송장번호</th>
+														<th>진행상태</th>
+														<th>주문자명</th>
+														<th>주문자ID</th>
+														<th>주문자연락처</th>
+														<th>상품정보</th>
+														<th>수량</th>
+														<th>결제금액</th>
+														<th>결제방식</th>
+														<th>결제일시</th>
+														<th>수취인명</th>
+														<th>수취인연락처</th>
+														<th>배송지</th>
+														<th>우편번호</th>
+														<th>배송메시지</th>
+														<th>발송기한</th>
+														<th>배송비</th>
+														<th>배송비유형</th>
+														<th>제주도서산간<br />추가배송비</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="mnone"><label for="listItem"><input type="checkbox" id="listItem" name="listItem" value="" class="check_single"/><span></span></label></td>
+														<td><a href="shipment_view.html">TAiq172487333</a></td>
+														<td>동원로엑스-로엑스택배(구:아주)</td>
+														<td>1234123412341234</td>
+														<td>진행상태</td>
+														<td>주문자명</td>
+														<td>주문자ID</td>
+														<td>000-0000-0000</td>
+														<td class="thumbnail_name">
+															<ul>
+																<li><img src="../images/sample/thum.jpg" alt="" /></li>
+																<li>
+																	<p class="product_info_name">상품명 노출상품명 노출 상품명 노출상품명 노출</p>
+																	<p class="product_info_name">옵션 노출 옵션 노출 옵션 노출 옵션 노출</p>
+																</li>
+															</ul>
+														</td>
+														<td>1</td>
+														<td>00,000 원</td>
+														<td>결제방식</td>
+														<td>YYYY-MM-DD HH:MM:SS</td>
+														<td>수취인명</td>
+														<td>000-0000-0000</td>
+														<td>배송지</td>
+														<td>우편번호</td>
+														<td>배송메시지</td>
+														<td>발송기한</td>
+														<td>00,000 원</td>
+														<td>조건부무료</td>
+														<td>00,000 원</td>
+													</tr>
+													<tr>
+														<td class="mnone"><label for="listItem"><input type="checkbox" id="listItem" name="listItem" value="" class="check_single"/><span></span></label></td>
+														<td><a href="javascript:;">TAiq172487333</a></td>
+														<td>동원로엑스-로엑스택배(구:아주)</td>
+														<td>1234123412341234</td>
+														<td>진행상태</td>
+														<td>주문자명</td>
+														<td>주문자ID</td>
+														<td>000-0000-0000</td>
+														<td class="thumbnail_name">
+															<ul>
+																<li><img src="../images/sample/thum.jpg" alt="" /></li>
+																<li>
+																	<p class="product_info_name">상품명 노출상품명 노출 상품명 노출상품명 노출</p>
+																	<p class="product_info_name">옵션 노출 옵션 노출 옵션 노출 옵션 노출</p>
+																</li>
+															</ul>
+														</td>
+														<td>1</td>
+														<td>00,000 원</td>
+														<td>결제방식</td>
+														<td>YYYY-MM-DD HH:MM:SS</td>
+														<td>수취인명</td>
+														<td>000-0000-0000</td>
+														<td>배송지</td>
+														<td>우편번호</td>
+														<td>배송메시지</td>
+														<td>발송기한</td>
+														<td>00,000 원</td>
+														<td>조건부무료</td>
+														<td>00,000 원</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<div class="btn_group_right">
+											<span>★ 선택한 주문을</span>
+											<select name="" id="">
+												<option value="">배송준비</option>
+												<option value="">배송중</option>
+												<option value="">반품신청</option>
+											</select>
+											<a href="javascript:;" class="btn2 btn-danger">일괄처리</a>
+										</div>
+									</div>
+								</div>
+								<!-- 배송완료 -->
+								<div id="shipPanel3" class="panel_contents">
+									<ul class="select_views">
+										<li class="all_list">총<span> 99 </span>건</li>
+										<li>
+											<select name="" id="" class="basic_select">
+												<option value="">10건씩 조회</option>
+												<option value="">20건씩 조회</option>
+												<option value="">50건씩 조회</option>
+												<option value="">100건씩 조회</option>
+											</select>
+										</li>
+									</ul>
+									<div class="table_layout">
+										<div class="table-responsive">
+											<table class="shipment_table">
+												<colgroup>
+													<col width=""/>
+													<col width=""/>
+													<col width=""/>
+													<col width=""/>
+													<col width=""/>
+													<col width=""/>
+													<col width=""/>
+													<col width=""/>
+													<col width=""/>
+													<col width=""/>
+													<col width=""/>
+													<col width=""/>
+													<col width=""/>
+													<col width=""/>
+													<col width=""/>
+													<col width=""/>
+													<col width=""/>
+													<col width=""/>
+													<col width=""/>
+													<col width=""/>
+													<col width=""/>
+													<col width=""/>
+												</colgroup>
+												<thead>
+													<tr>
+														<th><label for="listAllOk"><input type="checkbox" id="listAllOk"/><span></span></label></th>
+														<th>주문번호</th>
+														<th>택배사</th>
+														<th>송장번호</th>
+														<th>진행상태</th>
+														<th>주문자명</th>
+														<th>주문자ID</th>
+														<th>주문자연락처</th>
+														<th>상품정보</th>
+														<th>수량</th>
+														<th>결제금액</th>
+														<th>결제방식</th>
+														<th>결제일시</th>
+														<th>수취인명</th>
+														<th>수취인연락처</th>
+														<th>배송지</th>
+														<th>우편번호</th>
+														<th>배송메시지</th>
+														<th>발송기한</th>
+														<th>배송비</th>
+														<th>배송비유형</th>
+														<th>제주도서산간<br />추가배송비</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td class="mnone"><label for="listItem"><input type="checkbox" id="listItem" name="listItem" value="" class="check_single"/><span></span></label></td>
+														<td><a href="shipment_view.html">TAiq172487333</a></td>
+														<td>동원로엑스-로엑스택배(구:아주)</td>
+														<td>1234123412341234</td>
+														<td>진행상태</td>
+														<td>주문자명</td>
+														<td>주문자ID</td>
+														<td>000-0000-0000</td>
+														<td class="thumbnail_name">
+															<ul>
+																<li><img src="../images/sample/thum.jpg" alt="" /></li>
+																<li>
+																	<p class="product_info_name">상품명 노출상품명 노출 상품명 노출상품명 노출</p>
+																	<p class="product_info_name">옵션 노출 옵션 노출 옵션 노출 옵션 노출</p>
+																</li>
+															</ul>
+														</td>
+														<td>1</td>
+														<td>00,000 원</td>
+														<td>결제방식</td>
+														<td>YYYY-MM-DD HH:MM:SS</td>
+														<td>수취인명</td>
+														<td>000-0000-0000</td>
+														<td>배송지</td>
+														<td>우편번호</td>
+														<td>배송메시지</td>
+														<td>발송기한</td>
+														<td>00,000 원</td>
+														<td>조건부무료</td>
+														<td>00,000 원</td>
+													</tr>
+													<tr>
+														<td class="mnone"><label for="listItem"><input type="checkbox" id="listItem" name="listItem" value="" class="check_single"/><span></span></label></td>
+														<td><a href="javascript:;">TAiq172487333</a></td>
+														<td>동원로엑스-로엑스택배(구:아주)</td>
+														<td>1234123412341234</td>
+														<td>진행상태</td>
+														<td>주문자명</td>
+														<td>주문자ID</td>
+														<td>000-0000-0000</td>
+														<td class="thumbnail_name">
+															<ul>
+																<li><img src="../images/sample/thum.jpg" alt="" /></li>
+																<li>
+																	<p class="product_info_name">상품명 노출상품명 노출 상품명 노출상품명 노출</p>
+																	<p class="product_info_name">옵션 노출 옵션 노출 옵션 노출 옵션 노출</p>
+																</li>
+															</ul>
+														</td>
+														<td>1</td>
+														<td>00,000 원</td>
+														<td>결제방식</td>
+														<td>YYYY-MM-DD HH:MM:SS</td>
+														<td>수취인명</td>
+														<td>000-0000-0000</td>
+														<td>배송지</td>
+														<td>우편번호</td>
+														<td>배송메시지</td>
+														<td>발송기한</td>
+														<td>00,000 원</td>
+														<td>조건부무료</td>
+														<td>00,000 원</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										<div class="btn_group_right">
+											<span>★ 선택한 주문을</span>
+											<select name="" id="">
+												<option value="">배송준비</option>
+												<option value="">배송중</option>
+												<option value="">반품신청</option>
+											</select>
+											<a href="javascript:;" class="btn2 btn-danger">일괄처리</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 페이징 -->
+					<div class="paging">
+						<a href="javascript:;" class="first"><img src="../images/icon/icon_prev_02.png" alt="" /></a>
+						<a href="javascript:;"><img src="../images/icon/icon_prev_01.png" alt="" /></a>
+						<a href="javascript:;" class="active">1</a>
+						<a href="javascript:;">2</a>
+						<a href="javascript:;">3</a>
+						<a href="javascript:;">4</a>
+						<a href="javascript:;">5</a>
+						<a href="javascript:;"><img src="../images/icon/icon_next_01.png" alt="" /></a>
+						<a href="javascript:;"><img src="../images/icon/icon_next_02.png" alt="" /></a>
+					</div>
+					<!-- 본문 끝 -->
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+
+<!--  시작 -->
+<!--  끝 -->

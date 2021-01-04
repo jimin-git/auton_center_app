@@ -1,0 +1,2577 @@
+{
+	"app": {
+		"name": "INSPINIA 2.4"
+	},
+	"nav": {
+		"site": "사이트관리",
+		"envconfig": "기본환경설정",
+		"package": "Paquetes"
+	},
+	"body": {
+		"welcome": "Bienvenido Amelia"
+	},
+	"topnav": {
+		"messageinfo": "Usted tiene 42 mensajes y 6 notificaciones.",
+		"search": "Buscar algo...",
+		"logout": "Cerrar sesión",
+		"welcometext": "Bienvenido a INSPINIA + administración Tema.",
+		"language": "Lenguaje",
+		"companyPage" : "가맹점페이지"
+	},
+	"demo": {
+		"text1": "한글 설명",
+		"num": "번호"
+	},
+	"account": {
+		"num": "번호",
+		"name": "이름",
+		"id": "아이디",
+		"phone": "전화번호",
+		"status": "상태"
+	},
+	"radio": {
+		"use": "사용",
+		"unuse": "미사용",
+		"accept": "수락",
+		"deny": "거절",
+		"approve" : "승인",
+		"disapprove" : "미승인",
+		"inclusion" : "포함",
+		"undercoverage" : "미포함"
+	},
+	"test": "test __count__",
+	"item": "a person",
+	"value": "value __v__",
+	"envconfig": {
+		"list": {
+			"pageTitle": "환경설정",
+			"subTitle": "환경설정",
+			"table": {
+				"no": "번호",
+				"siteCode": "사이트 코드",
+				"siteName": "사이트명",
+				"url": "사이트주소",
+				"config": "관리",
+				"rows": {
+					"base": "기본설정",
+					"mailTemplate": "메일템플릿",
+					"smsTemplate": "문자템플릿"
+				}
+			}
+		},
+		"base": {
+			"categoryTab" : {
+				"category" : "카테고리",
+				"title" : "카테고리설정",
+				"search" : "카테고리 검색",
+				"button" : {
+					"import" : "불러오기",
+					"openAll" : "전체 펼치기",
+					"closeAll" : "전체 접기",
+					"moveProductList" : "상품목록으로 이동"
+				},
+				"noCategory" : "등록된 카테고리가 없습니다."
+			},
+			"introTab" : {
+				"title" : "인트로화면설정",
+				"findFile" : "파일찾기",
+				"megaScreen" : "초대형화면",
+				"largeScreen" : "대형화면",
+				"mediumScreen" : "보통화면",
+				"smallScreen" : "소형화면",
+				"recommendation" : "권장사항:__width-dp__dp X __height-dp__dp ( __width-px__px X __height-px__px )"
+			},
+			"siteTab": {
+				"title": "사이트정보",
+				"content1": {
+					"title": "웹사이트 정보",
+					"field1": "* 홈페이지명",
+					"field2": "* 홈페이지 Title",
+					"field3": "홈페이지 Keyword",
+					"field4": "홈페이지 Description",
+					"description": "* 입력하는 키워드 구분은 콤마(,)입니다."
+				},
+				"content2": {
+					"title": "푸터 정보",
+					"field1": "* 상호명",
+					"field2": "* 대표자명",
+					"field3": "* 사업자등록번호",
+					"field4": "통신판매업신고번호",
+					"field5": "* 대표전화",
+					"field6": "팩스번호",
+					"field7": "* 이메일주소",
+					"field8": {
+						"title": "* 주소",
+						"placeholder1": "우편번호",
+						"placeholder2": "주소"
+					},
+					"field9": "* 개인정보관리책임자",
+					"description": "* 입력시 하이픈(-) 추가하여 입력해주세요."
+				}
+			},
+			"memberTab": {
+				"title": "회원설정",
+				"register": {
+					"title": "회원가입처리",
+					"process": "가입처리",
+					"radio1": "자동가입",
+					"radio2": "운영자확인",
+					"radio3": "이메일인증",
+					"radio4": "휴대전화인증",
+					"description": "자동가입 : 가입신청시 자동으로 승인처리<br>운영자확인 : 가입신청시 사이트 운영자의 승인처리<br>이메일인증 : 가입과 동시에 가입자 이메일로 인증메일 발송하고, 인증메일 확인시 승인처리<br>휴대전화인증 : 가입시 가입자 휴대전화로 SMS 인증번호 발송하고, 인증 확인시 승인처리"
+				},
+				"lossAccount": {
+					"title": "아이디/비밀번호 분실",
+					"field1": "아이디분실",
+					"field2": "비밀번호분실",
+					"radio1": "즉시노출",
+					"radio2": "이메일로 전송",
+					"radio3": "SMS로 전송",
+					"description1": "즉시노출 : 인증 정보 확인 후 화면에 바로 출력<br>이메일로전송 : 인증 정보 확인 후 이메일로 전송<br>SMS전송 : 인증 정보 확인 후 SMS로 전송",
+					"description2": "즉시노출 : 인증 정보 확인 후 화면에 바로 출력(임시 비밀번호 재발급)<br>이메일로전송 : 인증 정보 확인 후 이메일로 전송 (임시 비밀번호 재발급)<br>SMS전송 : 인증 정보 확인 후 SMS로 전송 (임시 비밀번호 재발급)"
+				},
+				"deleteUser": {
+					"title": "회원탈퇴설정",
+					"field1": "탈퇴시 정보삭제",
+					"field2": "탈퇴아이디사용",
+					"description1": "회원탈퇴시 회원정보를 <input type='number' class='form-control-inline m-l-xs width-100' name='userSettings.deleteUserInfoAfter' value='__value__' / min=0> 일 후 자동 삭제",
+					"description2": "회원탈퇴시 탈퇴한 아이디를 <input type='number' class='form-control-inline m-l-xs width-100' name='userSettings.enableRemovedUserIDAfter' value='__value__' / min=0> 일 후 사용할 수 있도록 처리"
+				},
+				"identification": {
+					"title": "본인확인 사용여부",
+					"field1": "본인확인사용",
+					"system": "시스템선택",
+					"phoneIdentification": "휴대폰 본인확인",
+					"phoneIdentification2": "휴대폰번호 인증",
+					"ipinIdentification": "아이핀 본인확인"
+				}
+			},
+			"pointTab": {
+				"title": "포인트/적립금설정",
+				"memberPoint": {
+					"title": "포인트 사용여부",
+					"field1": "레드포인트사용",
+					"field2": "블루포인트사용"
+				},
+				"usePoint": {
+					"title": "적립금 사용여부",
+					"field1": "적립금사용",
+					"field2": "적립금 유효기간",
+					"description": "소멸 ",
+					"checkbox": "체크시 제한 없음"
+				},
+				"policy": {
+					"title": "적립금 지급정책",
+					"field1": "지급방법",
+					"field2": "지급기준",
+					"field3": "적립금 적립",
+					"field4": "회원적립금 지금",
+					"method": {
+						"radio1": "주문상품 금액의 <input type='number' class='form-control-inline m-l-xs width-100' name='pointSettings.applyRateAmount' value='__value__' min=0>%를 배송완료시 지급",
+						"radio2": "주문상품당 <input type='number' class='form-control-inline m-l-xs width-100' name='pointSettings.applyAmount' value='__value__' min=0>원을 배송완료시 지급"
+					},
+					"savingStandard": {
+						"radio1": "상품 결제가 기준",
+						"radio2": "상품 판매가 기준"
+					},
+					"saving": {
+						"radio1": "결제시 사용한 적립금에는 적립금 지급 안함",
+						"radio2": "결제시 사용한 적립금에는 적립금에도 적립금 지급"
+					},
+					"member": "회원가입시 <input type='number' class='form-control-inline m-l-xs width-100' name='pointSettings.enrollPoint' value='__enrollPoint__' min=0>원 지급<br>상품 구매 후 구매후기 작성시 <input type='number' class='form-control-inline m-l-xs width-100' name='pointSettings.reviewPoint' value='__reviewPoint__' min=0>원 지급"
+				},
+				"usePolicy": {
+					"title": "적립금 사용정책",
+					"label": "사용기준",
+					"standard": "총 결제금액이 <input type='number' class='form-control-inline m-l-xs width-100' name='pointSettings.minPaymentPrice' value='__minPaymentPrice__' min=0>원 이상일 때 적립급 사용 가능<br>총 적립급이 <input type='number' class='form-control-inline m-l-xs width-100' name='pointSettings.minUsePoint' value='__minUsePoint__' min=0>원 이상일 때 적립금 사용 가능<br>적립금은 주문당 <input type='number' class='form-control-inline m-l-xs width-100' name='pointSettings.maxUsePoint' value='__maxUsePoint__' min=0 />원까지만 사용 가능"
+				}
+			},
+			"deliveryTab": {
+				"title": "배송정보설정",
+				"unit": {
+					"title": "배송료 부과 단위",
+					"field1": "배송료 부과 단위",
+					"radio1": "개별 상품에 각각 부과",
+					"radio2": "구매 합산 금액 단위로 부과"
+				},
+				"standard": {
+					"title": "배송료 부과 기준",
+					"field1": "결제가격기준",
+					"radio1": "개별 상품에 각각 부과",
+					"radio2": "구매 합산 금액 단위로 부과"
+				},
+				"policy": {
+					"title": "기본 배송정책",
+					"field1": "기본배송비",
+					"description1": "기본 배송비를 <input type='number' class='form-control-inline m-l-xs width-100' name='deliverySettings.fixedPrice' value='__fixedPrice__' min=0 />원으로 설정",
+					"field2": "변동배송비",
+					"description2": "구매금액이 <input type='number' class='form-control-inline m-l-xs width-100' name='deliverySettings.minimumPayment' value='__minimumPayment__' min=0 />원보다 작을 경우 <input type='number' class='form-control-inline m-l-xs width-100' name='deliverySettings.variablePrice' value='__variablePrice__' min=0 />원 부과",
+					"description3": "구매금액이 <input type='number' class='form-control-inline m-l-xs width-100' name='deliverySettings.maximumPayment' value='__maximumPayment__' min=0 />원보다 클 경우 <input type='number' class='form-control-inline m-l-xs width-100' name='deliverySettings.maximumVariablePrice' value='__maxVariablePrice__' min=0 />원 부과",
+					"field3": "도서산간",
+					"table": {
+						"description": "선택한 지역을 <button type='button' onclick='javascript:deleteArea();' class='btn btn-sm btn-dark'>__button__</button>",
+						"baseSetting": "기본세팅",
+						"column1": "선택",
+						"column2": "특수지역명(도서, 산간 등)",
+						"column3": "우편번호 범위",
+						"column4": "배송비",
+						"currency": "<div class='input-group'><input type='text' class='form-control-inline width-100' name='deliverySettings.localAreaList[__index__].deliveryPrice' value='__charge__'>원</div>"
+					}
+				},
+				"company": {
+					"title": "배송업체선택",
+					"field": "배송업체",
+					"description": "주거래 배송업체를 선택 하여 주세요. 배송업체명을 선택 시 업체명과 배송조회 URL을 확인하실 수 있습니다.",
+					"modal": {
+						"title": "배송업체",
+						"subTitle": "배송업체설정",
+						"field1": "업체명"
+					}
+				}
+			},
+			"paymentTab": {
+				"title": "결제정보설정",
+				"useSystem": {
+					"title": "결제시스템 사용여부",
+					"field1": "결제시스템사용"
+				},
+				"kcpInfo": {
+					"title": "NHN KCP 결제정보",
+					"field1": "결제가격기준",
+					"field2": "모듈위치",
+					"field3": "pub.key 파일 위치",
+					"field4": "로그폴더위치",
+					"field5": "인증서버도메인",
+					"field6": "인증스크립트주소",
+					"field7": "인증코드",
+					"field8": "인증키",
+					"field9": "상점명",
+					"checkbox1": "신용카드",
+					"checkbox2": "실시간계좌이체",
+					"checkbox3": "에스크로 사용",
+					"checkbox4": "휴대폰결제"
+				},
+				"deposit": {
+					"title": "무통장입금 사용여부",
+					"field1": "무통장입금 사용"
+				},
+				"depositAccount": {
+					"title": "무통장 계좌 추가",
+					"field1": "무통장입금 사용",
+					"placeholder1": "은행명",
+					"placeholder2": "계좌번호(하이픈 포함)",
+					"placeholder3": "예금주",
+					"table": {
+						"column1": "은행명",
+						"column2": "계좌번호",
+						"column3": "예금주"
+					}
+				}
+			},
+			"mailTab": {
+				"title": "메일정보설정",
+				"representMail": "대표메일설정",
+				"outgoingMail": "발신전용메일설정",
+				"mailServer": "보내는 메일 서버",
+				"senderName": "보내는 사람 성명",
+				"senderMail": "보내는 사람 이메일",
+				"useOrNot": "사용여부",
+				"smtpServer": "SMTP 서버주소",
+				"port": "포트",
+				"useAuth": "인증사용",
+				"ssl": "보안연결(SSL)",
+				"authID": "인증아이디",
+				"authPassword": "인증비밀번호"
+			},
+			"smsTab": {
+				"title": "SMS정보설정",
+				"representNo": "대표번호설정",
+				"senderName": "보내는 사람 성명",
+				"senderNo": "보내는 번호",
+				"setting": "환경설정",
+				"inputKey": "KEY 입력",
+				"lguplusAdmin": "LG U+ 관리자 바로가기"
+			},
+			"message": {
+				
+			}
+		},
+		"mail": {
+			"title": "메일템플릿",
+			"path": "<li><a>환경설정</a></li><li class='active'><strong>메일템플릿</strong></li>",
+			"default": "기본 메일 디자인",
+			"enroll": "회원가입메일",
+			"orderResult": "주문완료메일",
+			"coupon": "쿠폰발송메일",
+			"authentication": "아이디/비밀번호 찾기",
+			"password": "비밀번호 변경 안내",
+			"editor": {
+				"subject": "제목",
+				"content": "내용"
+			}
+		},
+		"sms": {
+			"title": "문자템플릿",
+			"path": "<li><a>환경설정</a></li><li class='active'><strong>문자템플릿</strong></li>",
+			"order": "주문관련",
+			"member": "회원관련",
+			"advertisement": "광고관련"
+		}
+	},
+	"common": {
+		"language": {
+			"ko": "한국어",
+			"en": "영어",
+			"cn": "중국어",
+			"jp": "일어"
+		},
+		"button": {
+			"text": {
+				"search": "조회",
+				"insert": "등록",
+				"update": "수정",
+				"delete": "삭제",
+				"clear": "초기화",
+				"add": "추가",
+				"cancel": "취소",
+				"close" : "닫기",
+				"list": "목록",
+				"browse": "검색",
+				"init": "초기화",
+				"save": "저장",
+				"copy" : "복사",
+				"defaultSetting": "기본설정",
+				"emailTemplate": "메일템플릿",
+				"smsTemplate": "문자템플릿",
+				"selectAll": "전체선택",
+				"selectedDelete": "선택삭제",
+				"selectCancel": "선택취소",
+				"postcode": "우편번호",
+				"ok": "확인",
+				"preview": "미리보기",
+				"unapproved": "미승인",
+				"approved": "승인",
+				"login": "로그인",
+				"change" : "변경",
+				"franchiseInfo" : "가맹정보 바로가기",
+				"addCategory" : "카테고리추가",
+				"openCategory" : "카테고리보기",
+				"closeCategory" : "카테고리닫기",
+				"chkDup" : "중복조회",
+				"redirect" : "바로가기",
+				"sendTempPassword" : "임시 비밀번호 발송",
+				"joinRequest" : "가맹신청",
+				"joinRequestSmsSend" : "가맹신청페이지SMS전달",
+				 "manage" : "관리"
+				
+			},
+			"withicon": {
+				"selectedInsert": "$t(common.icon.download) 선택저장",
+				"selectedInsert_title": "선택저장",
+				"siteInsert": "사이트 $t(common.button.text.insert) $t(common.icon.plus)",
+				"siteInsert_title": "사이트 $t(common.button.text.insert)",
+				"apiInsert": "API 인증 $t(common.button.text.insert) $t(common.icon.plus)",
+				"apiInsert_title": "API 인증 $t(common.button.text.insert)",
+				"shippingCompanyInsert": "배송업체 $t(common.button.text.insert) $t(common.icon.plus)",
+				"shippingCompanyInsert_title": "배송업체 $t(common.button.text.insert)",
+				"insert": "$t(common.icon.arrow-right) $t(common.button.text.insert)",
+				"insert_title": "$t(common.button.text.insert)",
+				"update": "$t(common.button.text.update) $t(common.icon.arrow-right)",
+				"update_title": "$t(common.button.text.update)",
+				"close": "$t(common.icon.arrow-right) 닫기",
+				"boardInsert": "$t(common.icon.plus) 게시판 $t(common.button.text.add)",
+				"add": "$t(common.icon.arrow-right) $t(common.button.text.add)",
+				"addWithPlusIcon": "$t(common.icon.plus) $t(common.button.text.add)",
+				"save": "$t(common.icon.arrow-right) 저장",
+				"delete": "$t(common.icon.trash) $t(common.button.text.delete)",
+				"updateComment": "$t(common.icon.pencil) $t(common.button.text.update)",
+				"saveComment": "$t(common.icon.circle) $t(common.button.text.save)",
+				"cancelComment": "$t(common.icon.ban) $t(common.button.text.cancel)",
+				"insertCompany" : "$t(common.icon.plus) 가맹점 $t(common.button.text.insert)",
+				"joinRequest": "$t(common.button.text.joinRequest) $t(common.icon.arrow-right)",
+				"joinRequest_title": "$t(common.button.text.joinRequest)",
+				"joinRequestSmsSend": "$t(common.button.text.joinRequestSmsSend) $t(common.icon.arrow-right)",
+				"joinRequestSmsSend_title": "$t(common.button.text.joinRequestSmsSend)"
+			},
+			"condition": {
+				"selectPageSize": {
+					"10": "10건씩 조회",
+					"20": "20건씩 조회",
+					"30": "30건씩 조회",
+					"50": "50건씩 조회",
+					"100": "100건씩 조회"
+				}
+			}
+		},
+		"head": {
+			"no": "번호",
+			"createDate": "등록일",
+			"manager": "관리"
+		},
+		"icon": {
+			"plus": "",
+			"download": "",
+			"arrow-right": "",
+			"trash": "",
+			"pencil": "",
+			"circle": "",  
+			"ban": ""
+		},
+		"totalCount": "총 __count__건 조회", 
+		"message": {
+			"insertConfirm": {
+				"title": "등록 확인",
+				"text": "정말로 등록하시겠습니까?",
+				"ok": "등록",
+				"cancel": "취소"
+			},
+			"updateConfirm": {
+				"title": "수정 확인",
+				"text": "정말로 수정하시겠습니까?",
+				"ok": "수정",
+				"cancel": "취소"
+			},
+			"deleteConfirm": {
+				"title": "삭제 확인",
+				"text": "정말로 삭제하시겠습니까?",
+				"ok": "삭제",
+				"cancel": "취소"
+			},
+			"addConfirm": {
+				"title": "추가 확인",
+				"text": "정말로 추가하시겠습니까?",
+				"ok": "추가",
+				"cancel": "취소"
+			},
+			"registerConfirm": {
+				"title": "저장 확인 ",
+				"text": "정말로 저장하시겠습니까?",
+				"ok": "저장",
+				"cancel": "취소"
+			},
+			"moveConfirm": {
+				"title": "이동 확인",
+				"text": "변경된 사항이있습니다. 저장 후 이동하시겠습니까?",
+				"ok": "저장 후 이동",
+				"cancel": "취소"
+			},
+			"sendConfirm" : {
+				"title": "전송 확인",
+				"text": "비밀번호를 초기화하고, 임시비밀번호를 발송하시겠습니까?",
+				"ok": "확인",
+				"cancel": "취소"
+			},
+			"disableDeleteConfirm": {
+				"title": "삭제 불가",
+				"text": "소속가맹점이 있습니다. 확인후 삭제바랍니다.",
+				"ok": "확인",
+				"cancel": "취소"
+			},
+			"selectSiteConfirm": {
+				"title": "사이트 확인",
+				"text": "사이트를 먼저 선택해주세요.",
+				"ok": "확인",
+				"cancel": "취소"
+			},
+			"approveConfirm": {
+				"title": "승인 확인",
+				"text": "정말로 승인하시겠습니까?",
+				"ok": "승인",
+				"cancel": "취소"
+			},
+			"disableUpdateConfirm": {
+				"title": "수정 불가",
+				"text": "수정이 불가능합니다. 확인후 수정바랍니다.",
+				"ok": "확인",
+				"cancel": "취소"
+			},"orderStatusConfirm" : {
+				"title": "주문상태변경 확인",
+				"text": "선택한 주문을 $t(order.orderStatus.__status__) 상태로 변경하시겠습니까?",
+				"ok": "확인",
+				"cancel": "취소"
+			},"joinConfirm" : {
+				"title": "가입 확인",
+				"text": "정말로 가입하시겠습니까?",
+				"ok": "확인",
+				"cancel": "취소"
+			},"serviceFinishConfirm" : {
+				"title": "시공 완료",
+				"text": "서비스 완료 처리 하시겠습니까?",
+				"ok": "확인",
+				"cancel": "취소"
+			},
+			"approvalRequestConfirm": {
+				"title": "승인 신청",
+				"text": "승인신청 하시겠습니까?",
+				"ok": "예",
+				"cancel": "아니오"
+			},
+			"approvalCancelConfirm": {
+				"title": "승인 취소",
+				"text": "승인신청을 취소 하시겠습니까?",
+				"ok": "예",
+				"cancel": "아니오"
+			},
+			"confirmFinish": "확인되었습니다.",
+			"insertFinish": "등록되었습니다.",
+			"updateFinish": "수정되었습니다.",
+			"deleteFinish": "삭제되었습니다.",
+			"sendFinish" : "발송되었습니다.",
+			"saveFinish" : "저장되었습니다.",
+			"approvalFinish": "승인되었습니다.",
+			"deactivationFinish": "미승인 처리되었습니다.",
+			"rejectFinish": "반려되었습니다.",
+			"applyFinish" : "가입 신청 되었습니다.",
+			"insertError": "등록에 실패하였습니다.",
+			"updateError": "수정에 실패하였습니다.",
+			"deleteError": "삭제에 실패하였습니다.",
+			"sendError": "발송에 실패하였습니다.",
+			"saveError": "저장에 실패하였습니다.",
+			"applyError" : "가입 신청이 실패하였습니다.",
+			"cannotDelete" : "삭제할 수 없는 가맹점이 있습니다. 하위가맹점이 있거나 현재 주문이 있는 경우 삭제가 불가능합니다.",
+			"canel": "취소되었습니다.",
+			"login": "로그인되었습니다.",
+			"approvalError": "승인에 실패하였습니다.",
+			"deactivationError": "미승인 처리에 실패하였습니다.",
+			"rejectError": "반려에 실패하였습니다.",
+			"changeOrderStatus" : "주문상태가 변경되었습니다.",
+			"changeOrderStatusError" : "주문상태 변경에 실패하였습니다.",
+			"changeOrderStatusWarning" : "주문상태 변경에 실패한 상품이 있습니다.",
+			"title": {
+				"defaultTitle": "메시지"
+			},
+			"availableID" : "사용가능한 아이디입니다.",
+			"disavailableID" : "사용할 수 없는 아이디입니다.",
+			"availableEmail" : "사용가능한 이메일주소입니다.",
+			"disavailableEmail" : "이미 사용 중인 이메일주소입니다.",
+			"availableBizNumber" : "사용가능한 사업자번호입니다.",
+			"disavailableBizNumber" : "이미 등록된 사업자번호입니다.",
+			"required" : "필수항목입니다.",
+			"disabledDelete" : "삭제할 수 없습니다.",
+			"sendTempPasswordFinish" : "입력하신 이메일로 임시비밀번호가 발송되었습니다.",
+			"sendTempPasswordError" : "비밀번호 초기화에 실패하였습니다.",
+			"unblockFinish" : "계정차단이 해제되었습니다.",
+			"unblockError" : "계정차단해제에 실패하였습니다.",
+			"onlyImageFile" : "이미지 파일만 업로드 가능합니다.(jpeg, jpg, gif, png)",
+			"invalidAutoNo" : "차량번호 형식이 바르지않습니다.",
+			"invalidEmail" : "이메일 형식이 바르지않습니다.",
+			"emailNotExist" : "입력한 이메일 주소로 가입된 정보가 없습니다.",
+			"sendPushSuccess" : "2차인증번호가 발송되었습니다.",
+			"resendPushSuccess" : "2차인증번호가 재발송되었습니다.",
+			"sendPushFailed" : "2차인증번호 발송이 실패되었습니다. 고객센터로 연락바랍니다.",
+			"sendMmsSuccess" : "2차인증번호가 발송되었습니다.",
+			"sendMmsFailed" : "2차인증번호 발송이 실패되었습니다. 고객센터로 연락바랍니다.",
+			"notAvailable" : "예약한 가맹점이 아닙니다.",
+			"useQrcode" : "이미 사용한 QR코드입니다.",
+			"unapprove" : "상품권을 사용할 수 있는 가맹점이 아닙니다.",
+			"serviceFinishSuccess" :"시공이 완료되었습니다.",
+			"serviceFinishFailed" :"시공이 완료되었습니다.",
+			"notExistOrder" :"주문 내역이 없습니다.",
+			"requestFinish": "신청되었습니다.",
+			"requestCancelFinish": "신청 취소되었습니다.",
+			"requestError": "신청에 실패하였습니다.",
+			"requestCancelError": "신청 취소에 실패하였습니다."
+		}
+	},
+	"site": {
+		"title": {
+			"list": "사이트목록",
+			"insertForm": "사이트상세등록",
+			"updateForm": "사이트상세수정"
+		},
+		"head": {
+			"no": "번호",
+			"code": "코드",
+			"siteName": "사이트명",
+			"siteURL": "사이트주소",
+			"manager": "관리"
+		},
+		"form": {
+			"label": {
+				"siteCode": "사이트코드",
+				"siteName": "사이트명",
+				"siteURL": "사이트주소",
+				"siteLanguage": "사이트언어"
+			}
+		},
+		"message": {
+			"useCode": "사용 가능한 코드입니다.",
+			"notUseCode": "사용 가능한 코드가 아닙니다."
+		},
+		"button": {
+			"siteInsert": "사이트 등록"
+		}
+	},
+	"content": {
+		"searchOption": {
+			"searchCondition": "조회조건",
+			"group": "그룹",
+			"selectAllGroup": "그룹전체",
+			"category": "게시판 종류",
+			"checkbox": {
+				"common": "일반",
+				"event": "이벤트",
+				"exposure" : "노출"
+			},
+			"board": "게시판",
+			"selectAllBoard": "게시판 전체",
+			"registrationDate": "등록일",
+			"boardType": {
+				"notice": "공지사항",
+				"review": "후기관리",
+				"private": "문의관리"
+			},
+			"period": {
+				"button": "기간 <span class='caret'></span>",
+				"all": "전체",
+				"today": "오늘",
+				"week": "최근 7일",
+				"month": "최근 __month__개월"
+			},
+			"select": {
+				"all": "전체",
+				"boardName": "게시판명",
+				"boardID": "게시판ID",
+				"writer": "등록자",
+				"writerID": "등록자ID",
+				"subject": "제목",
+				"content": "내용",
+				"productName": "상품명"
+			},
+			"keyword": "검색어",
+			"tag": "태그"
+		},
+		"board": {
+			"list": {
+				"option": "사이트전체",
+				"no": "번호",
+				"groupName": "그룹명",
+				"boardID": "$t(content.searchOption.select.boardID)",
+				"boardName": "$t(content.searchOption.select.boardName)",
+				"post": "등록글",
+				"creator": "등록자",
+				"date": "등록일",
+				"config": "관리",
+				"subject" : "제목",
+				"writer" : "등록자",
+				"recommend" : "추천",
+				"site" : "사이트명",
+				"boardTitle" : "게시판명",
+				"preview" : "내용미리보기",
+				"score" : "별점"
+				
+			},
+			"form": {
+				"info": {
+					"title": "기본정보",
+					"boardGroup": "게시판그룹",
+					"defaultBoardGroup": "그룹명(그룹ID)",
+					"boardID": "* 게시판ID",
+					"boardName": "* 게시판명",
+					"boardType": "* 게시판종류",
+					"password": "* 관리비밀번호",
+					"passwordAgain": "* 관리비밀번호 확인",
+					"selectSite": "사이트 선택",
+					"selectSiteRequired" : "* $t(content.board.form.info.selectSite)"
+				},
+				"function": {
+					"title": "기능 설정",
+					"fileUpload": "파일업로드",
+					"description": "$t(content.board.form.function.inputNumberHtml) * 게시물 한건당 업로드 할 수 있는 파일의 최대 개수('0'은 파일첨부 사용하지 않음)",
+					"theNumberOfFile": "$t(content.board.form.function.fileUpload) 개수",
+					"fileUploadSize": "$t(content.board.form.function.fileUpload) 용량",
+					"fileSizeRadio": {
+						"eachFile": "파일당 용량",
+						"allFiles": "전체파일 용량"
+					},
+					"comment": "댓글 기능",
+					"countPerPage": "페이지당 게시글 수",
+					"pagePerList": "페이지 네비게이션",
+					"displayNewHour": "새글(New) 표시",
+					"displayHotClick": "인기글(hot) 표시",
+					"displayHotClickHtml": "조회수 $t(content.board.form.function.smallInputNumberHtml) name='__name1__' value='__value1__' > 이상 <span class='p-w-xs'>/</span> 추천수 $t(content.board.form.function.smallInputNumberHtml) name='__name2__' value='__value2__' > 이상",
+					"inputNumberHtml": "<input type='number' class='form-control-inline' min=0 name='__name__' value='__value__'>",
+					"smallInputNumberHtml": "<input type='number' class='form-control-inline m-l-xs width-100' min=0 ",
+					"display": "$t(content.board.form.function.inputNumberHtml) 개씩 출력",
+					"day": "$t(content.board.form.function.inputNumberHtml) 일"
+				},
+				"auth": {
+					"title": "권한 설정",
+					"accessBoard": "게시판 노출/접근",
+					"accessList": "게시판 목록 조회",
+					"accessArticle": "게시판 글 조회",
+					"writeArticle": "글 쓰기 권한",
+					"replyArticle": "글 답변 권한",
+					"admin": "관리자",
+					"member": "회원",
+					"guest": "비회원"
+				},
+				"message": {
+					"validId": "사용 가능한 아이디 입니다.",
+					"invalidId": "사용 가능한 아이디가 아닙니다.",
+					"doNotMatchPassword": "비밀번호가 일치하지 않습니다.",
+					"emptyBoardList" : "등록된 게시판이 없습니다.",
+					"emptyCommentList" : "등록된 댓글이 없습니다."
+				}
+			}
+		},
+		"post": {
+			"list": {
+				"option": "사이트전체",
+				"no": "번호",
+				"board": "게시판",
+				"subject": "$t(content.searchOption.select.subject)",
+				"writer": "$t(content.searchOption.select.writer)",
+				"registrationDate": "$t(content.searchOption.registrationDate)",
+				"view": "조회",
+				"recommend": "추천",
+				"config": "관리",
+				"postInsert": "$t(common.icon.plus) 게시글 $t(common.button.text.add)",
+				"today": "오늘 __time__"
+			},
+			"content": {
+				"viewCount": "$t(content.post.list.view) __count__",
+				"recommendCount": "$t(content.post.list.recommend) __count__",
+				"attachedFile": "첨부파일",
+				"button": {
+					"reply": "답글 쓰기",
+					"add": "$t(common.button.text.add) $t(common.icon.plus)"
+				},
+				"writeComment": "댓글 쓰기"
+			},
+			"form": {
+				"post": "게시글",
+				"insertPost": "$t(content.post.form.post) 추가",
+				"updatePost": "$t(content.post.form.post) 수정",
+				"selectBoard": "__asterisk__ $t(content.post.list.board) 선택",
+				"writer": "작성자",
+				"type": {
+					"label": "* 글속성",
+					"common": "일반",
+					"notice": "공지",
+					"secret": "비밀글"
+				},
+				"subject": "* 제목",
+				"subjectStyle": {
+					"label": "제목글꾸밈",
+					"size": "글자크기",
+					"normal": "보통",
+					"large": "크게",
+					"thickness": "굵기",
+					"bold": "굵게",
+					"line": "선",
+					"noLine": "없음",
+					"underline": "밑줄",
+					"overline": "윗줄",
+					"strikethrough": "취소선",
+					"useColor": "색 사용"
+				},
+				"eventImage": "이벤트 이미지",
+				"findFile": "파일 찾기",
+				"imageText": "이미지 대체텍스트",
+				"eventPeriod": "이벤트기간",
+				"noPeriod": "기간 없음",
+				"attachFile": "파일첨부",
+				"fileDescription1": "파일당 용량 __maxFileSize__KB 제한, 가능 업로드 수 __maxFileCnt__개",
+				"fileDescription2": "전체파일 용량 __maxFileSize__KB 제한, 가능 업로드 수 __maxFileCnt__개"
+			}
+		},
+		"boardGroup": {
+			"boardGroup": "게시판 그룹",
+			"add": "$t(content.boardGroup.boardGroup) 추가",
+			"id": "$t(content.boardGroup.boardGroup) ID",
+			"name": "$t(content.boardGroup.boardGroup)명",
+			"button": {
+				"update": "$t(common.button.text.update)",
+				"delete": "$t(common.button.text.delete)"
+			}
+		},
+		"page": {
+			"list": {
+				"option": "사이트전체",
+				"no": "번호",
+				"site": "사이트",
+				"groupName": "그룹명",
+				"pageID": "페이지ID",
+				"pageName": "페이지명",
+				"creator": "등록자",
+				"date": "등록일",
+				"config": "관리"
+			},
+			"form": {
+				"groupChoice": "그룹선택",
+				"regName": "작성자",
+				"pageID": "페이지ID",
+				"pageName": "페이지명",
+				"siteChoice": "사이트 선택",
+				"content": "내용"
+			},
+			"title": {
+				"pageAdd": "페이지추가",
+				"pageGroupAdd": "페이지그룹추가",
+				"pageGroup": "페이지그룹"
+			},
+			"function": {
+				"choiceCancle": "선택취소",
+				"choiceDel": "선택삭제",
+				"pageAdd": "페이지추가",
+				"contentAdd": "내용추가"
+			},
+			"message": {
+				"emptyPage": "등록된 페이지가 없습니다 "
+			}
+		},
+		"banner": {
+			"form": {
+				"bannerLocation": "배너위치",
+				"bannerName": "배너명",
+				"link": "링크",
+				"fileUpload": "파일업로드",
+				"visibleYn": "노출여부",
+				"visible": "보이기",
+				"unVisible": "숨기기",
+				"visibleDate": "노출기간",
+				"alwaysvisible": "상시노출"
+			},
+			"title": {
+				"banner": "배너",
+				"bannerAddOrModify": "배너추가OR수정",
+				"bannerGroup": "배너그룹",
+				"bannerGroupAdd": "배너그룹추가"
+			},
+			"function": {
+				"choiceCancle": "선택취소",
+				"choiceDel": "선택삭제",
+				"bannerAdd": "배너추가",
+				"orderSave": "순서저장",
+				"orderChange": "순서변경 저장"
+			},
+			"message": {
+				"emptyPage": "등록된 배너가 없습니다 "
+			}
+		},
+		"popup" : {
+			"button" : {
+				"insertPopup" : "$t(common.icon.plus) 팝업추가"
+			},
+			"list" : {
+				"name" : "팝업명",
+				"period" : "노출기간",
+				"hidden" : "노출여부",
+				"button" : {
+					"show" : "보이기",
+					"hide" : "숨기기"
+				},
+				"hiddenOption" : {
+					"show" : "노출",
+					"hide" : "미노출",
+					"always" : "상시노출"
+				}
+			},
+			"form" : {
+				"insertPopup" : "팝업 추가",
+				"updatePopup" : "팝업 수정",
+				"view" : "팝업방식",
+				"base" : "기본",
+				"layer" : "레이어",
+				"modal" : "모달",
+				"invisibleDays" : {
+					"label" : "쿠키유효기간",
+					"content" : "<input type='number' class='form-control-inline m-l-xs width-100' name='invisibleDays' value='__invisibleDays__'> 시간 동안 안보이기 사용(0 : 사용안함)"
+				},
+				"description" : "* 팝업기간이 지난 팝업을 ‘보이기’설정하려면 ‘상시노출’을 체크하거나 팝업기간을 조정하십시오"
+			}
+		}
+	},
+	"system": {
+		"companyHistory" : {
+			"message" : {
+				"emptyList" : "가맹점이력이 없습니다."
+			}
+		},
+		"code" : {
+			"auto" : {
+				"tab" : {
+					"car" : "차종관리",
+					"fuel" : "유종관리"
+				},
+				"title" : {
+					"where" : "등록 위치 선택" ,
+					"car" : "차종구분 추가" , 
+					"fuel" : "유종구분 추가",
+					"brand" : {
+						"car" : "제조사 추가",
+						"fuel" : "중분류 추가"
+					},
+					"model" : {
+						"car" : "모델 추가",
+						"fuel" : "하분류 추가"
+					},
+					"detail" : {
+						"car" : "세부 모델 추가",
+						"fuel" : "세부코드 추가"
+					},
+					"msg" : "세부모델(세부모델명, 년식 둥)",
+					"add" : {
+						"car" : "차종명" , 
+						"fuel" : "유종명" ,
+						"brand" : {
+							"car" : "제조사명",
+							"fuel" : "중분류명"
+						},
+						"model" : {
+							"car" : "모델명",
+							"fuel" : "하분류명"
+						},
+						"detail" : {
+							"car" : "세부모델명",
+							"fuel" : "세부코드명"
+						}
+					}
+				},
+				"select" : {
+					"car" : "차종구분 선택",
+					"fuel" : "유종구분 선택",
+					"brand" : {
+						"car" : "제조사 선택",
+						"fuel" : "중분류 선택"
+					},
+					"model" : {
+						"car" : "모델 선택",
+						"fuel" : "하분류 선택"
+					},
+					"detail" : {
+						"car" : "세부차종 선택"
+					},
+					"engine" : {
+						"car" : "엔진타입 선택"
+					},
+					"exhaust" : {
+						"car" : "배기량 선택"
+					}
+				}
+			},
+			"data" : {
+				"empty" : "등록된 코드가 없습니다."
+			},
+			"msg" : {
+				"remove" : " 건의 데이터가 존재합니다. 그래도 삭제하시겠습니까?",
+				"nodata" : "삭제하시겠습니까?",
+				"duplicate" : "이미 존재하는 코드명입니다."
+			}
+		},
+		"authClientManager": {
+			"title": {
+				"list": "API인증목록",
+				"insertForm": "API인증 등록",
+				"updateForm": "API인증 수정"
+			},
+			"head": {
+				"clientId": "아이디",
+				"clientSecret": "코드",
+				"grantType": "인증방식",
+				"manager": "관리"
+			},
+			"form": {
+				"label": {
+					"clientId": "아이디",
+					"clientSecret": "시크릿코드",
+					"redirectURL": "리다이렉트URL",
+					"gratType": "인증방식",
+					"accessTokenValidity": "토큰발행시간(초)",
+					"refreshTokenValidity": "토큰재발행시간(초)",
+					"autoApprove": "자동인증여부"
+				}
+			},
+			"searchType": {
+				"all": "전체",
+				"client_id": "아이디",
+				"client_secret": "코드",
+				"authorized_grant_types": "인증방식"
+			}
+		},
+		"shippingCompany": {
+			"title": {
+				"list": "배송업체",
+				"insertForm": "배송업체등록",
+				"updateForm": "배송업체수정"
+			},
+			"head": {
+				"name": "배송업체명",
+				"URL": "URL"
+			},
+			"form": {
+				"label": {
+					"name": "업체명",
+					"URL": "URL"
+				}
+			},
+			"searchType": {
+				"all": "전체",
+				"name": "배송업체명",
+				"url": "URL"
+			}
+		},
+		"productHistory": {
+			"title": {
+				
+			},
+			"head": {
+				"title": "제목",
+				"description": "이력내용",
+				"dmlId": "처리자명",
+				"dmlNm": "처리자ID",
+				"createDate": "등록(변경)일시"
+			},
+			"form": {
+				"label": {
+					"name": "업체명",
+					"URL": "URL"
+				}
+			},
+			"searchType": {
+				"all": "전체",
+				"data_title": "제목",
+				"dml_desc": "이력내용",
+				"dml_id": "처리자ID",
+				"dml_nm": "처리자명"
+			}
+		}
+	},
+	"sales" : {
+		 "title": {
+         	"salesManagement": ""
+      	 },
+		"table": {
+			"th":{
+				"no": "번호",
+				"id" : "정산번호",
+				"orderno" : "주문번호",
+				"sitename" : "사이트명",
+				"card" : "신용카드",
+				"cash" : "현금(이체)",
+				"mileage" : "적립금",
+				"redpoint" : "레드포인트",
+				"bluepoint" : "블루포인트",
+				"hstrydate" : "정산일시",
+				"join" : "가맹점명",
+				"joinid" : "가맹점아이디",
+				"supplyprice" : "공급가",
+				"surtax" : "부가세",
+				"supplypricetotal" : "공급가 합계",
+				"surtaxtotal" : "부가세 합계",
+				"month" : "기준월",
+				"sum" :"합계",
+				"nodata":"정산 내역이 없습니다."
+			},
+			"label":{
+				"area":"기준일",
+				"siteName":"사이트명",
+				"totalPrice":"총금액",
+				"deliveryCompletePrice":"배송완료",
+				"serviceCompletePrice":"서비스완료",
+				"deliveryPrice":"배송비",
+				"takeBackPrice":"반품완료",
+				"orderNumber":"주문번호(주문ID)",
+				"oitSeq":"주문상품SEQ",
+				"orderStatus":"주문상태",
+				"prdName":"상품명",
+				"paymentPrice":"결제금액",
+				"writeDate":"매출일시"
+			}
+		},
+		"form":{
+			"label":{
+				"search":{
+					"site":"사이트명",
+					"join":{
+						"title":"가맹점명",
+						"head":"본사 전체",
+						"company":"가맹점 전체"
+					},
+					"date":"기준월"
+				}
+			}
+		},
+		"head" : {
+			"label" : {
+				"priceUnit" : "원"
+			}
+		},
+		"label": {
+			"area" : "정산 기준월",
+			"siteselect" : "사이트 선택"
+		}
+	},
+	"company" : {
+      	"message": {
+	         "tempPasswordEmail": "※ 비밀번호를 잊어버렸을 시 입력한 이메일로 임시 비밀번호가 발송됩니다.",
+	         "taxBillPublish": "※ 입력하신 담당자 이메일로 세금계산서 발행정보가 발송됩니다."
+	     },
+	     "button": {
+	         "update": "수정"
+	     },
+		"label" : {
+			"headOffice" : "가맹본사",
+			"area" : "지역",
+			"supplyYn" : "공급사여부",
+			"supply" : "공급사",
+			"companyId" : "가맹점ID",
+			"companyName" : "가맹점명",
+			"company" : "가맹점",
+			"requestStatus" : "요청상태",
+			"builder" : "시공사",
+			 "passwordConfirm": "비밀번호확인",
+	         "storeName": "매장명",
+	         "representName": "대표자명",
+	         "storeKinds": "매장구분",
+	         "companyNumber": "사업자번호",
+	         "businessConditionsType": "업태/업종",
+	         "mailOrderYn": "통신판매신고유무",
+	         "mailOrderNumber": "통신판매신고번호",
+	         "address": "주소",
+	         "zipCode": "우편번호",
+	         "representTelephone": "대표전화번호",
+	         "returnTelephone": "반품처리 전화번호",
+	         "faxNumber": "팩스번호",
+	         "email": "이메일주소",
+	         "sellerGroup": "판매자 그룹 정보",
+	         "managerName" : "담당자명",
+	         "managerContact": "담당자연락처",
+	         "managerEmail": "담당자이메일",
+	         "defaultDelivery": "기본 배송료",
+	         "downCompany": "하위셀러",
+	         "managerInformation": "담당자정보"
+		},
+		"title": {
+			"group": "그룹",
+			"info": "가맹점 주소",
+			"division": "가맹점 구분",
+			"basicInfo": "가맹점 기본정보 입력",
+			"detailInfo": "가맹점 상세정보 입력",
+			"certification": "가맹점 인증",
+			"managerInfo": "담당자정보",
+			"insertFranchiseInfo" : "가맹점그룹정보",
+			"franchiseUnderList": "소속 가맹목록",
+			"franchiseUnderInfo" : "소속 가맹점",
+			"addFranchiseUnderInfo" : "소속 가맹점 추가",
+			"companySearch" : "업체조회",
+			"deliveryInfo" : "기본 배송료 설정",
+			"usePrivacy" : "개인정보 수집 및 이용에 대한 동의"
+		},
+		"form" : {
+			"label" : {
+				"id": "아이디",
+				"password" : "비밀번호",
+				"passwordConfirm" : "비밀번호확인",
+				"companyName" : "가맹점명",
+				"representName" : "대표자명",
+				"companyNumber" : "사업자번호",
+				"mailOrderNumber" : "통신판매업신고번호",
+				"businessConditions" : "업태",
+				"businessType" : "업종",
+				"representTelephone" : "대표전화번호",
+				"faxNumber" : "팩스번호",
+				"email" : "이메일주소",
+				"area" : "지역",
+				"address": "주소",
+				"latitude": "위도",
+				"longitude": "경도",
+				"managerName": "담당자명",
+				"managerContact": "담당자연락처",
+				"managerEmail": "담당자이메일",
+				"headquarters": "본사",
+				"franchise": "가맹점",
+				"choose" : "선택",
+				"headOffice" : "본사",
+				"brandName" : "브랜드명",
+				"searchFranchise" : "가맹점검색",
+				"authority" : "권한",
+				"joinMngYn" : "가맹점관리",
+				"joinAprvYn" : "가맹점승인",
+				"contentYn" : "게시판",
+				"prdYn" : "상품관리",
+				"orderYn" : "주문관리",
+				"summeryYn" : "통계관리",
+				"joinInfo" : "가맹정보",
+				"reciver" : "받는사람",
+				"reciverPhone" : "받는사람 연락처",
+				"companyType" : "사업자구분",
+				"copType1" : "법인사업자",
+				"copType2" : "개인사업자",
+				"noJper" : "담당자를 지정하지 않음",
+				"copLicense" : "사업자등록증사본",
+				"mailOrder" : "통신판매업신고증",
+				"defaultDelivery" : "기본 배송료",
+				"returnContact" : "반송받을 연락처"
+				
+			},
+			"select" : {
+				"chooseHeadOffice" : "본사 선택",
+				"chooseFranchise" : "상위가맹점 선택",
+				"allHeadOffice" : "본사 전체",
+				"allCompany" : "가맹점 전체",
+				"allUpCompany" : "상위가맹점 전체",
+				"allDownCompany" : "하위가맹점 전체",
+				"upCompany" : "상위가맹점",
+				"downCompany" : "하위가맹점",
+				"supplyYn" : "공급사여부",
+				"approveComplit" : "승인완료",
+				"approveRequest" : "승인요청중",
+				"waitingJoin" : "가입대기",
+				"reject" : "반려"
+			},
+			"head" : {
+				"telephoneNo" : "전화번호",
+				"type" : "유형",
+				"up" : "상위",
+				"down" : "하위",
+				"head" : "본사",
+				"franchiseCount" : "소속가맹점수",
+				"companyGroup" : "본사그룹",
+				"approval" : "승인여부",
+				"approve" : "승인",
+				"disapprove" : "미승인"
+			},
+			"message" : {
+				"noCompany" : "등록된 가맹점 리스트가 없습니다.",
+				"noCompanyList" : "등록된 소속 가맹점 리스트가 없습니다.",
+				"inputFranchiseName" : "검색할 가맹점명을 입력하세요.",
+				"temporaryPassword" : "등록 시 임시 비밀번호가 자동으로 발송됩니다.",
+				"passwordPolicy" : "비밀번호는 영문과 특수문자를 포한 8자리 이상을 입력해주시기 바랍니다.",
+				"inputHyphen" : "입력시 하이픈(-) 추가하여 입력해주세요.",
+				"separatedByCommas" : "한 개 이상의 __sales__인 경우 콤마(,)로 구분하여 입력해주세요.",
+				"separatedByCommas_salesKind" : "$t(company.form.message.separatedByCommas, {\"sales\": \"업태\"})",
+				"separatedByCommas_salesType" : "$t(company.form.message.separatedByCommas, {\"sales\": \"업종\"})",
+				"tempPasswordEmail" : "입력한 이메일 주소로 임시 비밀번호가 발송됩니다.",
+				"passwordMatch" : "비밀번호가 일치합니다.",
+				"passwordNotMatch" : "입력하신 비밀번호가 일치하지 않습니다.",
+				"noBizNo" : "입력한 사업자등록번호로 가입된 정보가 없습니다.",
+				"existBizNo" : "이미 가입된 회원정보입니다.",
+				"normalBizNo" : "정상적인 사업자등록번호 입니다.",
+				"notAvailableBizNo" : "올바른 사업자 번호를 입력해주세요.",
+				"availableId" : "해당 아이디는 사용 가능 합니다. ",
+				"beforSmsSendChk" : "가입신청페이지URL을 SMS로 전달 시 아래 정보를 확인 후 발송하시기 바랍니다.",
+				"noJper" : "담당자를 지정하지 않을 경우 대표자가 담당자가 됩니다.",
+				"attachfile" : "첨부파일은 jpg 파일을 지원하며 첨부파일 용량은 20MB를 초과할 수 없습니다."
+			}
+		},
+		"companyGroup" : {
+			"searchType" : {
+				"all" : "전체",
+				"code" : "그룹코드",
+				"name" : "그룹명"
+			},
+			"list" : "그룹목록",
+			"message" : {
+				"noGroup" : "등록된 가맹점그룹이 없습니다."
+			}
+		},
+		"list" : {
+			"downCompany" : {
+				"title" : "하위가맹점 리스트"
+			},
+			"upCompany" : {
+				"title" : "상위가맹점 리스트"
+			}
+		},
+		"pageForm": {
+			"title" : "가맹점 페이지 관리",
+			"unit": {
+				"title1": "필수정보",
+				"title2": "지도연결"
+			},
+			"label" : {
+				"pageName" : "가맹점페이지명",
+				"url" : "인터넷주소",
+				"image" : "대표 이미지",
+				"pageComment" : "홈페이지설명",
+				"address" : "주소",
+				"youtubeVideoId" : "유튜브 영상ID",
+				"navertvId" : "네이버TV 영상ID"
+			},
+			"message" : {
+				"domain" : ".auton.kr",
+				"enterId" : "아이디를 입력해주세요.",
+				"recheckId" : "아이디 중복 체크를 해주세요.",
+				"useAble" : "사용가능합니다.",
+				"notUseAble" : "사용중인 주소입니다.",
+				"notUseAbleId" : "사용중인 아이디 입니다.",
+				"imageInfo" : "최대 1개 최대 5MB 가로 길이 1280PX 이상의 큰 이미지를 올려주세요.",
+				"duplUrl" : "현재의 주소와 동일합니다.",
+				"duplChkUrl" : "인터넷 주소 중복체크를 해주세요."
+			}
+		},
+		"shipping": {
+			"title": "배송정보설정",
+			"unit": {
+				"title": "배송료 부과 단위",
+				"field1": "배송료 부과 단위",
+				"radio1": "개별 상품에 각각 부과",
+				"radio2": "구매 합산 금액 단위로 부과"
+			},
+			"standard": {
+				"title": "배송료 부과 기준",
+				"field1": "결제가격기준",
+				"radio1": "개별 상품에 각각 부과",
+				"radio2": "구매 합산 금액 단위로 부과"
+			},
+			"policy": {
+				"title": "기본 배송정책",
+				"field1": "기본배송비",
+				"description1": "기본 배송비를 <input type='number' class='form-control-inline m-l-xs width-100' name='baseDeliveryprice' value='__fixedPrice__' min=0 />원으로 설정",
+				"field2": "변동배송비",
+				"description2": "구매금액이 <input type='number' class='form-control-inline m-l-xs width-100' name='fewOrder' value='__minimumPayment__' min=0 />원보다 작을 경우 <input type='number' class='form-control-inline m-l-xs width-100' name='fewExtraCharge' value='__variablePrice__' min=0 />원 부과",
+				"description3": "구매금액이 <input type='number' class='form-control-inline m-l-xs width-100' name='manyOrder' value='__maximumPayment__' min=0 />원보다 클 경우 <input type='number' class='form-control-inline m-l-xs width-100' name='manyExtraCharge' value='__maxVariablePrice__' min=0 />원 부과",
+				"field3": "도서산간",
+				"table": {
+					"description": "선택한 지역을 <button type='button' onclick='javascript:deleteArea();' class='btn btn-sm btn-dark'>__button__</button>",
+					"baseSetting": "기본세팅",
+					"column1": "선택",
+					"column2": "특수지역명(도서, 산간 등)",
+					"column3": "우편번호 범위",
+					"column4": "배송비",
+					"currency": "<div class='input-group'><input type='text' class='form-control-inline width-100' name='deliverySettings.localAreaList[__index__].deliveryPrice' value='__charge__'>원</div>"
+				}
+			},
+			"company": {
+				"title": "배송업체선택",
+				"field": "배송업체",
+				"description": "주거래 배송업체를 선택 하여 주세요. 배송업체명을 선택 시 업체명과 배송조회 URL을 확인하실 수 있습니다.",
+				"modal": {
+					"title": "배송업체",
+					"subTitle": "배송업체설정",
+					"field1": "업체명"
+				}
+			}
+		}
+	},
+	"member": {
+       "title": {
+	        "accountsiteUpdateForm": "회원 상세",
+	        "accountInsertForm": "관리자 등록",
+	        "accountUpdateForm": "관리자 상세"
+
+	        },
+		"search": {
+			"searchTerms": "조회조건",
+			"termChoice": "기간선택",
+			"mobileUuid": "앱설치",
+			"all": "전체",
+			"install": "설치",
+			"uninstall": "미설치",
+			"status": "상태",
+			"searchWord": "검색어",
+			"search": "조회",
+			"date1": "오늘",
+			"date2": "최근 7일",
+			"date3": "최근 1개월",
+			"date4": "최근 3개월",
+			"enterMeber": "가입회원",
+			"unsubscribeMeber": "탈퇴회원",
+			"id": "아이디",
+			"name": "회원명",
+			"phone": "휴대폰",
+			"telephone": "자택전화",
+			"email": "이메일",
+			"term": "기간",
+			"unapproved": "미승인",
+			"approved": "승인",
+			"transmit": "전송",
+			"nottransmit": "미전송",
+			"balance": "차감",
+			"give": "지급",
+			"send": "발송",
+			"error": "오류"
+		},
+		"head": {
+			"no": "번호",
+			"site": "사이트",
+			"id": "아이디",
+			"name": "회원명",
+			"phone": "휴대폰",
+			"totalPoint": "적립금",
+			"mobileUuid": "앱설치",
+			"loginTime": "최종접속일",
+			"writeDate": "가입일",
+			"unsubscribeDate": "탈퇴일",
+			"adminName": "성명",
+			"contactIP": "접속IP",
+			"status": "상태",
+			"receiver": "받는사람",
+			"content": "내용",
+			"pushdate": "푸쉬발송일자",
+			"sendYn": "전송여부",
+			"statement": "내역",
+			"orderNo": "주문번호",
+			"amt": "금액",
+			"regDate": "등록일",
+			"management": "관리",
+			"toName": "받는사람",
+			"fromName": "보내는 사람",
+			"title": "제목",
+			"sendDate": "발송일시",
+			"toPhone": "받는번호",
+			"fromPhone": "보내는 번호"
+		},
+		"form": {
+			"memberList": "회원목록",
+			"memberName": "회원명",
+			"statement": "내역",
+			"point": "적립금",
+			"mailInsert": "메일쓰기",
+			"toName": "받는사람",
+			"fromName": "보내는 사람",
+			"title": "제목",
+			"content": "내용",
+			"attachfile": "첨부파일",
+			"findfile": "파일찾기",
+			"regDate": "작성일시",
+			"readDate": "읽은시간",
+			"site": "사이트",
+			"mailSendStatement": "메일발송내역",
+			"adminBasicInfo": "관리자기본정보",
+			"id": "*아이디",
+			"password": "*비밀번호",
+			"password2": "비밀번호확인",
+			"name": "*성명",
+			"telephone": "전화번호",
+			"celphone": "*휴대폰 번호",
+			"email": "*이메일",
+			"address": "주소",
+			"authorityType": "*권한타입",
+			"authoritySet": "권한설정",
+			"authorityNoMenu": "미권한메뉴",
+			"authorityMenu": "관리권한메뉴",
+			"authorityNoSite": "미권한사이트",
+			"authoritySite": "관리권한사이트",
+			"approvedYn": "승인여부",
+			"unapproved": "미승인",
+			"approved": "승인",
+			"memberInfo":"회원정보",
+			"etcInfo":"기타정보",
+			"agreementYn":"수신동의여부",
+			"smsAgreement":"SMS수신동의",
+			"emailAgreement":"이메일수신동의",	
+			"loginTime":"최근접속일시",
+			"joinBackOut":"가입/탈퇴",
+			"join":"가입",
+			"backOut":"탈퇴",
+			"joinDate":"가입일시",
+			"unsubscribeDate":"탈퇴일시",
+			"unsubscribeComment":"탈퇴사유",
+			"year":"년",
+			"month":"월"
+
+		},
+		"message": {
+			"emptyMember": "등록된 회원이 없습니다 ",
+			"emptyPush": "푸쉬발송내역이 없습니다",
+			"emptyPoint": " 적립금이용내역이 없습니다",
+			"emptyMail": " 메일발송내역이 없습니다",
+			"emptySms": " 문자발송내역이 없습니다",
+			"notUseCode": "사용 가능한 코드가 아닙니다."
+		},
+		"button": {
+			"search": "조회",
+			"init": "초기화",
+			"choiceHandle": "선택처리",
+			"choiceCancle": "선택취소",
+			"choiceDel": "선택삭제",
+			"choiceApproved": "선택승인",
+			"choiceUnapproved": "선택미승인",
+			"memberInsert": "회원등록",
+			"adminInsert": "운영자관리등록",
+			"pushInsert": "푸쉬전송",
+			"pointInsert": "적립금지급/차감",
+			"memberSearch": "회원검색",
+			"choice": "선택",
+			"mailInsert": "메일발송",
+			"smsInsert": "문자보내기",
+			"add": "추가",
+			"memberAdd": "회원추가",
+			"list": "목록",
+			"zipcode": "우편번호",
+			"send": "발송",
+			"signUp": "가입신청",
+			"cancel": "취소"			
+		}
+	},
+	"product": {
+		"title": {
+			"info" : "상품기본정보",
+			"price-point" : "가격/재고/적립금/포인트",
+			"saleInfo" : "판매정보",
+			"setProduct" : "세트상품 구성",
+			"deliveryPrice" : "배송비 설정",
+			"hashTag" : "해시태그 설정",
+			"addInfo" : "부가정보",
+			"normalInfo" : "기본정보",
+			"displaySetting" : "표시설정",
+			"installationWay" : "장착법 정보",
+			"detail" : "상품 상세",
+			"prodinfo" : "상품정보고시",
+			"requestAdd" : "등록요청정보",
+			"approveInfo" : "승인정보",
+			"couponDetail" : "쿠폰상세",
+			"searchServiceName" : "서비스명 조회",
+			"addServiceName" : "서비스명 추가",
+			"serviceNameList" : "서비스명 목록",
+			"addProductGroup" : "상품그룹 추가",
+			"category" : "카테고리",
+			"addCategory" : "카테고리 추가",
+			"selectCategory" : "카테고리 선택",
+			"updateCategory" : "카테고리 수정",
+			"couponProduct" : "쿠폰 대상 - 상품",
+		
+	        "productUpdateForm": "상품 수정",
+	        "couponUpdateForm": "쿠폰 수정",
+			"eventInsertForm": "이벤트 등록",
+			"eventUpdateForm": "이벤트 수정",
+			"installationWayInsertForm": "장착법 등록",
+			"installationWayUpdateForm": "장착법 수정",
+			"qnaUpdateForm": "상품문의 상세",
+			"reviewUpdateForm": "상품후기 상세",
+			"categoryInsertForm": "카테고리 등록",
+			"reservationConfig": "예약운영 설정",
+			"reservationService": "서비스 예약관리",
+			"workDaySpecify": "영업일 지정",
+			"setHoliday" : "지정휴일 설정",
+			"timeSetting" : "시간별 설정" ,
+			"selectDate" : "날짜 선택" 
+		},
+		"search": {
+			"display": "진열",
+			"hidden": "숨김",
+			"productName": "상품명",
+			"productCode": "상품코드",
+			"intergratedProductExposureYn": "통합상품노출여부",
+			"supplyCompany": "공급사",
+			"couponName": "쿠폰명",
+			"couponPrice": "쿠폰금액",
+			"eventCode": "이벤트코드",
+			"eventSubject": "이벤트제목",
+			"regName": "등록자명",
+			"regID": "등록자ID",
+			"regDate": "등록일",
+			"subject": "제목",
+			"content": "내용",			
+			"answerBefore": "답변전",
+			"answerFinsh": "답변완료",
+			"temporarySave": "임시저장",
+			"mainCategory": "대분류",
+			"middleCategory": "중분류",
+			"smallCategory": "소분류",
+			"searchKeyword": "검색어 입력",
+			"displayYn": "진열여부"
+		},
+		"head": {
+			"classification" : "구분",
+			"type" : "상품타입",
+			"site": "사이트",
+			"searchProductName" : "상품명 검색",
+			"no": "번호",
+			"productImge": "상품이미지",
+			"productInfo": "상품정보",
+			"salePrice": "판매가격",
+			"companyName":"가맹점",
+			"stock": "재고",
+			"displayStatus": "진열상태",
+			"period": "기간",
+			"label" : {
+				"exposure" : "노출",
+				"display": "진열",
+				"hidden": "숨김",
+				"hidden_2": "진열안함",
+				"priceUnit" : "원",
+				"pointUnit" : "점",
+				"dayUnit" : "일",
+				"up" : "위",
+				"down" : "아래",
+				"under" : "하부",
+				"approveWait" : "승인대기",
+				"approveReject" : "승인반려",
+				"product" : "상품",
+				"survice" : "서비스",
+				"commission01" : "10%",
+				"commission02" : "20%",
+				"commission03" : "30%",
+				"commission04" : "전체"
+			},
+			"couponName": "쿠폰명",
+			"couponPrice": "쿠폰금액",			
+			"issueQty": "발급수량",
+			"target": "대상",
+			"exposurePeriod": "노출기간",
+			"couponPeriod": "유효기간",	
+			"groupConfig" : "상품그룹관리",
+			"groupName" : "상품그룹명",
+			"shortcut" : "바로가기",
+			"order" : "순서",
+			"approval" : "승인상태",
+
+			"eventCode": "이벤트코드",
+			"eventSubject": "이벤트제목",
+			"eventPeriod": "이벤트기간",
+			"regName": "등록자명",
+			"regDate": "등록일",
+			"subject": "제목",
+			"productName": "상품명",
+			"satisfaction": "만족도",
+			"status": "상태",
+			"answerBefore": "답변전",
+			"answerFinsh": "답변완료",
+			"temporarySave": "임시저장",
+			"user": "사용자",
+			"orderNo": "주문번호",
+			"couponUseDate": "쿠폰사용일시",
+			"holyday": "지정휴일",
+			"time": "시간",
+			"openYn": "영업/휴무",
+			"manpowerPlacement" : "인력배치"
+		},
+		"searchType" : {
+			"singleProduct" : "단품",
+			"setProduct" : "세트상품",
+			"product" : "상품",
+			"service" : "서비스",
+			"product&service" : "조합",
+			"giftcard" : "상품권",
+			"tax" : "과세",
+			"taxFree" : "비과세",
+			"usePolicy" : "기본 적립금 정책을 따름",
+			"useInputValue" : "위 입력한 적립금 지급",
+			"soldout" : "품절",
+			"pc" : "PC용",
+			"mobile" : "모바일용",
+			"etc" : "외"
+		},
+		"form": {
+			"code" : "상품코드",
+			"selectSite" : "사이트 선택",
+			"productName" : "상품명",
+			"serviceName" : "서비스명",
+			"group" : "광고그룹",
+			"tag" : "해쉬태그 입력",
+			"support" : "부가 정보",
+			"productInfoText" : "상품상세 설명",
+			"description" : "상품소개",
+			"exposureMain" : "메인노출",
+			"mobile" : "모바일",
+			"serviceRequiredTime" : "서비스소요시간",
+			"serviceRequiredTimeUnit" : " 분",
+			"exposurePeriod" : "상품노출기간",
+			"noPeriod" : "기간없음",
+			"releaseDay" : "출시일",
+			"supply" : "공급사",
+			"manufacturer" : "제조사",
+			"origin" : "원산지",
+			"brand" : "브랜드",
+			"icon" : "아이콘",
+			"additionalInfo" : "추가정보",
+			"hashTag" : "해시태그",
+			"exposureCoupon" : "쿠폰노출여부",
+			"carUseYn" : "차량 선택 옵션",
+			"productCategory" : "상품구분",
+			"price" : "판매가",
+			"originPrice" : "정가",
+			"unitPrice" : "공급가",
+			"supplyPrice" : "공급가액",
+			"surTax" : "부가세",
+			"stock" : "재고량",
+			"stockYn" : "제한없음",
+			"stock_2" : "재고",
+			"maximumBuyLimitCount" : "최대구매제한수량",
+			"savedMoney" : "적립금",
+			"savedMoneyPolicy" : "적립금정책",
+			"minimumPoint" : "최소포인트",
+			"tax" : "과세유형",
+			"soldout" : "품절여부",
+			"groupName" : "옵션분류명",
+			"quantity" : "수량",
+			"insert-delete" : "추가/삭제",
+			"image" : "상품이미지",
+			"productImage" : "대표상품이미지",
+			"attachedFile" : "첨부파일",
+			"thumnail" : "상품추가이미지",
+			"related" : "관련상품",
+			"relatedOrder" : "주문내역",
+			"deliveryPrice" : "배송비 선택",
+			"receiveMethod" : "수령방법",
+			"installationWay" : "장착설명 사용여부",
+			"selectInstallationWay" : "장착설명 선택",
+			"searchInstallationWay" : "장착설명 검색",
+			"law" : "장애인을 위한 설명",
+			"memo" : "관리자메모",
+			"intro" : "인트로",
+			"delimemo" : "이용안내",
+			"client" : "요청자",
+			"clientName" : "요청자명",
+			"franchiseUnderName" : "소속가맹점명",
+			"requestDate" : "요청일시",
+			"rejectReason" : "반려사유",
+			"approve" : "승인여부",
+			"approveDate" : "승인일시",
+			"order" : "순서",
+			"freeShipping" : "무료배송",
+			"displayProduct" : "상품진열",
+			"shipping" : {
+				"config" : "기본 설정을 따름",
+				"free" : "배송비 무료",
+				"free_2" : "무료",
+				"collectible" : "배송비 착불",
+				"collectible_2" : "착불",
+				"fixed" : "배송비 고정",
+				"fixed_2" : "고정",
+				"bind" : "묶음배송",
+				"spcRegion" : "도서산간 배송비 사용",
+				"set" : "묶음 배송"
+			},
+			"categoryName" : "카테고리명",
+			"categoryCode" : "카테고리코드",
+			"position" : "위치",
+			"design" : "상단디자인",
+			"copiedCategory" : "복사할 카테고리",
+			"includeUnuse" : "미사용 포함",
+			"categoryPosition" : "생성할 카테고리 위치",
+			"copyMethod" : "복사방식",
+			"copyOnlyCategory" : "카테고리만 복사",
+			"copyWithProduct" : "상품포함 복사",
+			"includeUnderCategory" : "하부 카테고리 포함",
+			"noLimit" : "제한없음",
+			"couponExposurePeriod" : "쿠폰노출기간",
+			"couponPeriod" : "쿠폰유효기간",
+			"selectProduct" : "상품선택",		
+			"serviceCompany" : "서비스가맹점",
+			"franchiseUnder" : "소속가맹점",
+			"franchiseUnderSetting" : "설정된소속가맹점",
+			"alwaysvisible" : "상시노출",
+			"checkbox": {
+				"monday": "월",
+				"tuesday": "화",
+				"wednesday" : "수",
+				"thursday": "목",
+				"friday": "금",
+				"saturday" : "토",
+				"sunday" :"일",
+				"24HoursOpenYn" : "24시간 운영"
+			},
+			"radio": {
+				"salesOpen": "영업",
+				"salesClose": "휴무"
+			},
+			"salesTime" : "영업시간",
+			"holyDay" : "지정휴일",
+			"am": "오전",
+			"pm": "오후",
+			"required": "필수여부",
+			"representativeYn" : "대표상품여부",
+			"representative" : "대표상품",
+			"textOption" : "텍스트 옵션"
+		},
+		"message": {
+			"selectSiteFirst" : "사이트 선택 후 카테고리를 선택해주세요.",
+			"productTypes" : "세트상품타입 종류 : 상품, 서비스",
+			"exposureMainPage" : "선택시 선택한 디바이스로 접속한 화면 메인페이지에 상품이 노출됩니다.",
+			"changeIcon" : "아이콘을 추가/변경/삭제 할 수 있습니다.",
+			"inputTitle" : "제목을 입력하세요.",
+			"inputHashTag" : "해시태그를 입력하세요. (#블랙박스  #블박)",
+			"inputAdditionalDescription" : "추가설명을 입력해주세요.",
+			"inputSavedMoney" : "구매시 적립할 적립금을 입력해주세요.",
+			"minimumPoint" : "구매시 최소 사용될 포인트를 입력해주세요. (예 : 100점 입력시 포인트 100점 이하 사용불가)",
+			"soldout" : "재고량과 관계없이 품절로 표시",
+			"relatedProduct" : "관련상품은 옵션이 없는 상품만 검색이 됩니다.",
+			"deliveryPrice" : "배송비 착불 또는 고정, 묶음배송인 경우 <input type='text' malength='20' name='deliveryprice' id='deliveryprice' size='10' class='form-control-inline m-l-sm' style='width:70px;' value='__price__'>원을 부과합니다.",
+			"emptyCoupon": "쿠폰발행내역이 없습니다",
+			"emptyCategory" : "등록된 카테고리가 없습니다.",
+			"disabledServiceName" : "사용할 수 없는 서비스명입니다.",
+			"abledServiceName" : "사용가능한 서비스명입니다.",
+			"disabledGroupName" : "사용할 수 없는 상품그룹명입니다.",
+			"abledGroupName" : "사용가능한 상품그룹명입니다.",
+			"emptyProductGroup" : "등록된 상품그룹이 없습니다.",
+			"selectSiteCode" : "사이트를 선택해주세요.",
+			"moveUnderCategories" : "하부 카테고리 함께 이동됨",
+			"copyUnuseCategory" : "복사할 분류 선택 시 '미사용 포함'선택 시 미사용 분류도 복사됨",
+			"couponPriceDetail" : "원 (할인되는 금액을 입력하세요)",
+			"couponPeriodDetail" : "일 (쿠폰을 받은 시점으로부터의 유효기간(일)을 입력해 주세요.)",
+			
+			"emptyProduct": "등록된 상품이 없습니다 ",
+			"emptyCouponUseInfo": "쿠폰사용내역이 없습니다",
+			"emptyEvent": " 이벤트내역이 없습니다",
+			"emptyInstallationWay": " 장착법내역이 없습니다",
+			"emptyQna": " 상품문의내역이 없습니다",
+			"emptyReview": " 상품후기내역이 없습니다",
+			
+			"imageLimit2": "이미지는 최대 2장까지 가능합니다.",
+			"imageLimit4": "이미지는 최대 4장까지 가능합니다.",
+			"deleteProductConfirm": {
+				"title": "삭제 확인",
+				"text": "삭제할 경우 해당 계정과 관련된 모든 정보가 삭제됩니다. 삭제하시겠습니까?",
+				"ok": "삭제",
+				"cancel": "취소"
+			},
+			"selectProduct": "대상을 선택해주세요.",
+			"selectProducts": "취소/반품 시 단건만 가능합니다.",
+			"copyProductConfirm": {
+				"title": "복사 확인",
+				"text": "복사 하시겠습니까?",
+				"ok": "복사",
+				"cancel": "취소"
+			},
+			"insertSurtax" : "과세유형이 과세인 경우 부가세를 입력하셔야 합니다.",
+			"insertRequiredOptionGroup" : "세트상품그룹 중 하나는 필수여부가 체크되서 등록되어야합니다.",
+			"useOptionOfRequiredGroup" : "필수옵션 그룹에 사용 중인 상품이 없습니다.",
+			"insertServiceRequiredTime" : "서비스 소요시간을 입력해주세요.",
+			"insertExpoStartDate" : "상품 노출기간 시작일을 입력해주세요.",
+			"insertExpoEndDate" : "상품 노출기간 종료일을 입력해주세요.",
+			"insertExpoStartTime" : "상품 노출기간 시작 시간을 입력해주세요.",
+			"insertExpoEndTime" : "상품 노출기간 종료 시간을 입력해주세요.",
+			"insertDelivery" : "배송비를 선택해 주세요.",
+			"insertDeliveryPrice" : "배송비를 입력해주세요.",
+			"productMainImages" : "대표상품이미지 (메인썸네일 및 대표로 노출되는 이미지)",
+			"productDetailImages" : "상품추가이미지 (대표이미지 외 추가 이미지로 상세페이지에서 노출되는 이미지)",
+			"simpleProductDetailImages" : "상품 이미지 / 동영상 등록",
+			"Images" : "이미지",
+			"Video" : "동영상"
+		},
+		"button": {
+			"addProduct": "상품 등록",
+			"insertGroup": "그룹 추가",
+			"search" : "상품검색",
+			"copyProduct" : "상품복사",
+			"addCoupon": "쿠폰발행",
+			"saveOrder" : "순서저장",
+			"siteList" : "사이트 목록",
+			"copyCategory" : "카테고리 복사",
+			"allOpen" : "전체 펼치기",
+			"allClose" : "전체 접기",
+			"configCategory" : "카테고리관리",
+			"moveProductGroup" : "상품목록으로 이동",
+			"addInstallationWay": "장착법 등록",
+			"showCompany" : "가맹점보기",
+			"insertSingleProduct" : "단품 등록",
+			"insertSetProduct" : "상품 등록",  
+			"selectPeriod": "기간 선택"
+		},
+		"radio": {
+			"fixStock": "재고량 고정",
+			"stockOrderIntergration": "재고량 주문 연동",
+			"notDisplay" : "표시안함",
+			"notLimit" : "제한없음"
+		},
+		"option" : {
+			"display" : {
+				"all" : "전체",
+				"display" : "진열",
+				"hide" : "숨김"
+			}
+		},
+		"select" : {
+			"display" : {
+				"selectService" : "서비스명 선택"
+			}
+		}
+	},
+	"login": {
+		"contents": {
+			"auton": "오토앤",
+			"ownerCenter": "사장님센터",
+			"administrator": "통합관리자",
+			"autonAdministrator": "오토앤 통합관리자",
+			"content1": "아이디와 비밀번호를 입력하신 후,",
+			"content2": "로그인 버튼을 클릭해 주세요.",
+			"email": "대표 이메일을 입력해주세요.",
+			"resetPassword": "비밀번호 초기화",
+			"saveId": "아이디 저장",
+			"doLogin": "로그인 하기",
+			"doresetPassword": "비밀번호 찾기",
+			"login" : "로그인"
+		},
+		"message": {
+			"messageID": "아이디를 입력해 주세요.",
+			"messagePWD": "비밀번호를 입력해 주세요.",
+			"messageSecondCode": "2차 인증번호를 입력해 주세요.",
+			"loginFailed": "입력하신 정보가 다릅니다. 확인하여 주시기 바랍니다.",
+			"loginID": "아이디",
+			"loginPWD": "패스워드",
+			"loginFailCountOvere": "로그인 정보가 3회 이상 잘못입력하여 접속이 차단되었습니다.<br>관리자에게 문의하시기 바랍니다.<br>(문의 : auton@auton.co.kr / 02)000-0000)",
+			"secondCodeSend": "2차 인증번호 발송",
+			"secondCode": "2차 인증번호",
+			"needSecondCodeSend" : "2차 인증번호 발송을 해주세요.",
+			"secondCodeRemainTime": "2차 인증번호 남은 시간 : ",
+			"secondCodeFinish": "2차 인증번호 유효시간이 만료 되었습니다.",
+			"secondCodeFailed": "2차 인증번호 일치하지 않습니다."
+		}
+	},
+	"order" : {
+		"option" : {
+			"selectPeriod" : "기간선택",
+			"member" : {
+				"label" : "회원구분",
+				"NON_MEMBERS" : "비회원",
+				"BASIC_MEMBESR" : "일반회원",
+				"SNS_MEMBERS" : "SNS",
+				"PRIMERE_MEMBERS" : "멤버스"
+			},
+			"searchType" : {
+				"orderNo" : "주문번호",
+				"productName" : "상품명",
+				"buyerName" : "주문자명",
+				"buyerID" : "주문자ID",
+				"recipient" : "받는사람",
+				"shippingCompany" : "택배사",
+				"invoice" : "송장번호",
+				"company" : "가맹점명"
+			},
+			"status" : {
+				"orderStatus" : "진행상태",
+				"DEPOSIT_READY" : "입금대기",
+				"PAYMENT_SUCESS" : "결제완료",
+				"DELIVERY_PREPARE" : "배송준비",
+				"DELIVERY" : "배송중",
+				"DELIVERY_COMPLETE" : "배송완료",
+				"RESERVATION_READY" : "예약대기",
+				"RESERVATION_SUCESS" : "예약완료",
+				"RESERVATION_SUCCESS" : "예약완료",
+				"SERVICE_READY" : "서비스대기",
+				"ON_SERVICE" : "서비스중",
+				"SERVICE_COMPLETE" : "서비스완료",
+				"COMPLETE_SERVICE" : "서비스확정",
+				"COMPLETE" : "구매확정",
+				"CANCEL_REQUEST" : "취소신청",
+				"CANCEL_REQUEST_PART" : "부분취소신청",
+				"CANCEL_APPROVE_PART" : "취소승인",
+				"CANCEL" : "취소완료",
+				"CANCEL_PART" : "부분취소완료",
+				"TAKEBACK_REQUEST" : "반품신청",
+				"TAKEBACK_REQUEST_PART" : "부분반품신청",
+				"TAKEBACK_APPROVE_PART" : "반품승인",
+				"TAKEBACK" : "반품완료",
+				"TAKEBACK_PART" : "부분반품완료",
+				"MONEYBACK_REQUEST" : "환불신청",
+				"MONEYBACK_REQUEST_PART" : "부분환불신청",
+				"MONEYBACK" : "환불완료",
+				"MONEYBACK_PART" : "부분환불",
+				"REFUND" : "환불",
+				"ACCEPT_ERROR" : "주문오류",
+	            "deliveryOccur": "배송비 발생",
+	            "cancelReturn": "취소/반품",
+	            "total": "전체",
+	            "deliveryProduct": "일반 상품",
+	            "serviceProduct": "서비스 상품"
+			}
+		},
+		"label": {
+	         "productName": "상품명",
+	         "productCode": "상품코드",
+	         "productClassification": "상품구분",
+	         "displayStatus": "진열여부",
+	         "supplier": "공급사",
+	         "productDetail": "상품상세설명",
+	         "productInformationYn": "상품정보고시",
+	         "noChoice": "선택안함",
+	         "explanationForDisabled": "장애인을 위한 설명",
+	         "freeTextOption": "자율 텍스트 입력 옵션",
+	         "sellingPrice": "판매가",
+	         "consumerPrice": "소비자가",
+	         "serviceDemandTime": "서비스소요시간",
+	         "category": "카테고리",
+	         "hashtag": "해시태그",
+	         "methodOfReceiving": "수령방법",
+	         "choosePeriod": "기간선택",
+	         "orderChannel": "주문채널",
+	         "orderNumber": "주문번호",
+	         "orderName": "주문자명",
+	         "orderId": "주문자Id",
+	         "orderPhone": "주문자연락처",
+	         "quantity": "수량",
+	         "payment": "결제금액",
+	         "paymentStatus": "결제상태",
+	         "paymentDate": "결제일시",
+	         "recipientName": "수취인명",
+	         "recipientContact": "수취인연락처",
+	         "shippingAddress": "배송지",
+	         "orderDetailStatus": "주문세부상태",
+	         "useCoupon": "쿠폰사용",
+	         "dateOfShipment": "발송기한",
+	         "deliveryCostType": "배송비유형",
+	         "cancelInformation": "취소정보",
+	         "returnInformation": "반품정보",
+	         "productPrice": "상품금액",
+	         "orderStatus": "주문상태",
+	         "paymentMethod": "결제방식",
+	         "totalRefund": "총 환불금액",
+	         "totalPayment": "총 결제금액",
+	         "happyCall": "해피콜",
+	         "memo": "메모",
+	         "historyCheck": "이력 보기"
+	      },
+	      "radio": {
+	         "display": "진열 ",
+	         "hidden": "숨김",
+	         "use": "사용",
+	         "Unused": "미사용",
+	         "deliveryService": "택배",
+	         "directReceipt": "직접수령",
+	         "quickService": "퀵",
+	         "storeDelivery": "지점배송"
+	      },
+	      "button": {
+	         "registProduct": "단품등록",
+	         "copyProduct": "상품복사",
+	         "selectProductView": "선택상품진열",
+	         "selectProductHide": "선택상품숨김",
+	         "previous": "이전",
+	         "next": "다음",
+	         "trackingNumber": "송장정보/시공사진등록",
+	         "detailedInformation": "상세정보조회"
+	      },
+	      "title": {
+	         "productInformation": "상품정보",
+	         "salesInformation": "판매정보",
+	         "additionalInformation": "부가정보",
+	         "orderManagement": "주문관리"
+	      },
+	      "select": {
+	         "toDay": "오늘 ",
+	         "sevenDays": "최근 7일",
+	         "lastMonth": "최근 1개월",
+	         "lastThreeMonth": "최근 3개월"
+	      },
+		"table" : {
+			"label" : {
+				"orderDate" : "주문일시",
+				"buyer" : "주문자<br />(주문자id)",
+				"completeDate" : "최종상태<br />처리일시",
+				"productInfo" : "상품정보",
+				"price" : "상품금액",
+				"deliveryInfo" : "배송정보",
+				"deliveryPrice" : "배송료",
+				"payment" : "결제방식",
+				"paymentDate" : "결제일시",
+				"paymentErrorDate" : "결제오류일시",
+				"paymentDueDate" : "결제(예정)일시",
+				"moneybackDate" : "환불일시",
+				"deliveryDate" : "배송완료일시",
+				"takebackApproveDate" : "반품승인일시",
+				"takebackDate" : "반품완료일시",
+				"cancelDate" : "주문취소일시",
+				"history" : "이력", 
+				"image" : "이미지",
+				"orderStatus" : "주문상태",
+				"quantity" : "수량",
+				"pointOrCoupon" : "포인트<br />상품쿠폰",
+				"savedMoney" : "적립금",
+				"useSavedMoney" : "사용 포인트 / 사용 적립금",
+				"totalUseSavedMoney" : "총 사용 포인트 / 총 사용 적립금",
+				"usedCoupon" : "사용 쿠폰",
+				"cancelType" : "취소 결제 타입",
+				"cancelPointPw" : "포인트 비밀번호",
+				"cancelPg" : "PG",
+				"cancelPoint" : "포인트",
+				"totalProductPrice" : "상품 총 금액",
+				"totalOrderPrice" : "주문 총 결제금액",
+				"productPrice" : "상품 금액",
+				"orderPrice_" : "주문 결제금액",
+				"productName" : "상품명",
+				"priceUnit" : "__price__ 원",
+				"visitor" : "방문자명",
+				"reserved_date" : "예약일시",
+				"reserved_company" : "방문 가맹점",
+				"visitor_hp" : "방문자 연락처",
+				"visitor_email" : "방문자 이메일",
+				"free" : "무료",
+				"orderPrice" : "결제금액"
+			},
+			"button" : {
+				"viewHistory" : "이력보기",
+				"cancelOrder" : "주문취소",
+				"cancelRequest" : "취소신청",
+				"cancelApprove" : "취소승인",
+				"takebackRequest" : "반품신청",
+				"takebackApprove" : "반품승인",
+				"takeback" : "반품완료",
+				"moneyback" : "환불처리",
+				"insertOrder" : "$t(common.icon.plus) 주문 $t(common.button.text.insert)",
+				"inputInvoice" : "송장입력",
+				"checkInvoice" : "송장확인",
+				"reservationInfo" : "예약정보",
+				"checkReservation" : "예약확인",
+				"tracking" : "배송조회"
+			}
+		},
+		"detail" : {
+			"title" : "주문상세",
+			"button" : {
+				"changeOrderInfo" : "주문정보변경",
+				"resendInfo" : "예약번호 재발송",
+				"sendMessage" : "문자보내기"
+			},
+			"orderInfo" : "주문정보",
+			"orderItemInfo" : "주문상품정보",
+			"buyerInfo" : {
+				"label" : "주문자정보",
+				"name" : "주문자명",
+				"phoneNumber" : "전화번호",
+				"phone" : "일반전화",
+				"cellphone" : "휴대전화",
+				"emailAddress" : "이메일주소",
+				"address" : "주소",
+				"deliveryNO" : "송장번호",
+				"deliverySearch" : "배송조회",
+				"request" : "요청사항"
+			},
+			"deliveryInfo" : {
+				"label" : "배송정보",
+				"name" : "성명",
+				"contact" : "연락처",
+				"email" : "이메일"
+			},
+			"paymentInfo" : {
+				"label" : "결제정보",
+				"type" : "결제방식",
+				"date" : "결제일시",
+				"paymentAmount" : "결제금액",
+				"totPaymentAmount" : "총 결제금액",
+				"point" : "사용포인트",
+				"availablePoint" : "사용가능한 포인트",
+				"pointCard" : "포인트카드번호",
+				"refund" : "환불정보",
+				"bankAccount" : {
+					"bankName" : "은행명",
+					"accountNo" : "계좌번호",
+					"accountName" : "예금주명"
+				}
+			}
+		},
+		"form" : {
+			"selectProduct" : "상품선택",
+			"table" : {
+				"productInfo" : "상품정보",
+				"productOption" : "상품옵션",
+				"addProduct" : "$t(common.icon.plus) 상품 $t(common.button.text.add)",
+				"noProduct" : "주문할 상품을 추가해주세요."
+			},
+			"searchAccount" : "회원검색",
+			"adminMemo" : "관리자메모",
+			"memo" : "메모",
+			"refund" : "환불",
+			"doNotRefund" : "환불안함"
+		},
+		"paymentType" : {
+			"DEPOSIT" : "무통장입금",
+			"CARD" : "신용카드",
+			"ACCOUNT_TRANSFER" : "계좌이체",
+			"REALTIME_ACCOUNT_TRANSFER" : "실시간계좌이체",
+			"VACCOUNT" : "가상계좌",
+			"SAVEMONEY" : "적립금",
+			"REDPOINT" : "레드포인트",
+			"BLUEPOINT" : "블루포인트",
+			"ALLIANCE" : "제휴포인트",
+			"CARD_ALLIANCE" : "복합결제<br>(신용카드+제휴포인트)",
+			"CARD_SAVEMONEY" : "복합결제<br>(신용카드+적립금)",
+			"CARD_REDPOINT" : "복합결제<br>(신용카드+레드포인트)",
+			"CARD_BLUEPOINT" : "복합결제<br>(신용카드+블루포인트)",
+			"ACCOUNT_TRANSFER_SAVEMONEY" : "복합결제<br>(계좌이체+적립금)",
+			"ACCOUNT_TRANSFER_REDPOINT" : "복합결제<br>(계좌이체+레드포인트)",
+			"CARD_SAVEMONEY_REDPOINT" : "복합결제<br>(신용카드+적립금+레드포인트)",
+			"CARD_SAVEMONEY_BLUEPOINT" : "복합결제<br>(신용카드+적립금+블루포인트)",
+			"GIFTCARD" : "상품권",
+			"BANK" : "계좌이체",
+			"VBANK" : "가상계좌",
+			"VBANK_ALLIANCE" : "복합결제<br>(가상계좌+제휴포인트)"
+		},
+		"message" : {
+			"forSelectedOrder" : "선택한 주문을 ",
+			"inputAmount" : "취소/반품 수량을 입력해주세요.",
+			"commission" : "※ 서비스상품 취소/환불 처리 시 발생하는 비용을 청구할 수 있습니다",
+			"noOrderItems" : "주문된 상품내역이 없습니다.",
+			"noProducts" : "카테고리에 등록된 상품이 없습니다.",
+			"noOption" : "선택가능한 옵션이 없습니다.",
+			"noCompany" : "선택가능한 가맹점이 없습니다.",
+			"selectOneBuyer" : "주문자는 한 명만 선택해주세요.",
+			"selectOrderStatus" : "주문상태를 선택해주세요.",
+			"noSelectedOrder" : "선택된 주문이 없습니다.",
+			"soldout" : "품절된 상품입니다. 다른 상품을 선택해주세요.",
+			"addedProduct" : "이미 추가된 상품입니다.",
+			"disabledReservation" : "예약이 불가능한 가맹점입니다.",
+			"noDeliveryProduct" : "배송상품이 없습니다.",
+			"noReservationInfo" : "등록된 예약정보가 없습니다.",
+			"cannotRequestCancel" : "입금대기 / 결제완료 / 취소승인된 상품에 한해서만 주문취소가 가능합니다.",
+			"cannotRequestTakeback" : "반품승인 상품에 한해서만 반품승인이 가능합니다.",
+			"noHistory" : "이력정보가 없습니다.",
+			"noDeliveryInfo" : "사이트 기본환경설정에서 배송업체를 설정해주세요.",
+			"noShippingCompany" : "송장번호가 등록되지않았습니다.",
+			"selectCompany" : "가맹점이 선택되지 않았습니다.",
+	         "inputRequire": "필수입력 예시의 항목을 모두 작성해 주세요.",
+	         "notPublished": "전안법 필수 입력사항으로 상품고시 미 작성 시 예고없이 상품이 판매중지 될 수 있습니다.",
+	         "useInformation": "브랜드, 연료, 연식 등 자율적으로 입력을 받아야 하는 정보가 있을 때 사용하세요."
+		},
+		"invoice" : {
+			"insertExcel" : "송장 엑셀파일 등록",
+			"sample" : "샘플보기",
+			"history" : "송장 일괄 등록 내역",
+			"emptyHistory" : "송장 일괄 등록 내역이 없습니다.",
+			"excelFile" : "엑셀파일만 업로드 가능합니다.",
+			"count" : {
+				"all" : "전체건수",
+				"success" : "성공건수",
+				"fail" : "실패건수"
+			},
+			"detail" : "상세내역",
+			"showDetail" : "상세내역보기",
+			"whether" : {
+				"label" : "성공여부",
+				"success" : "성공",
+				"failure" : "실패"
+			},
+			"deliveryDate" : "배송일",
+			"deliveryEndDate" : "배송완료일",
+			"processInsert" : "등록진행",
+			"cancelInsert" : "등록취소",
+			"message" : {
+				"checkInvoice" : "송장번호가 이미 등록된 주문이 __count__건 있습니다. 이대로 등록을 진행하시겠습니까?",
+				"insertInvoiceEnd" : "송장 일괄 등록이 완료되었습니다."
+			}
+		},
+		"invoiceBatReg" : {
+			"label" : {
+				"excelFileReg" :"송장엑셀파일 등록",
+				"regDtSearch" : "등록일 검색",
+				"number" : "번호",
+				"regDtTm" : "등록일시",
+				"totCnt" : "전체건수",
+				"sucCnt" : "성공건수",
+				"failCnt" : "실패건수",
+				"dtlInfo" : "상세내역",
+				"odrNo" : "주문번호",
+				"prdOdrNo" : "상품주문번호",
+				"spCoCd" : "배송업체코드",
+				"drvrNo" : "송장번호",
+				"drvrDt" : "배송일",
+				"code" : "배송업체 ID",
+				"name" : "배송업체명",
+				"url" : "배송조회URL"
+			},
+			"button" : {
+				"sampleFile" : "샘플파일보기",
+				"regist" : "등록하기",
+				"spCoChk" : "배송업체확인",
+				"showDetail" : "상세내역보기",
+				"regProgress" : "등록진행",
+				"regCancel" : "등록취소"
+			},
+			"messeage" : {
+				"regProgressConfirm" : "송장번호가 이미 등록된 주문건이 있습니다. 이대로 등록을 진행하시겠습니까?",
+				"regComplit" : "송장 일괄등록이 완료되었습니다."
+			}
+		}
+	},
+	"settlement" : {
+		"table": {
+			"th":{
+				"no": "번호",
+				"period" : "기간",
+				"totalPrice" : "총금액",
+				"unit" : "공급가",
+				"price" : "판매가",
+				"card" : "신용카드",
+				"real" : "실시간",
+				"point" : "포인트",
+				"mileage" : "적릭금",
+				"fee":"운영사수수료금액",
+				"wthTax":"세금포함",
+				"wthoutTax":"세금제외",
+				"deposit":"공급사<br/>입금금액",
+				"orderNo":"주문번호",
+				"site":"사이트명",
+				"payment":"결제방식",
+				"paymfentDate":"결제일시",
+				"companyName":"가맹점명",
+				"stlmntPriod":"정산기간",
+				"state":"상태",
+				"stlmntDate":"정산처리일시",
+				"stlmntId":"정산처리자"
+			}
+		},
+		"form":{
+			"label":{
+				"companyName":"가맹점",
+				"period":"기간",
+				"monHstry":"월별정산내역",
+				"summary":"정산처리내용",
+				"search":{
+					"condition":"조회조건",
+					"date":"기간선택",
+					"state":"상태",
+					"all":"전체",
+					"success":"정산완료",
+					"cancel":"정산취소"
+				},
+				"searchDate":"기간선택"
+			}
+		}
+	},
+	"joincompanyCoust":{
+		"search":{
+			"keyword":"검색어",
+			"all":"전체",
+			"name":"이름",
+			"custTelephone" : "휴대폰",
+			"email" : "이메일",
+			"address" : "주소",
+			"createDate" : "등록일",
+			"orderAmt":"주문금액",
+			"agreementYn":"수신동의여부",
+			"smsAgreement":"SMS수신동의",
+			"emailAgreement":"이메일수신동의",
+			"orderCount":"주문개수",
+			"search" : "조회"
+		},
+		"head":{
+			"joincompanyCustSearch":"가맹점 고객",
+			"emailSend":"E-mail발송",
+			"smsSend":"SMS발송",
+			"newCoustomer":"신규고객등록"
+		},
+		"th":{
+			"no":"번호",
+			"custName":"성명",
+			"custTelephone":"휴대폰",
+			"email" : "이메일",
+			"address" : "주소",
+			"agreement" : "수신동의",
+			"smsAgreement" : "SMS" ,
+			"emailAgreement" : "E-mail",
+			"agreementY" : "수신동의",
+			"agreementN" : "수신거부",
+			"orderCount" : "주문개수",
+			"orderAmt" : "주문금액",
+			"createDate" : "등록일",
+			"productImg" : "상품이미지",
+			"productName" : "상품명",
+			"deliveryNo" : "송장번호",
+			"price" : "결제금액",
+			"orderDate" : "주문일자",
+			"orderSatus" : "주문상태"
+		}
+	},
+	"attentionAccountsite":{
+		"search":{
+			"keyword":"검색어",
+			"all":"전체",
+			"name":"이름",
+			"celphone" : "휴대폰",
+			"email" : "이메일",
+			"address" : "주소",
+			"createDate" : "등록일",
+			"totalorder":"주문금액",
+			"agreementYn":"수신동의여부",
+			"smsagreement":"SMS수신동의",
+			"emailagreement":"이메일수신동의",
+			"totalordercnt":"주문개수",
+			"search" : "조회"
+		},
+		"head":{
+			"attentionAccountsiteSearch":"관심회원",
+			"emailSend":"E-mail발송",
+			"smsSend":"SMS발송"
+		},
+		"th":{
+			"no":"번호",
+			"name":"성명",
+			"celphone":"휴대폰",
+			"email" : "이메일",
+			"agreement" : "수신동의",
+			"smsagreement" : "SMS" ,
+			"emailagreement" : "E-mail",
+			"agreementY" : "수신동의",
+			"agreementN" : "수신거부",
+			"totalordercnt" : "주문개수",
+			"totalorder" : "주문금액",
+			"createDate" : "등록일"
+		}
+	},
+	"gnb":{
+		"1":{
+			"1":"대시보드",
+			"2":"셀러관리",
+			"3":"상품관리",
+			"4":"판매관리",
+			"5":"정산관리",
+			"6":"게시판",
+			"7":"보안"
+		}
+	},
+	"dashboard": {
+	      "title": {
+	       	 "salesCurrentMonth": "당월 누적 매출",
+	         "salesStatusToday": "오늘의 판매현황",
+	         "todayService": "오늘의 서비스 현황",
+	         "talkn": "톡앤",
+	         "notice": "공지사항"
+	      },
+	      "button": {
+	         "salesDetail": "매출내역",
+	         "subStoreSales": "하위매장 매출",
+	         "viewAll": "전체보기",
+	         "ServiceDateManagement": "서비스날짜관리"
+	      },
+	      "label": {
+	         "case": "건"
+	      },
+	      "message": {
+	         "noReservationService": "예약된 서비스가 없습니다."
+	      }
+    },
+    "talkn": {
+      "label": {
+         "productName": "상품명",
+         "content": "내용",
+         "answerYn": "답변여부",
+         "regdate": "일시"
+      },
+      "message": {
+         "recentEmptyTalkn": "톡앤 목록이 없습니다."
+      }
+   },
+   "notice": {
+      "message": {
+         "recentEmptyNotice": "최근 등록된 공지사항이 없습니다."
+      }
+   },
+   "franchise": {
+      "title": {
+         "sellerInformation": "판매자정보",
+         "setBusinessDay": "영업일 설정",
+         "prManagement": "홍보관리"
+      },
+      "label": {
+         "defaultSetting": "기본설정",
+         "businessDay": "영업일",
+         "weekDay": "평일",
+         "weekend": "주말",
+         "monday": "월",
+         "tuesday": "화",
+         "wednesday": "수 ",
+         "thursday": "목",
+         "friday": "금",
+         "saturday": "토",
+         "sunday": "일",
+         "openTimeSetting": "영업시간설정",
+         "startTime": "시작시간",
+         "endTime": "종료시간 ",
+         "allTime": "24시간 운영",
+         "storeName": "매장명",
+         "image": "대표 이미지",
+         "productImage": "상품 이미지",
+         "video": "홍보영상",
+         "storeInformation": "매장설명",
+         "holidaySetting": "지정휴일설정"
+      },
+      "button": {
+         "add": "추가",
+         "save": "저장",
+         "fileSelect": "파일선택",
+         "delete": "삭제",
+         "select": "선택",
+         "directInput": "직접입력"  
+      },
+      "radio": {
+         "imageUpload": "이미지 업로드"
+      },
+      "select": {
+         "naverTv": "네이버 TV",
+         "youtube": "유튜브"
+      }
+   },
+    "memberStoreManagement": {
+      "label": {
+         "search": "검색어",
+         "phone": "연락처",
+         "case": "건",
+         "idx": "번호",
+         "regdate": "일시",
+         "operationStatus": "운영여부"
+      },
+      "tab": {
+         "topStore": "상위매장"
+      },
+      "button": {
+         "cancelSelect": "선택취소"
+      },
+      "select": {
+         "selectionProcessing": "선택처리"
+      },
+      "message": {
+         "NoSubStoreList": "하위 셀러 목록이 없습니다.",
+         "NoTopStoreList": "리셀러 목록이 없습니다."
+      }
+   },
+   "category": {
+      "title": {
+         "categoryManagement": "카테고리 관리",
+         "registerCategory": "카테고리 등록"
+      },
+      "label": {
+         "categoryName": "카테고리명"
+      },
+      "button": {
+         "saveOrder": "순서저장"
+      }
+   },
+   "serviceManage": {
+      "title": {
+         "management": "서비스 관리"
+      },
+      "label": {
+         "note": "날짜 클릭 시 영업/휴무 변경이 가능합니다. 휴무  영업",
+         "ServiceDateManagement": "서비스날짜 ",
+         "holiday": "휴무",
+         "open": "영업"
+      }
+   },
+   "useGuide": {
+      "title": {
+         "useGuide": "이용안내설정"
+      },
+      "label": {
+      	"note": "이용안내를 설정하면 상품에 자동으로 노출이 됩니다."
+      }
+   },
+   "serviceReservation": {
+      "title": {
+         "service": "서비스 예약전송",
+         "reservation": "하위 가맹점 서비스 예약전송"
+      },
+      "label": {
+         "selectMerchant": "가맹점 선택"
+      },
+      "button": {
+         "searchMember": "가맹점 검색"
+      }
+   },
+   
+   "giftcard": {
+      "title": {
+         "service": "상품권서비스신청"
+      },
+      "label": {
+      	"note": "이용안내를 설정하면 상품에 자동으로 노출이 됩니다."
+      },
+      "button": {
+		"NON_SELECT" : "신청대기",
+		"APPROVAL_REQUEST" : "승인신청",
+		"APPROVAL_COMPLETE" : "신청완료",
+		"APPROVAL_CANCEL" : "신청취소",
+		"APPROVAL_MANAEGEMENT" : "신청관리"
+	  },
+      "option" :{
+  		"status" : {
+      		"NON_SELECT" : "신청대기",
+      		"APPROVAL_REQUEST" : "승인신청",
+      		"APPROVAL_COMPLETE" : "승인완료"
+  		}
+      }
+   }
+}

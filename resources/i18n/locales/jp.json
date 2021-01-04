@@ -1,0 +1,901 @@
+{
+  "app" : {
+    "name" : "name"
+  },
+  "nav" : {
+    "site" : "site",
+    "envconfig" : "envconfig",
+    "package" : "package"
+  },
+  "body" : {
+    "welcome" : "welcome"
+  },
+  "topnav" : {
+    "messageinfo" : "messageinfo",
+    "search" : "search",
+    "logout" : "logout",
+    "welcometext" : "welcometext",
+    "language" : "language",
+	"companyPage" : "company page"
+  },
+  "demo" : {
+    "text1" : "text1",
+    "num" : "num"
+  },
+  "account" : {
+    "num" : "num",
+    "name" : "name",
+    "id" : "id",
+    "phone" : "phone",
+    "status" : "status"
+  },
+  "radio" : {
+    "use" : "use",
+    "unuse" : "unuse"
+  },
+  "test" : "test",
+  "item" : "item",
+  "value" : "value",
+  "envconfig" : {
+    "list" : {
+      "pageTitle" : "pageTitle",
+      "subTitle" : "subTitle",
+      "table" : {
+        "no" : "no",
+        "siteCode" : "siteCode",
+        "siteName" : "siteName",
+        "url" : "url",
+        "config" : "config",
+        "rows" : {
+          "base" : "base",
+          "mailTemplate" : "mailTemplate",
+          "smsTemplate" : "smsTemplate"
+        }
+      }
+    },
+    "base" : {
+      "pageTitle" : "pageTitle",
+      "path" : "path",
+      "siteTab" : {
+        "title" : "title",
+        "content1" : {
+          "title" : "title",
+          "field1" : "field1",
+          "field2" : "field2",
+          "field3" : "field3",
+          "field4" : "field4",
+          "description" : "description"
+        },
+        "content2" : {
+          "title" : "title",
+          "field1" : "field1",
+          "field2" : "field2",
+          "field3" : "field3",
+          "field4" : "field4",
+          "field5" : "field5",
+          "field6" : "field6",
+          "field7" : "field7",
+          "field8" : {
+            "title" : "title",
+            "placeholder1" : "placeholder1",
+            "placeholder2" : "placeholder2"
+          },
+          "field9" : "field9",
+          "description" : "description"
+        }
+      },
+      "memberTab" : {
+        "title" : "title",
+        "register" : {
+          "title" : "title",
+          "process" : "process",
+          "radio1" : "radio1",
+          "radio2" : "radio2",
+          "radio3" : "radio3",
+          "radio4" : "radio4",
+          "description" : "description"
+        },
+        "lossAccount" : {
+          "title" : "title",
+          "field1" : "field1",
+          "field2" : "field2",
+          "radio1" : "radio1",
+          "radio2" : "radio2",
+          "radio3" : "radio3",
+          "description1" : "description1",
+          "description2" : "description2"
+        },
+        "deleteUser" : {
+          "title" : "title",
+          "field1" : "field1",
+          "field2" : "field2",
+          "description1" : "description1",
+          "description2" : "description2"
+        },
+        "identification" : {
+          "title" : "title",
+          "field1" : "field1"
+        },
+        "phoneIdentification" : {
+          "title" : "title",
+          "field1" : "field1"
+        },
+        "ipinIdentification" : {
+          "title" : "title",
+          "field1" : "field1"
+        }
+      },
+      "pointTab" : {
+        "title" : "title",
+        "memberPoint" : {
+          "title" : "title",
+          "field1" : "field1",
+          "field2" : "field2"
+        },
+        "usePoint" : {
+          "title" : "title",
+          "field1" : "field1",
+          "field2" : "field2",
+          "description" : "description",
+          "checkbox" : "checkbox"
+        },
+        "policy" : {
+          "title" : "title",
+          "field1" : "field1",
+          "field2" : "field2",
+          "field3" : "field3",
+          "field4" : "field4",
+          "field5" : "field5",
+          "method" : {
+            "radio1" : "radio1",
+            "radio2" : "radio2"
+          },
+          "savingStandard" : {
+            "radio1" : "radio1",
+            "radio2" : "radio2"
+          },
+          "saving" : {
+            "radio1" : "radio1",
+            "radio2" : "radio2"
+          },
+          "member" : "member",
+          "useStandard" : "useStandard"
+        }
+      },
+      "deliveryTab" : {
+        "title" : "title",
+        "unit" : {
+          "title" : "title",
+          "field1" : "field1",
+          "radio1" : "radio1",
+          "radio2" : "radio2"
+        },
+        "standard" : {
+          "title" : "title",
+          "field1" : "field1",
+          "radio1" : "radio1",
+          "radio2" : "radio2"
+        },
+        "policy" : {
+          "title" : "title",
+          "field1" : "field1",
+          "description1" : "description1",
+          "field2" : "field2",
+          "description2" : "description2",
+          "description3" : "description3",
+          "field3" : "field3",
+          "table" : {
+            "description" : "description",
+            "column1" : "column1",
+            "column2" : "column2",
+            "column3" : "column3",
+            "column4" : "column4",
+            "currency" : "currency"
+          }
+        },
+        "company" : {
+          "title" : "title",
+          "field" : "field",
+          "description" : "description",
+          "modal" : {
+            "title" : "title",
+            "subTitle" : "subTitle",
+            "field1" : "field1"
+          }
+        }
+      },
+      "paymentTab" : {
+        "title" : "title",
+        "useSystem" : {
+          "title" : "title",
+          "field1" : "field1"
+        },
+        "kcpInfo" : {
+          "title" : "title",
+          "field1" : "field1",
+          "field2" : "field2",
+          "field3" : "field3",
+          "field4" : "field4",
+          "field5" : "field5",
+          "field6" : "field6",
+          "field7" : "field7",
+          "field8" : "field8",
+          "field9" : "field9",
+          "checkbox1" : "checkbox1",
+          "checkbox2" : "checkbox2",
+          "checkbox3" : "checkbox3",
+          "checkbox4" : "checkbox4"
+        },
+        "deposit" : {
+          "title" : "title",
+          "field1" : "field1"
+        },
+        "depositAccount" : {
+          "title" : "title",
+          "field1" : "field1",
+          "placeholder1" : "placeholder1",
+          "placeholder2" : "placeholder2",
+          "placeholder3" : "placeholder3",
+          "table" : {
+            "column1" : "column1",
+            "column2" : "column2",
+            "column3" : "column3"
+          }
+        }
+      },
+      "mailTab" : {
+        "title" : "title",
+        "representMail" : "representMail",
+        "outgoingMail" : "outgoingMail",
+        "mailServer" : "mailServer",
+        "senderName" : "senderName",
+        "senderMail" : "senderMail",
+        "useOrNot" : "useOrNot",
+        "smtpServer" : "smtpServer",
+        "port" : "port",
+        "useAuth" : "useAuth",
+        "ssl" : "ssl",
+        "authID" : "authID",
+        "authPassword" : "authPassword"
+      },
+      "smsTab" : {
+        "title" : "title",
+        "representNo" : "representNo",
+        "senderName" : "senderName",
+        "senderNo" : "senderNo",
+        "setting" : "setting",
+        "inputKey" : "inputKey",
+        "lguplusAdmin" : "lguplusAdmin"
+      }
+    },
+    "mail" : {
+      "title" : "title",
+      "path" : "path",
+      "default" : "default",
+      "enroll" : "enroll",
+      "orderResult" : "orderResult",
+      "coupon" : "coupon",
+      "authentication" : "authentication",
+      "password" : "password",
+      "editor" : {
+        "subject" : "subject",
+        "content" : "content"
+      }
+    },
+    "sms" : {
+      "title" : "title",
+      "path" : "path",
+      "order" : "order",
+      "member" : "member",
+      "advertisement" : "advertisement"
+    }
+  },
+  "common" : {
+    "language" : {
+      "ko" : "ko",
+      "en" : "en",
+      "cn" : "cn",
+      "jp" : "jp"
+    },
+    "button" : {
+      "text" : {
+        "search" : "search",
+        "insert" : "insert",
+        "update" : "update",
+        "delete" : "delete",
+        "clear" : "clear",
+        "add" : "add",
+        "cancel" : "cancel",
+        "list" : "list",
+        "browse" : "browse",
+        "defaultSetting" : "defaultSetting",
+        "emailTemplate" : "emailTemplate",
+        "smsTemplate" : "smsTemplate",
+        "selectedDelete" : "selectedDelete",
+        "selectCancel" : "selectCancel",
+        "postcode" : "postcode",
+        "ok" : "ok",
+        "preview" : "preview",
+        "unapproved" : "unapproved",
+        "approved" : "approved",
+		"login":"login"
+      },
+      "withicon" : {
+        "selectedInsert" : "selectedInsert",
+        "selectedInsert_title" : "selectedInsert_title",
+        "siteInsert" : "siteInsert",
+        "siteInsert_title" : "siteInsert_title",
+        "insert" : "insert",
+        "insert_title" : "insert_title",
+        "update" : "update",
+        "update_title" : "update_title",
+        "close" : "close"
+      },
+      "condition" : {
+        "selectPageSize" : {
+          "10" : "10건씩 조회",
+          "20" : "20건씩 조회",
+          "30" : "30건씩 조회",
+          "50" : "50건씩 조회",
+          "100" : "100건씩 조회"
+        }
+      }
+    },
+    "head" : {
+      "no" : "no"
+    },
+    "icon" : {
+      "plus" : "plus",
+      "download" : "download",
+      "arrow-right" : "arrow-right"
+    },
+    "totalCount" : "totalCount",
+    "message" : {
+      "insertConfirm" : {
+        "title" : "title",
+        "text" : "text",
+        "ok" : "ok",
+        "cancel" : "cancel"
+      },
+      "updateConfirm" : {
+        "title" : "title",
+        "text" : "text",
+        "ok" : "ok",
+        "cancel" : "cancel"
+      },
+      "deleteConfirm" : {
+        "title" : "title",
+        "text" : "text",
+        "ok" : "ok",
+        "cancel" : "cancel"
+      },
+      "addConfirm" : {
+        "title" : "title",
+        "text" : "text",
+        "ok" : "ok",
+        "cancel" : "cancel"
+      },
+      "registerConfirm" : {
+        "title" : "title",
+        "text" : "text",
+        "ok" : "ok",
+        "cancel" : "cancel"
+      },
+      "moveConfirm" : {
+        "title" : "title",
+        "text" : "text",
+        "ok" : "ok",
+        "cancel" : "cancel"
+      },
+      "confirmFinish" : "confirmFinish",
+      "insertFinish" : "insertFinish",
+      "updateFinish" : "updateFinish",
+      "deleteFinish" : "deleteFinish",
+      "insertError" : "insertError",
+      "updateError" : "updateError",
+      "deleteError" : "deleteError",
+      "canel" : "canel",
+      "login" : "login"
+    }
+  },
+  "site" : {
+    "title" : {
+      "list" : "list",
+      "insertForm" : "insertForm",
+      "updateForm" : "updateForm"
+    },
+    "head" : {
+      "no" : "no",
+      "code" : "code",
+      "siteName" : "siteName",
+      "siteURL" : "siteURL",
+      "manager" : "manager"
+    },
+    "form" : {
+      "label" : {
+        "siteCode" : "siteCode",
+        "siteName" : "siteName",
+        "siteURL" : "siteURL",
+        "siteLanguage" : "siteLanguage"
+      }
+    },
+    "message" : {
+      "useCode" : "useCode",
+      "notUseCode" : "notUseCode"
+    },
+    "button" : {
+      "siteInsert" : "siteInsert"
+    }
+  }
+  , "member" : {
+		"search" : {
+			"searchTerms" : "searchTerms",
+			"termChoice" : "termChoice",
+			"mobileUuid" : "mobileUuid",
+			"all" : "all",
+			"install" : "install",
+			"uninstall" : "uninstall",
+			"status" : "status",
+			"searchWord" : "searchWord",
+			"search" : "search",
+			"date1" : "date1",
+			"date2" : "date2",
+			"date3" : "date3",
+			"date4" : "date4",
+			"enterMeber" : "enterMeber",
+			"unsubscribeMeber" : "unsubscribeMeber",
+			"id" : "id",
+			"name" : "name",
+			"phone" : "phone",
+			"telephone" : "telephone",
+			"email" : "email",
+			"term" : "term"
+		},
+		"head" : {
+			"no" : "no",
+			"site" : "site",
+			"id" : "id",
+			"name" : "name",
+			"phone" : "phone",
+			"totalPoint" : "totalPoint",
+			"mobileUuid" : "mobileUuid",
+			"loginTime" : "loginTime",
+			"writeDate" : "writeDate",
+			"unsubscribeDate" : "unsubscribeDate",
+			"management" : "management"
+		},
+		"form" : {
+			"label" : {
+				"siteCode" : "siteCode",
+				"siteName" : "siteName",
+				"siteURL" : "siteURL",
+				"siteLanguage" : "siteLanguage"
+			}
+		},
+		"message" : {
+			"emptyMember" : "emptyMember",
+			"notUseCode" : "notUseCode" 
+		},
+		"button" : {
+			"search" : "search",
+			"init" : "init",
+			"choiceCancle" : "choiceCancle",
+			"choiceDel" : "choiceDel",
+			"memberInsert" : "memberInsert"
+		}
+	},
+	"product": {
+		"title": {
+			"info" : "product info"
+		},
+		"search": {
+			"display": "display"
+		},
+		"head": {
+			"classification" : "classification"
+		},
+		"searchType" : {
+			"singleProduct" : "singleProduct"
+		},
+		"form": {
+			"code" : "product code",
+			"representativeYn" : "Whether representative or not",
+			"representative" : "representative"
+		}
+	},
+	"login" : {
+		"contents" : {
+			"auton" : "auto&",
+			"ownerCenter": "オーナーセンター",
+			"administrator" : "Administrator",
+			"autonAdministrator" : "auto& Administrator",
+			"content1" : "Welcome to visit.",
+			"content2" : "Please sign in to access the Business Platform.",
+			"email": "Enter your valid e-mail.",
+			"resetPassword": "Reset password",
+			"saveId": "ID保存",
+			"doLogin": "로그인 하기",
+			"doresetPassword": "パスワードを探す",
+			"login" : "ログイン"
+		},
+		"message" : {
+			"messageID" : "Please enter your ID.",
+			"messagePWD" : "Please enter your password.",
+			"loginFailed" : "The information you entered is different. Please check and re-enter.",
+			"loginID" : "Id",
+			"loginPWD" : "パスワード"
+		}
+	},
+	"joincompanyCoust":{
+		"search":{
+			"keyword":"寃��깋�뼱",
+			"createDate" : "�벑濡앹씪",
+			"orderAmt":"二쇰Ц湲덉븸",
+			"agreementYn":"�닔�떊�룞�쓽�뿬遺�",
+			"smsAgreement":"SMS�닔�떊�룞�쓽",
+			"emailAgreement":"�씠硫붿씪�닔�떊�룞�쓽",
+			"orderCount":"二쇰Ц媛쒖닔",
+			"search" : "議고쉶"
+		},
+		"head":{
+			"emailSend":"E-mail諛쒖넚",
+			"smsSend":"SMS諛쒖넚",
+			"newCoustomer":"�떊洹쒓퀬媛앸벑濡�"
+		},
+		"th":{
+			"no":"踰덊샇",
+			"custName":"�꽦紐�",
+			"custTelephone":"�쑕���룿",
+			"email" : "�씠硫붿씪",
+			"address" : "二쇱냼",
+			"agreement" : "�닔�떊�룞�쓽",
+			"smsAgreement" : "SMS" ,
+			"emailAgreement" : "E-mail",
+			"agreementY" : "�닔�떊�룞�쓽",
+			"agreementN" : "�닔�떊嫄곕�",
+			"orderCount" : "二쇰Ц媛쒖닔",
+			"orderAmt" : "二쇰Ц湲덉븸",
+			"createDate" : "�벑濡앹씪"
+		}
+	},
+	"gnb":{
+		"1":{
+			"1":"ダッシュボード",
+			"2":"Member store management",
+			"3":"Commodity management",
+			"4":"판매관리",
+			"5":"정산관리",
+			"6":"게시판"
+		}
+	},
+	"dashboard": {
+	      "title": {
+	         "salesCurrentMonth": "今月の累計売上高",
+	         "salesStatusToday": "今日の販売状況",
+	         "todayService": "Today's Service Operations",
+	         "talkn": "Talk &",
+	         "notice": "Notice"
+	      },
+	      "button": {
+	         "salesDetail": "売上内訳",
+	         "subStoreSales": "下位の売場売り上げ",
+	         "viewAll": "View all",
+	         "ServiceDateManagement": "Service date management"
+	      },
+	      "label": {
+	         "case": "件"
+	      },
+	      "message": {
+	         "noReservationService": "There are no scheduled services"
+	      }
+   },
+   "order": {
+      "option": {
+         "status": {
+         	"orderStatus" : "진행상태",
+				"DEPOSIT_READY" : "預金待ち",
+				"PAYMENT_SUCESS" : "支払い完了",
+				"DELIVERY_PREPARE" : "発送準備",
+				"DELIVERY" : "配送中",
+				"DELIVERY_COMPLETE" : "配送完了",
+				"RESERVATION_READY" : "予約待ち",
+				"RESERVATION_SUCESS" : "予約完了",
+				"RESERVATION_SUCCESS" : "予約完了",
+				"SERVICE_READY" : "サービス待ち",
+				"ON_SERVICE" : "サービス中",
+				"SERVICE_COMPLETE" : "サービス完了",
+				"COMPLETE_SERVICE" : "サービスの確認",
+				"COMPLETE" : "購入確認",
+				"CANCEL_REQUEST" : "取消申請",
+				"CANCEL_REQUEST_PART" : "부분취소신청",
+				"CANCEL_APPROVE_PART" : "취소승인",
+				"CANCEL" : "キャンセル完了",
+				"CANCEL_PART" : "부분취소완료",
+				"TAKEBACK_REQUEST" : "返品申し込み",
+				"TAKEBACK_REQUEST_PART" : "부분반품신청",
+				"TAKEBACK_APPROVE_PART" : "返品承認",
+				"TAKEBACK" : "返品完了",
+				"TAKEBACK_PART" : "부분반품완료",
+				"MONEYBACK_REQUEST" : "환불신청",
+				"MONEYBACK_REQUEST_PART" : "부분환불신청",
+				"MONEYBACK" : "환불완료",
+				"MONEYBACK_PART" : "부분환불",
+				"REFUND" : "환불",
+				"ACCEPT_ERROR" : "주문오류",
+	            "deliveryOccur": "配送料の生成",
+	            "cancelReturn": "キャンセル / 返品",
+	            "total": "合計",
+	            "deliveryProduct": "配送製品",
+	            "serviceProduct": "サービス製品"
+         }
+      },
+      "paymentType" : {
+			"DEPOSIT" : "무통장입금",
+			"CARD" : "신용카드",
+			"ACCOUNT_TRANSFER" : "계좌이체",
+			"REALTIME_ACCOUNT_TRANSFER" : "실시간계좌이체",
+			"VACCOUNT" : "가상계좌",
+			"SAVEMONEY" : "적립금",
+			"REDPOINT" : "레드포인트",
+			"BLUEPOINT" : "블루포인트",
+			"ALLIANCE" : "제휴포인트",
+			"CARD_ALLIANCE" : "복합결제<br>(신용카드+제휴포인트)",
+			"CARD_SAVEMONEY" : "복합결제<br>(신용카드+적립금)",
+			"CARD_REDPOINT" : "복합결제<br>(신용카드+레드포인트)",
+			"CARD_BLUEPOINT" : "복합결제<br>(신용카드+블루포인트)",
+			"ACCOUNT_TRANSFER_SAVEMONEY" : "복합결제<br>(계좌이체+적립금)",
+			"ACCOUNT_TRANSFER_REDPOINT" : "복합결제<br>(계좌이체+레드포인트)",
+			"CARD_SAVEMONEY_REDPOINT" : "복합결제<br>(신용카드+적립금+레드포인트)",
+			"CARD_SAVEMONEY_BLUEPOINT" : "복합결제<br>(신용카드+적립금+블루포인트)"
+		},
+      "label": {
+         "productName": "Product name",
+         "productCode": "Product code",
+         "productClassification": "Product classification",
+         "displayStatus": "Display status",
+         "supplier": "Supplier",
+         "productDetail": "Product details description",
+         "productInformationYn": "Product identification report",
+         "noChoice": "No choice",
+         "explanationForDisabled": "Explanation for the Disabled",
+         "freeTextOption": "Autonomous Text Entry Options",
+         "sellingPrice": "selling price",
+         "consumerPrice": "Consumer price",
+         "serviceDemandTime": "Service demand time",
+         "category": "Category",
+         "hashtag": "hashtag",
+         "methodOfReceiving": "method of receiving",
+         "choosePeriod": "Choose Period",
+         "orderChannel": "Order channel",
+         "orderNumber": "Order number",
+         "orderName": "Order name",
+         "orderId": "Order Id",
+         "orderPhone": "Order phone",
+         "quantity": "Quantity",
+         "payment": "Payment amount",
+         "paymentStatus": "Payment status",
+         "paymentDate": "Payment date",
+         "recipientName": "Recipient name",
+         "recipientContact": "Recipient contact",
+         "shippingAddress": "Shipping address",
+         "orderDetailStatus": "Order detail status",
+         "useCoupon": "Use coupon",
+         "dateOfShipment": "Date of shipment",
+         "deliveryCostType": "Delivery cost type",
+         "cancelInformation": "Cancle information",
+         "returnInformation": "Return information",
+         "productPrice": "Product price",
+         "orderStatus": "Order status",
+         "paymentMethod": "Payment method",
+         "totalRefund": "Total refund amount",
+         "totalPayment": "Total Payment amount",
+         "happyCall": "Happy call",
+         "memo": "memo ",
+         "historyCheck": "History check"
+      },
+      "radio": {
+         "display": "Display",
+         "hidden": "Hidden",
+         "use": "use",
+         "Unused": "Unused",
+         "deliveryService": "delivery service",
+         "directReceipt": "Direct receipt",
+         "quickService": "Quick service",
+         "storeDelivery": "Store delivery"
+      },
+      "button": {
+         "registProduct": "Single item registration",
+         "copyProduct": "Copy product",
+         "selectProductView": "Selective product sequence",
+         "selectProductHide": "Hide Selected Products",
+         "previous": "Previous",
+         "next": "Next",
+         "trackingNumber": "Tracking number/progress photo registration",
+         "detailedInformation": "Detailed information check"
+      },
+      "title": {
+         "productInformation": "Product Information",
+         "salesInformation": "Sales information",
+         "additionalInformation": "Additional information",
+         "orderManagement": "Order management"
+      },
+      "message": {
+         "inputRequire": "Complete all the required input examples.",
+         "notPublished": "As a required input, the product may be suspended without notice if the product is not published.",
+         "useInformation": "Use when you have information that you need to be self-entered, such as brand, fuel, model year, etc."
+      },
+      "select": {
+         "toDay": "Today's  ",
+         "sevenDays": "the last seven days",
+         "lastMonth": "the last month",
+         "lastThreeMonth": "the last three months"
+      }
+   },
+   "talkn": {
+      "label": {
+         "productName": "Product name",
+         "content": "Contents",
+         "answerYn": "Answer status",
+         "regdate": "date"
+      },
+      "message": {
+         "recentEmptyTalkn": "톡앤 목록이 없습니다."
+      }
+   },
+    "notice": {
+      "message": {
+         "recentEmptyNotice": "There are no recent registered notices."
+      }
+   },
+   "franchise": {
+      "title": {
+         "sellerInformation": "Seller information",
+         "setBusinessDay": "Business Day Settings",
+         "prManagement": "Public relations management"
+      },
+      "label": {
+         "defaultSetting": "Default settings",
+         "businessDay": "Business day  ",
+         "weekDay": "Weekday",
+         "weekend": "Weekend",
+         "monday": "mon",
+         "tuesday": "tue",
+         "wednesday": "wed",
+         "thursday": "thu",
+         "friday": "fri",
+         "saturday": "sat",
+         "sunday": "sun",
+         "openTimeSetting": "Business time setting",
+         "startTime": "Business start time",
+         "endTime": "Business end time",
+         "allTime": "24-hour operation",
+         "storeName": "Store name",
+         "image": "Image",
+         "productImage": "Product image",
+         "video": "Promotional video",
+         "storeInformation": "Store Description",
+         "holidaySetting": "Specified holiday settings"
+      },
+      "button": {
+         "add": "Additional",
+         "save": "Save",
+         "fileSelect": "choose file",
+         "delete": "delete",
+         "select": "Choice",
+         "directInput": "Direct input"
+      },
+      "radio": {
+         "imageUpload": "Image upload"
+      },
+      "select": {
+         "naverTv": "Naver TV",
+         "youtube": "YouTube"
+      }
+   },
+   "company": {
+      "label": {
+         "passwordConfirm": "Password verification",
+         "storeName": "Store name",
+         "representName": "Representative name",
+         "storeKinds": "Store classification",
+         "companyNumber": "Business license number",
+         "businessConditionsType": "business conditions / Industry",
+         "mailOrderYn": "Internet sales report status",
+         "mailOrderNumber": "Internet sales report number",
+         "address": "Address",
+         "zipCode": "Zip code",
+         "representTelephone": "Representative phone number",
+         "returnTelephone": "Return processing call center",
+         "faxNumber": "Fax number",
+         "email": "e-mail",
+         "sellerGroup": "Seller Group Information",
+         "managerName" : "Contact name",
+         "managerContact": "Contact Phone Number",
+         "managerEmail": "Contact e-mail",
+         "defaultDelivery": "Basic Shipping Costs",
+         "downCompany": "Sub-store",
+         "managerInformation": "Contact Information"
+      },
+      "message": {
+         "tempPasswordEmail": "※  If you forget your password, your temporary password will be sent to the email you entered.",
+         "taxBillPublish": "※ Tax invoice issue information will be sent to the person in charge you entered."
+      },
+      "title": {
+         "group": "Group name"
+      },
+      "button": {
+         "update": "update"
+      }
+   },
+   "memberStoreManagement": {
+      "label": {
+         "search": "Search",
+         "phone": "Phone number",
+         "case": "case",
+         "idx": "Noice",
+         "regdate": "date",
+         "operationStatus": "Operation status"
+      },
+      "tab": {
+         "topStore": "Top store"
+      },
+      "button": {
+         "cancelSelect": "Cancel selection"
+      },
+      "select": {
+         "selectionProcessing": "Selection processing"
+      },
+      "message": {
+         "NoSubStoreList": "No sub-store list.",
+         "NoTopStoreList": "No Top store list."
+      }
+   },
+   "category": {
+      "title": {
+         "categoryManagement": "Category management",
+         "registerCategory": "Register Category"
+      },
+      "label": {
+         "categoryName": "Category name"
+      },
+      "button": {
+         "saveOrder": "Save Order"
+      }
+   },
+	"serviceManage": {
+	  "title": {
+	     "management": "Management service date"
+	  },
+	  "label": {
+	     "note": "You can change your sales/holiday by clicking on the date. closed business",
+	     "ServiceDateManagement": "Service date",
+	     "holiday": "Holiday",
+	     "open": "Open"
+	  }
+   },
+    "useGuide": {
+      "title": {
+         "useGuide": "Use guidance setup"
+      },
+      "label": {
+      	"note": "If you set the service information, it will be automatically exposed to the product."
+      }
+   },
+    "sales": {
+      "title": {
+         "salesManagement": "Sales management"
+      }
+   },
+    "serviceReservation": {
+      "title": {
+         "service": "Service Scheduled Transmission",
+         "reservation": "Sub-particle Service Reservation Transmission"
+      },
+      "label": {
+         "selectMerchant": "Select a merchant"
+      },
+      "button": {
+         "searchMember": "Search member store"
+      }
+   }
+}

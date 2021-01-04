@@ -1,0 +1,870 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> 상품관리 | 단품 등록 </title>
+
+<!-- style -->
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="../css/base.css" />
+<link rel="stylesheet" type="text/css" href="../css/lc_switch.css" />
+<link rel="stylesheet" type="text/css" href="../css/lightslider.css" />
+<link rel="stylesheet" type="text/css" href="../css/flatpickr.min.css" />
+<link rel="stylesheet" type="text/css" href="../css/select2.min.css" />
+<link rel="stylesheet" type="text/css" href="../css/page.css?20190108" />
+<!-- javascript -->
+<script type="text/javascript" src="../js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/lc_switch.js"></script>
+<script type="text/javascript" src="../js/lightslider.js"></script>
+<script type="text/javascript" src="../js/flatpickr.js"></script>
+<script type="text/javascript" src="../js/select2.full.min.js"></script>
+<script type="text/javascript" src="../js/page.js?21081208"></script>
+
+</head>
+<body>
+	<div id="wrap">
+		<div class="wrapper">
+			<!-- 상단로고 시작 -->
+			<div class="top_nav">
+				<div class="top_nav_wrap">
+					<h1>
+						<a href="dashboard.html">
+							<img src="../images/common/dashboard_logo.png" alt="auton logo" />
+						</a>
+						<span>가맹점명</span>
+					</h1>
+					<ul class="top_right">
+						<li class="alarm"><span class="alarm_new"></span><a href="javascript:;"><img src="../images/icon/icon_alarm.png" alt="" /></a></li>
+						<li><a href="login.html"><img src="../images/icon/icon_logout.png" alt="" /></a></li>
+						<li class="store_page"><a href="javascript:;"><img src="../images/icon/icon_go_store.png" alt="" /></a></li>
+						<li>
+							<div class="dropdown">
+								<a href="javascript:;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="select_language">한글</a>
+								<ul class="dropdown-menu language_menu" role="menu" aria-labelledby="dLabel">
+									<li><a href="javascript:;" id="kr">한글</a></li>
+									<li><a href="javascript:;" id="en">ENGLISH</a></li>
+									<li><a href="javascript:;" id="cn">中文(简体)</a></li>
+									<li><a href="javascript:;" id="jp">日本語</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+					<div class="alarm_list">
+						<h4>2018-09-01</h4>
+						<ul>
+							<li><a href="javascript:;" title="메시지내용 말풍선 노출">메시지내용 노출메시지내용 노출</a></li>
+							<li><a href="javascript:;" title="메시지내용 말풍선 노출">메시지내용 노출</a></li>
+							<li><a href="javascript:;" title="메시지내용 말풍선 노출">메시지내용 노출</a></li>
+							<li><a href="javascript:;" title="메시지내용 말풍선 노출">메시지내용 노출</a></li>
+							<li><a href="javascript:;" title="메시지내용 말풍선 노출">메시지내용 노출</a></li>
+						</ul>
+						<h4>2018-09-01</h4>
+						<ul>
+							<li><a href="javascript:;" title="메시지내용 말풍선 노출">메시지내용 노출메시지내용 노출메시지내용 노출메시지내용 노출메시지내용 노출메시지내용 노출</a></li>
+							<li><a href="javascript:;" title="메시지내용 말풍선 노출">메시지내용 노출</a></li>
+							<li><a href="javascript:;" title="메시지내용 말풍선 노출">메시지내용 노출</a></li>
+							<li><a href="javascript:;" title="메시지내용 말풍선 노출">메시지내용 노출</a></li>
+							<li><a href="javascript:;" title="메시지내용 말풍선 노출">메시지내용 노출</a></li>
+						</ul>
+					</div>
+					<a href="javascript:goNav()" class="m_hambuger"><img src="../images/icon/icon_hambuger.png" alt="" /></a>
+				</div>
+			</div>
+			<!-- 상단로고 끝 -->
+			<!-- 메뉴 시작 -->
+			<nav id="gnbMenu">
+				<div class="main_menu">
+					<ul>
+						<li class="menu"><a href="dashboard.html">대시보드</a></li>
+						<li class="menu slide_sub"><a href="javascript:;">가맹점관리</a></li>
+						<li class="menu slide_sub"><a href="javascript:;">상품관리</a></li>
+						<li class="menu slide_sub"><a href="javascript:;">판매관리</a></li>
+						<li class="menu slide_sub"><a href="javascript:;">정산관리</a></li>
+						<li class="menu slide_sub"><a href="javascript:;">게시판</a></li>
+					</ul>
+				</div>
+				<div class="sub_menu_group">
+					<div class="sub_menu_box">
+						<ul class="sub_menu sub_menu_0"><li>&nbsp;</li></ul>
+						<ul class="sub_menu sub_menu_1">
+							<li><a href="my_information.html">판매자정보</a></li>
+							<li><a href="information_change.html">정보변경신청</a></li>
+							<li><a href="settingday.html">영업일 설정</a></li>
+							<li><a href="publicity.html">홍보관리</a></li>
+							<li><a href="department.html">가맹관리</a></li>
+						</ul>
+						<ul class="sub_menu sub_menu_2">
+							<li><a href="product_list.html">상품관리</a></li>
+							<li><a href="category.html">카테고리 관리</a></li>
+							<li><a href="service_day.html">서비스날짜 관리</a></li>
+							<li><a href="information_sttings.html">이용안내설정</a></li>
+						</ul>
+						<ul class="sub_menu sub_menu_3">
+							<li><a href="order_status.html">주문관리</a></li>
+							<li><a href="send_service.html">서비스 예약전송</a></li>
+							<li><a href="shipment.html">발주/발송관리</a></li>
+							<li><a href="cancel.html">취소관리</a></li>
+							<li><a href="return.html">반품관리</a></li>
+						</ul>
+						<ul class="sub_menu sub_menu_4">
+							<li><a href="my_sales.html">매출내역</a></li>
+							<li><a href="company_sales.html">하위매장 매출내역</a></li>
+						</ul>
+						<ul class="sub_menu sub_menu_5">
+							<li><a href="notice.html">공지사항</a></li>
+							<li><a href="review.html">후기관리</a></li>
+							<li><a href="talkn.html">1:1 문의(톡앤)</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<!-- 메뉴 끝 -->
+			<!-- 시작 -->
+			<div class="content_wrap">
+				<div class="content_box">
+					<div class="site_map">
+						<ul>
+							<li>HOME</li>
+							<li class="bar">&gt;</li>
+							<li>상품관리</li>
+							<li class="bar">&gt;</li>
+							<li>단품등록</li>
+						</ul>
+					</div>
+					<h2 class="page_title">단품등록</h2>
+					<!-- 본문 시작 -->
+					<div class="search_wrap">
+						<form action="">
+							<div class="single_registration">
+								<div>
+									<ul class="step_link">
+										<li><a href="#step1" class="active"><span>1</span>상품정보</a></li>
+										<li><a href="#step2"><span>2</span>판매정보</a></li>
+										<li><a href="#step3"><span>3</span>부가정보</a></li>
+									</ul>
+									<div class="step_panels">
+										<!-- 상품정보 -->
+										<div class="panel_content" id="step1">
+											<div class="step_content">
+												<h4>상품정보</h4>
+												<div class="form-horizontal">
+													<div class="form-group">
+														<label for="personEmail" class="col-sm-3 control-label">대표 이미지</label>
+														<div class="col-sm-8">
+															<div class="filebox new_attached_file"> 
+																<input class="upload_name" value="파일명.jpg [000kbyte]" disabled="disabled">
+																<input type="file" id="ex_filename" class="upload-hidden">
+																<label for="ex_filename">찾아보기</label>
+															</div>
+														</div>
+													</div>
+													
+													<div class="form-group">
+														<label for="" class="col-sm-3 control-label"><span class="required">*</span> 상품구분</label>
+														<div class="col-sm-8">
+															<label for="product" class="label_padding"><input type="radio" name="producttype" value="product" id="product" checked=""><span></span>상품</label>
+															<label for="service" class="label_padding"><input type="radio" name="producttype" value="service" id="service"><span></span>서비스</label>
+														</div>
+													</div>
+													<div class="form-group select_service">
+														<label for="" class="col-sm-3 control-label"><span class="required">*</span> 서비스명</label>
+														<div class="col-sm-8">
+															<select name="select_servicename" id="" class="form-control select2_demo_3">
+																<option></option>
+																<option value="서비스명">서비스명</option>
+																<option value="서비스명">서비스명</option>
+																<option value="서비스명">서비스명</option>
+															</select>
+														</div>
+													</div>
+													<div class="form-group select_product">
+														<label for="" class="col-sm-3 control-label"><span class="required">*</span> 상품명</label>
+														<div class="col-sm-8">
+															<input type="text" class="form-control" id="" placeholder="">
+														</div>
+													</div>
+													<div class="form-group">
+														<label for="" class="col-sm-3 control-label">공급사</label>
+														<div class="col-sm-8">로그인 된 사업자명</div>
+													</div>
+													<div class="form-group">
+														<label for="" class="col-sm-3 control-label">상품 상세설명</label>
+														<div class="col-sm-8">
+															웹에디터 삽입
+														</div>
+													</div>
+													<div class="form-group">
+														<label for="" class="col-sm-3 control-label">상품정보고시</label>
+														<div class="col-sm-8">
+															<select name="productInfo" id="productInfo" class="form-control">
+																<option value="productInfo_0" selected>선택안함</option>
+																<option value="productInfo_1">자동차용품</option>
+																<option value="productInfo_2">내비게이션</option>
+																<option value="productInfo_3">상품권 쿠폰</option>
+																<option value="productInfo_4">모바일 쿠폰</option>
+																<option value="productInfo_5">기타용역</option>
+																<option value="productInfo_6">패션잡화</option>
+																<option value="productInfo_7">기타</option>
+															</select>
+															<ul class="textyn_required">
+																<li class="required">필수입력 예시의 항목을 모두 작성해 주세요.</li>
+																<li class="required">전안법 필수 입력사항으로 상품고시 미 작성 시 예고없이 상품이 판매중지 될 수 있습니다.</li>
+															</ul>
+															<div class="product_panel_group">
+																<!-- 자동차용품 -->
+																<div id="productInfo_1" class="product_panel">
+																	<div class="form-horizontal">
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> 품명</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> 모델명</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> 동일 모델의 출시년월</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> KC 인증 필 유/무</label>
+																			<div class="col-sm-8">
+																				<label for="kcY" class="label_padding"><input type="radio" name="kcyn" value="kcY" id="kcY" checked=""><span></span>유</label>
+																				<label for="kcN" class="label_padding"><input type="radio" name="kcyn" value="kcN" id="kcN"><span></span>무</label>
+																				<div class="form-group kc_number">
+																					<label for="" class="col-sm-3 control-label">인증번호</label>
+																					<div class="col-sm-8">
+																						<input type="text" class="form-control" id="" placeholder="">
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> 제조사</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> 제조국</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> 크기</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> 적용차종</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> 제품사용으로 인한 위험 및 유의사항</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> 품질보증기준</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> AS 책임자</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<!-- 내비게이션 -->
+																<div id="productInfo_2" class="product_panel">
+																	<div class="form-horizontal">
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> 품명</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> 모델명</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> KC 인증 필 유/무</label>
+																			<div class="col-sm-8">
+																				<label for="kcY2" class="label_padding"><input type="radio" name="kcyn2" value="kcY2" id="kcY2" checked=""><span></span>유</label>
+																				<label for="kcN2" class="label_padding"><input type="radio" name="kcyn2" value="kcN2" id="kcN2"><span></span>무</label>
+																				<div class="form-group kc_number">
+																					<label for="" class="col-sm-3 control-label">인증번호</label>
+																					<div class="col-sm-8">
+																						<input type="text" class="form-control" id="" placeholder="">
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> 정격전압</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> 소비전력</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> 동일 모델의 출시 년월</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> 제조사</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> 제조국</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> 크기</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> 무게</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> 주요 사양</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> 맵 업데이트 비용</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> 무상기간</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> 품질보증기준</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> AS 책임자</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<!-- 상품권 쿠폰 -->
+																<div id="productInfo_3" class="product_panel">
+																	<div class="form-horizontal">
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> 발행자</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> 유효기간</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> 이용조건</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> 이용가능매장</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> 잔액환급조건</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> 소비자상담 관련 전화번호</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<!-- 모바일 쿠폰 -->
+																<div id="productInfo_4" class="product_panel">
+																	<div class="form-horizontal">
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> 발행자</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> 유효기간, 이용조건</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> 이용가능매장</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> 환불 조건 및 방법</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> 소비자 관련 전화번호</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<!-- 기타용역 -->
+																<div id="productInfo_5" class="product_panel">
+																	<div class="form-horizontal">
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> 서비스 제공 사업자</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																	</div>
+																	<div class="form-horizontal">
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> 법에 의한 인증.허가 등을 받았음을 확인할 수 있는 경우 그에 대한 사항</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																	</div>
+																	<div class="form-horizontal">
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> 이용조건</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																	</div>
+																	<div class="form-horizontal">
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> 취소.중도해약.해지 조건 및 환불기준</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																	</div>
+																	<div class="form-horizontal">
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> 취소. 환불방법</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																	</div>
+																	<div class="form-horizontal">
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> 소비자상담 관련 전화번호</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<!-- 패션잡화 -->
+																<div id="productInfo_6" class="product_panel">
+																	<div class="form-horizontal">
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> 종류</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> 소재</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> 치수</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> 제조사</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> 제조국</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> 취급시 주의사항</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> 품질보증기준</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> AS 책임자</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<!-- 가구 -->
+																<div id="productInfo_7" class="product_panel">
+																	<div class="form-horizontal">
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> 품명</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> KC 인증 필 유무</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> 색상</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> 구성품</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> 주요소재</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> 제조사</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> 수입사</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> 제조국</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> 크기</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> 배송 설치 비용</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> 품질보증기준</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> AS 책임자</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+																<!-- 기타 -->
+																<div id="productInfo_8" class="product_panel">
+																	<div class="form-horizontal">
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> 품명</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> 모델명</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> 법에의한 인증.허가 등을 받았음을 확인할 수 있는 경우 그에 대한 사항</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> 제조사</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																		<div class="form-group">
+																			<label for="" class="col-sm-3 control-label"><span class="required">*</span> AS 책임자 또는 소비자 상담 관련 전화번호</label>
+																			<div class="col-sm-8">
+																				<input type="text" class="form-control" id="" placeholder="">
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<label for="" class="col-sm-3 control-label">장애인을 위한 설명</label>
+														<div class="col-sm-8">
+															웹에디터 삽입
+														</div>
+													</div>
+													<div class="form-group">
+														<label for="" class="col-sm-3 control-label">자율 텍스트 입력 옵션</label>
+														<div class="col-sm-8">
+															<label for="textY" class="label_padding"><input type="radio" name="textyn" value="textY" id="textY" checked=""><span></span>사용</label>
+															<label for="textN" class="label_padding"><input type="radio" name="textyn" value="textN" id="textN"><span></span>미사용</label>
+															<input type="text" class="form-control textyn" id="" placeholder="">
+															<p class="required textyn_required">브랜드, 연료, 연식 등 자율적으로 입력을 받아야 하는 정보가 있을 때 사용하세요.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="btn_group_left">
+												<a href="product_list.html" class="btn btn-default go_list">목록</a>
+											</div>
+											<div class="btn_group_right">
+												<a href="javascript:;" class="btn btn-success go_next">다음</a>
+											</div>
+										</div>
+										<!-- 판매정보 -->
+										<div class="panel_content" id="step2">
+											<div class="step_content">
+												<h4>판매정보</h4>
+												<div class="form-horizontal">
+													<div class="form-group">
+														<label for="" class="col-sm-3 control-label"><span class="required">*</span> 판매가</label>
+														<div class="col-sm-6 has-success has-feedback">
+															<input type="text" class="form-control" id="" placeholder="">
+															<span class="form-control-feedback" aria-hidden="true">원</span>
+														</div>
+													</div>
+													<div class="form-group">
+														<label for="" class="col-sm-3 control-label">소비자가</label>
+														<div class="col-sm-6 has-success has-feedback">
+															<input type="text" class="form-control" id="" placeholder="">
+															<span class="form-control-feedback" aria-hidden="true">원</span>
+														</div>
+													</div>
+													<div class="form-group product_rethink">
+														<label for="" class="col-sm-3 control-label">재고</label>
+														<div class="form-inline">
+															<div class="col-xs-6 col-sm-3">
+																<input type="text" class="form-control" id="" placeholder="">
+															</div>
+															<div class="checkbox">
+																<label for="noLimit"><input type="checkbox" id="noLimit" checked=""><span></span>제한없음</label>
+															</div>
+														</div>
+													</div>
+													<div class="form-group service_time">
+														<label for="" class="col-sm-3 control-label">서비스소요시간</label>
+														<div class="col-sm-6 has-success has-feedback">
+															<input type="text" class="form-control" id="" placeholder="">
+															<span class="form-control-feedback" aria-hidden="true">분</span>
+														</div>
+													</div>
+													<div class="form-group">
+														<label for="" class="col-sm-3 control-label">진열상태</label>
+														<div class="col-sm-8">
+															<label for="view" class="label_padding"><input type="radio" name="viewhide" value="view" id="view" checked=""><span></span>진열</label>
+															<label for="hide" class="label_padding"><input type="radio" name="viewhide" value="hide" id="hide"><span></span>숨김</label>
+														</div>
+													</div>
+													<div class="form-group">
+														<label for="" class="col-sm-3 control-label">카테고리</label>
+														<div class="col-sm-8">
+															<a href="javascript:;" class="btn btn-danger" id="categoryModal">+ 추가</a>
+															<a href="javascript:;" class="btn btn-default">삭제</a>
+															<div class="clearfix"></div>
+															<select name="" id="" multiple="multiple" class="category_select col-sm-8 form-control">
+																<option value="">fff</option>
+															</select>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="btn_group_left">
+												<a href="product_list.html" class="btn btn-default go_list">목록</a>
+											</div>
+											<div class="btn_group_right">
+												<a href="javascript:;" class="go_prve btn btn-default">이전</a>
+												<a href="javascript:;" class="go_next btn btn-success">다음</a>
+											</div>
+										</div>
+										<!-- 부가정보 -->
+										<div class="panel_content" id="step3">
+											<div class="step_content">
+												<h4>부가정보</h4>
+												<div class="form-horizontal">
+													<div class="form-group">
+														<label for="" class="col-sm-3 control-label">해시태그</label>
+														<div class="col-sm-8">
+															<input type="text" class="form-control" id="" placeholder="해시태그를 입력하세요. (#블랙박스  #블박)" >
+														</div>
+													</div>
+													<div class="form-group">
+														<label for="" class="col-sm-3 control-label"><span class="required">*</span> 수령방법</label>
+														<div class="col-sm-8 check_group">
+															<div class="checkbox">
+																<label for="parcel"><input type="checkbox" id="parcel" checked=""><span></span>택배</label>
+															</div>
+															<div class="checkbox">
+																<label for="direct"><input type="checkbox" id="direct" ><span></span>직접수령</label>
+															</div>
+															<div class="checkbox">
+																<label for="quick"><input type="checkbox" id="quick" ><span></span>퀵</label>
+															</div>
+															<div class="checkbox">
+																<label for="autodilbury"><input type="checkbox" id="autodilbury" ><span></span>지점배송</label>
+																<a href="javascript:;" class="autodilbury_info" role="button" data-toggle="popover" data-placement="bottom" title="오토딜리버리란?" data-content="내가 구매한 상품이 서비스 매장으로 직접 배송되는 방법입니다.">?</a>
+															</div>
+														</div>
+													</div>
+													<div class="form-group">
+														<label for="" class="col-sm-3 control-label"><span class="required">*</span> 배송비</label>
+														<div class="col-sm-8 check_group">
+															<label for="free"><input type="radio" name="shipping" value="free" id="free" checked=""><span></span>무료</label>
+															<label for="bind"><input type="radio" name="shipping" value="bind" id="bind"><span></span>묶음배송</label>
+															<label for="delivery"><input type="radio" name="shipping" value="delivery" id="delivery"><span></span>착불</label>
+															<label for="fixed"><input type="radio" name="shipping" value="fixed" id="fixed"><span></span>고정</label>
+														</div>
+													</div>
+													<div class="form-group">
+														<label for="" class="col-sm-3 control-label">&nbsp;</label>
+														<div class="col-sm-8">
+															<p>* 배송비가 착불 또는 고정인 경우 <input type="text" class="shipping_inp" /> 원을 부과합니다.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="btn_group_left">
+												<a href="product_list.html" class="btn btn-default go_list">목록</a>
+											</div>
+											<div class="btn_group_right">
+												<a href="javascript:;" class="go_prve btn btn-default">이전</a>
+												<a href="javascript:;" class="go_next btn btn-danger">등록</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+					<!-- 본문 끝 -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 카테고리 추가 팝업 -->
+	<div class="add_category_bg"></div>
+	<div id="addCategory" class="add_category">
+		<h4>카테고리<a href="javascript:;" class="add_close"><img src="../images/icon/icon_close.png" alt="" /></a></h4>
+		<div class="category_box">
+			<div class="right">
+				<ul>
+					<li class="title">카테고리명</li>
+					<li><a href="javascript:;">+ 용품몰</a></li>
+					<li><a href="javascript:;">+ 서비스몰</a></li>
+					<li><a href="javascript:;">+ 패키지</a></li>
+					<li><a href="javascript:;">+ 테스트몰</a></li>
+				</ul>
+				<div class="btn_group_center">
+					<a href="javascript:;" class="btn btn-danger">+ 추가</a>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</body>
+</html>
+
+
+<!--  시작 -->
+<!--  끝 -->

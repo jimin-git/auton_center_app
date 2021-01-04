@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="pragma" content="no-cache">
+
+		<!-- style -->
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/base.css?20200923">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/lc_switch.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/lightslider.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/flatpickr.min.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/select2.min.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/page.css?20201029">
+
+		<!-- javascript -->
+		<script type="text/javascript" src="../../../resources/js/jquery-1.10.1.min.js"></script>
+		<script type="text/javascript" src="../../../resources/js/bootstrap.min.js"></script>
+
+		<!-- 추가 되는 부분 -->
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/slick.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/travel_center.css">
+
+		<script type="text/javascript" src="../../../resources/js/slick.min.js"></script>
+		<script type="text/javascript" src="../../../resources/js/travel_center.js"></script>
+
+		<!-- 달력  -->
+	  <link rel="stylesheet" href="../../../resources/css/jquery-ui.css" type="text/css" />
+	  <script src="../../../resources/js/jquery-ui.js"></script>
+
+		<!-- 추가 되는 부분 -->
+
+		<title> 가맹점관리 | 영업일 설정 </title>
+	</head>
+	<body>
+		<!--  #wrap 시작
+		흰색 배경의 경우 class 추가 bg_white
+
+		-->
+		<script>
+
+		</script>
+
+
+		<div id="wrap" class="bg_white">
+      <!--
+			헤더 <c:import url="/layout/header" />
+			-->
+			<div class="content_wrap" >
+				<h2 class="tit_type02 icon_ck mb20">사진을 올려주세요.</h2>
+				<input type="file" id="FileImage" accept="image/*" onchange="setThumbnail(event);" style="display:none" multiple/>
+				<div class="image_container_wrap mb20 pl10 pr10">
+					<ul id="image_container">
+						<li><label for="FileImage">최대 3장까지 가능</label></li>
+						<li class="none"></li>
+					</ul>
+				</div>
+
+				<h2 class="tit_type02 icon_ck mb20">메모를 입력해주세요.</h2>
+				<div class="pl10 pr10">
+					<label for="info_memo_1" class="x_1"><input id="info_memo_1" type="radio" class="type01" name="info_memo"><span></span><span>{서비스명}이 완료되었습니다.</span></label>
+					<label for="info_memo_2" class="x_1 mt10"><input id="info_memo_2" type="radio" class="type01" name="info_memo"><span></span><span>직접입력</span></label>
+					<textarea name="name" rows="8" cols="80" class="textbox_warp mt20 " ></textarea>
+				</div>
+
+			</div>
+			<!-- content_wrap -->
+			<div class="btn_wrap fix">
+				<a href="#" class="btn x_2 btn_blue">완료</a><a href="#" class="btn x_2 btn_white">취소</a>
+			</div>
+
+			<!-- 팝업 -->
+			<div class="bim"></div>
+
+			<!--서비스가 완료 팝업-->
+			<div class="popup_wrap layer_pop_con">
+				<div class="popup_con center">
+					서비스가 완료되었습니다.
+				</div>
+				<div class="btn_wrap center">
+					<a href="#" class="btn btn_blue x_2">확인</a>
+				</div>
+			</div>
+			<!--//서비스가 완료 팝업-->
+
+
+			<!-- 본문 끝 -->
+		</div>
+		<!-- #wrap 끝 -->
+	</body>
+</html>

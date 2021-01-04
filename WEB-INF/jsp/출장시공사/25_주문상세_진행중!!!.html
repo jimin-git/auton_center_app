@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="pragma" content="no-cache">
+
+		<!-- style -->
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/base.css?20200923">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/lc_switch.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/lightslider.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/flatpickr.min.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/select2.min.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/page.css?20201029">
+
+		<!-- javascript -->
+		<script type="text/javascript" src="../../../resources/js/jquery-1.10.1.min.js"></script>
+		<script type="text/javascript" src="../../../resources/js/bootstrap.min.js"></script>
+
+		<!-- 추가 되는 부분 -->
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/slick.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/travel_center.css">
+
+		<script type="text/javascript" src="../../../resources/js/slick.min.js"></script>
+		<script type="text/javascript" src="../../../resources/js/travel_center.js"></script>
+		<!-- 추가 되는 부분 -->
+
+		<title> 입점사 관리 | 판매자 정보 </title>
+	</head>
+	<body>
+		<!--  #wrap 부분 추가
+		-->
+		<div id="wrap" class="">
+      <c:import url="/layout/header" />
+			<!-- 본문 시작 -->
+			<div class="content_wrap">
+					<div class="site_map">
+						<ul>
+							<li>HOME</li>
+							<li class="bar">&gt;</li>
+							<li data-i18n="order.title.orderManagement">주문관리</li>
+							<li class="bar">&gt;</li>
+							<li>주문현황</li>
+							<li class="bar">&gt;</li>
+							<li>주문상세</li>
+						</ul>
+					</div>
+					<h2 class="page_title">주문 상세</h2>
+					<!-- 본문 시작 -->
+					<div class="order_view_box">
+						<form id="orderForm" method="post" class="form-horizontal" action="/order/itemUpdate" autocomplete="off">
+							<input type="hidden" name="oid" id="oid" value="41394">
+							<input type="hidden" name="writeAcid" value="3069">
+							<input type="hidden" name="modifyAcid" value="3069">
+							<input type="hidden" name="modifyAcnm" value="auton_가맹점">
+							<input type="hidden" name="orderNo" id="orderNo" value="O2O201906191560906457219">
+							<input type="hidden" name="siteCode" id="siteCode" value="GTM">
+							<input type="hidden" name="receiptType" id="receiptType" value="">
+							<input type="hidden" name="transId" id="transId" value="">
+							<input type="hidden" name="orderId" id="orderId" value="kjmgun@naver.com">
+							<input type="hidden" name="publishStatus" id="publishStatus" value="update">
+							<input type="hidden" name="serviceManagerHp" id="serviceManagerHp" value="">
+							<input type="hidden" name="serviceManagerNm" id="serviceManagerNm" value="">
+							<input type="hidden" name="completeAgreeYn" id="completeAgreeYn" value="N">
+							<!--주문정보-->
+							<h4 class="tit_section col-xs-12">주문정보</h4>
+							<div class="content_box con_box">
+								<ul class="order_info cancel_order_info">
+									<li class="half"><span class="first" data-i18n="order.label.orderNumber">주문번호</span><span class="ordernumber">THmo6457219</span></li>
+									<li class="half"><span class="first">주문일시</span><span class="orderdatetime">2019-06-19 10:11:25</span></li>
+									<li class="half"><span class="first" data-i18n="order.label.orderName">주문자명</span>
+										<span class="orderdatetime">
+													김*모
+										</span>
+									</li>
+									<li class="half"><span class="first" data-i18n="order.label.orderPhone">주문자연락처</span>
+										<span class="orderdatetime">
+													010-5339-****
+										</span>
+									</li>
+								</ul>
+							</div>
+
+								<!-- 주문상품 -->
+								<div class="order_item mb15">
+									<div class="accordion tit_section on">주문상품</div>
+									<div class="content_box on">
+										<div class="table-responsive">
+											<table class="table order_item_table" style="margin-bottom:0 !important;">
+												<thead>
+													<tr>
+														<th><label for="orderProductAll"><input type="checkbox" id="orderProductAll"><span></span></label></th>
+														<th data-i18n="order.title.productInformation">상품정보</th>
+														<th data-i18n="order.label.quantity">수량</th>
+														<th data-i18n="order.label.productPrice">상품금액</th>
+														<th data-i18n="order.label.orderStatus">주문상태</th>
+														<th data-i18n="table.label.reserved_date">예약일시</th>
+														<th data-i18n="order.button.trackingNumber">송장정보/시공사진등록</th>
+													</tr>
+												</thead>
+												<tbody>
+															<tr>
+																<input type="hidden" class="input_orderItemList0" name="orderItemList[0].oid" value="41394">
+																<input type="hidden" class="input_orderItemList0" name="orderItemList[0].oitSeq" value="0">
+																<input type="hidden" class="input_orderItemList0" name="orderItemList[0].itemSeq" value="0">
+																<input type="hidden" name="orderItemList[0].modifyAcid" value="3069">
+																<input type="hidden" name="orderItemList[0].modifyAcnm" value="auton_가맹점">
+																<input type="hidden" name="orderItemList[0].prdType" value="SERVICE">
+																<input type="hidden" name="orderItemList[0].idx" value="0">
+																<input type="hidden" name="orderItemList[0].amount" value="1">
+																<td class="top_checkbox">
+																	<label for="orderProductItem0">
+																		<input type="checkbox" id="orderProductItem0" class="check_single check_orderItem" data-price="1000" data-receiptyn="" data-idx="0">
+																		<span></span>
+																	</label>
+																</td>
+																<td class="thumbnail_name">
+																	<ul>
+																		<li>
+																				<img src="https://onc.auton.kr/resources/images/common/no_img.png" alt="">
+																		</li>
+																		<li>
+																				<a href="javascript:;" class="product_name" title="test 고트럭몰 서비스">test 고트럭몰 서비스</a>
+																		</li>
+																	</ul>
+
+																</td>
+																<td class="quantity">1</td>
+																<td class="money">1,000 원</td>
+																<td class="top_order_state">
+																<!-- 2020-11-26 DKC일 경우, selectBox 항상 비활성화 처리 -->
+
+																	<select class="order_state" id="orderItemList[0].order_status" name="orderItemList[0].order_status" disabled="">
+
+																		<!-- 입금대기 -->
+
+																		<!-- 결제완료 -->
+
+																		<!-- 배송준비 -->
+
+																		<!-- 배송중 -->
+
+																		<!-- 배송완료 -->
+
+																		<!-- 예약대기 -->
+
+																		<!-- 예약완료 -->
+
+																		<!-- 서비스대기 -->
+
+																		<!-- 서비스중 -->
+
+																		<!-- 서비스완료 -->
+
+																		<!-- 취소신청 -->
+
+																		<!-- 취소승인 -->
+
+																		<!-- 반품신청 -->
+
+																		<!-- 반품승인 -->
+
+																		<!-- 결제오류 -->
+
+																		<!-- 취소완료, 반품완료, 구매확정, 서비스확정, 환불 -->
+
+																			<option data-i18n="order.option.status.CANCEL" value="CANCEL" selected="selected">취소완료</option>
+																			<option data-i18n="order.option.status.TAKEBACK" value="TAKEBACK">반품완료</option>
+																			<option data-i18n="order.option.status.COMPLETE" value="COMPLETE">구매확정</option>
+																			<option data-i18n="order.option.status.COMPLETE_SERVICE" value="COMPLETE_SERVICE">서비스확정</option>
+																			<option data-i18n="order.option.status.MONEYBACK" value="MONEYBACK">환불완료</option>
+																	</select>
+
+																</td>
+																<td class="top_order_date">
+																	<span>2019-06-21<em class="ml10">10:00:00</em></span>
+																	<div class="btn_wrap mt10">
+																		<a href="javascript:fn_reservationDatePopUp('41394', '0', '0', '0');" class="btn btn_white">예약일시등록</a>
+																		<a href="javascript:fn_reservationDatePopUp('41394', '0', '0', '0');" class="btn btn-danger">예약신청내역</a>
+																	</div>
+																</td>
+																<td><a href="javascript:fn_showServiceInfoPopUp('41394', '0', '0', '0');" class="btn btn-danger">시공사진등록</a></td>
+																<td style="display:none;">
+																	<li style="display:none;"><a href="javascript:dekeyPop('validate');" class="btn btn-danger keybtn">키 확인</a></li>
+																</td>
+															</tr>
+
+												</tbody>
+
+											</table>
+										</div>
+											<div class="nodekey_group">
+												<ul class="">
+													<li>
+														<a href="javascript:fn_cancelOrderItem('cancel');" class="btn btn-default">주문취소</a>
+
+													</li>
+													<li style="display:none;"><a href="javascript:dekeyPop('validate');" class="btn btn-danger keybtn">키 확인</a></li>
+													<!-- <li><a href="javascript:fn_cancelOrderItem('takeback');" class="btn btn-default">반품완료</a></li> -->
+												</ul>
+												<div class="">
+														<a href="javascript:fn_updateOrderStatus();" class="btn btn-danger">주문상태저장</a>
+
+												</div>
+											</div>
+											<a href="javascript:shippingInfoService('김*모',' 010-5339-****','서울 관악구 신림동 ****-**','***','2019-06-21 10:00:00','auton_가맹점','부재 시 경비실에 맡겨주세요.'); " class="btn x_1 btn_blue">예약정보조회</a>
+
+									</div>
+								</div>
+								<!-- 결제정보 -->
+								<div class="accordion_box">
+									<div class="accordion">결제 정보</div>
+									<div class="panels" style="display: none;">
+										<div class="">
+											<ul class="ship_ul_table">
+												<li class="block">
+													<span class="first">결제방식</span>
+													<span class="second" data-i18n="[html]order.paymentType.CARD">신용카드</span>
+												</li>
+												<li class="block">
+
+
+													<span class="first">결제일시</span>
+													<span class="second">2019-06-19 10:11:25</span>
+												</li>
+												<li class="block">
+													<span class="first">총 상품가</span>
+													<span class="second">1,000 원</span>
+												</li>
+												<li class="block">
+													<span class="first">총 배송비</span>
+													<span class="second">0 원</span>
+												</li>
+												<li class="block">
+													<span class="first">쿠폰 할인금액</span>
+													<span class="second">0 원</span>
+												</li>
+												<li class="block">
+													<span class="first">포인트 사용금액</span>
+													<span class="second">0 원</span>
+												</li>
+
+												<!-- 취소완료 시 노출 -->
+												<li class="block payment_info">
+													<span class="first">총 환불금액</span>
+													<span class="second">
+
+														-
+
+														<span>1,000</span> 원</span>
+												</li>
+												<li class="block payment_info">
+
+													<span class="first">총 결제금액</span>
+													<span class="second"><span>1,000</span> 원</span>
+												</li>
+											</ul>
+											<br>
+										</div>
+									</div>
+								</div>
+
+								<!-- 해피콜 -->
+								<div class="accordion_box">
+									<div class="accordion">해피콜</div>
+									<div class="panels">
+										<div class="happycall">
+											<ul>
+												<li><span class="first">날짜</span><span class="second"><input type="hidden" id="happyCallDate" class="flatpickr flatpickr-input" readonly="readonly"><input class="flatpickr flatpickr-input flatpickr-mobile" step="any" tabindex="1" type="date" placeholder=""></span></li>
+												<li class="input_memo"><span class="first">메모</span><span class="second"><input type="text" id="happyCallContent" class="form-control"></span></li>
+												<li class="single_btn"><a href="javascript:fn_insertHappyCall('0');" class="btn btn-danger">추가</a></li>
+											</ul>
+
+
+										</div>
+									</div>
+								</div>
+								<!-- 메모 -->
+								<div class="accordion_box">
+									<div class="accordion">메모</div>
+									<div class="panels">
+										<div class="memo">
+											<textarea class="form-control" rows="3" id="admin_memo" name="adminMemo"></textarea>
+											<div class="btn_group_right">
+												<a href="javascript:fn_updateMemo();" class="btn btn-default">수정</a>
+												<a href="javascript:fn_deleteMemo();" class="btn btn-default">삭제</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- 이력 보기  -->
+								<div class="accordion_box">
+									<div class="accordion">이력 보기</div>
+									<div class="panels" style="display: none;">
+										<div class="table-responsive">
+											<table class="table">
+												<thead>
+													<tr>
+														<th>변경일시</th>
+														<th>상태구분</th>
+														<th>내용</th>
+													</tr>
+												</thead>
+												<tbody>
+
+														<tr>
+															<td>2019-06-25 13:08:23</td>
+															<td>주문취소완료</td>
+															<td>결제완료-&gt;주문취소완료,Name=test 고트럭몰 서비스 test 서비스,pid=50789,oid=41394,oitSeq=0,itemSeq=0</td>
+														</tr>
+
+														<tr>
+															<td>2019-06-25 13:04:16</td>
+															<td>결제완료</td>
+															<td>주문취소완료-&gt;결제완료,Name=test 고트럭몰 서비스 test 서비스,pid=50789,oid=41394,oitSeq=0,itemSeq=0</td>
+														</tr>
+
+														<tr>
+															<td>2019-06-20 09:30:11</td>
+															<td>주문취소완료</td>
+															<td>결제완료-&gt;주문취소완료,Name=test 고트럭몰 서비스 test 서비스,pid=50789,oid=41394,oitSeq=0,itemSeq=0</td>
+														</tr>
+
+														<tr>
+															<td>2019-06-19 10:11:25</td>
+															<td>주문완료</td>
+															<td>주문이 완료되었습니다.</td>
+														</tr>
+
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+								<div class="btn_group_right">
+									<a href="javascript:history.back();" class="btn btn-default">목록</a>
+								</div>
+
+						</form>
+					</div>
+					<!-- 본문 끝 -->
+			</div>
+			<!-- 본문 끝 -->
+		</div>
+		<!-- #wrap 끝 -->
+	</body>
+</html>

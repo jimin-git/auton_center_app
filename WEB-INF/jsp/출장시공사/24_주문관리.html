@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="pragma" content="no-cache">
+
+		<!-- style -->
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/base.css?20200923">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/lc_switch.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/lightslider.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/flatpickr.min.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/select2.min.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/page.css?20201029">
+
+		<!-- javascript -->
+		<script type="text/javascript" src="../../../resources/js/jquery-1.10.1.min.js"></script>
+		<script type="text/javascript" src="../../../resources/js/bootstrap.min.js"></script>
+
+		<!-- 추가 되는 부분 -->
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/slick.css">
+		<link rel="stylesheet" type="text/css" href="../../../resources/css/travel_center.css">
+
+		<script type="text/javascript" src="../../../resources/js/slick.min.js"></script>
+		<script type="text/javascript" src="../../../resources/js/travel_center.js"></script>
+		<!-- 추가 되는 부분 -->
+
+		<title> 입점사 관리 | 판매자 정보 </title>
+	</head>
+	<body>
+		<!--  #wrap 부분 추가
+		-->
+		<div id="wrap" class="">
+      <c:import url="/layout/header" />
+			<!-- 본문 시작 -->
+			<div class="content_wrap pb30">
+					<div class="site_map">
+						<ul>
+							<li>HOME</li>
+							<li class="bar">&gt;</li>
+							<li data-i18n="gnb.1.4">판매 관리</li>
+							<li class="bar">&gt;</li>
+							<li>서비스 관리</li>
+						</ul>
+					</div>
+					<h2 class="page_title">서비스 관리</h2>
+					<!-- content_box -->
+					<div class="content_box">
+							<div class="con_box">
+									<h4 class="tit_type02 mb10">기간선택</h4>
+									<div class="sell_wrap">
+											<select class="basic_select fl" id="period" name="period">
+	                        <option data-i18n="order.option.status.total" value="">전체</option>
+	                        <option data-i18n="order.select.toDay" value="1">오늘 </option>
+	                        <option data-i18n="order.select.sevenDays" value="2">최근 7일</option>
+	                        <option data-i18n="order.select.lastMonth" data-i18n-options="{&quot;month&quot; : &quot;1&quot;}" value="3">최근 1개월</option>
+	                        <option data-i18n="order.select.lastThreeMonth" data-i18n-options="{&quot;month&quot; : &quot;3&quot;}" value="4">최근 3개월</option>
+		                    </select>
+												<span class="inline pl05 fr">
+													<input type="hidden" class="flatpickr flatpickr-input " name="startDate" id="startDate" value="">
+													<input class="flatpickr flatpickr-input flatpickr-mobile x_2" step="any" tabindex="1" type="date" placeholder=""> ~
+													<input type="hidden" class="flatpickr flatpickr-input " name="endDate" id="endDate" value="">
+													<input class="flatpickr flatpickr-input flatpickr-mobile x_2" step="any" tabindex="1" type="date" placeholder="">
+												</span>
+										</div>
+								</div>
+								<div class="con_box line">
+									<h4 class="tit_type02 mb10">검색어</h4>
+									<div class="sell_wrap">
+										<select id="searchType1" name="searchType1" class="basic_select fl">
+											<option value="" data-i18n="order.option.status.total">전체</option>
+											<option value="orderNo" data-i18n="order.label.orderNumber">주문번호</option>
+											<option value="productName" data-i18n="talkn.label.productName">상품명</option>
+											<option value="name" data-i18n="account.name">이름</option>
+											<option value="phone" data-i18n="memberStoreManagement.label.phone">연락처</option>
+										</select>
+										<span class="inline pl05 fr btn_search_wrap">
+											<input type="text" class="form-control search_keyword" id="searchKeyword1" name="orderNo" value=""><em href="#" class="btn_search"></em>
+										</span>
+									</div>
+								</div>
+								<div class="con_box line">
+									<h4 class="tit_type02 mb10">진행상태</h4>
+									<div class="order_statuslist">
+										<label for="SERVICE_ALL" class="label_padding"><input type="radio" value="" id="SERVICE_ALL" name="orderStatusList" class="input_radio" checked=""><span></span>
+											<span data-i18n="order.option.status.total">전체</span>
+										</label>
+										<label for="DEPOSIT_READY" class="label_padding"><input type="radio" value="DEPOSIT_READY" id="DEPOSIT_READY" name="orderStatusList" class="input_radio"><span></span>
+											<span data-i18n="order.option.status.DEPOSIT_READY">입금대기</span>
+										</label>
+										<label for="PAYMENT_SUCESS" class="label_padding"><input type="radio" value="PAYMENT_SUCESS" id="PAYMENT_SUCESS" name="orderStatusList" class="input_radio"><span></span>
+											<span data-i18n="order.option.status.PAYMENT_SUCESS">결제완료</span>
+										</label>
+										<label for="RESERVATION_READY" class="label_padding"><input type="radio" value="RESERVATION_READY" id="RESERVATION_READY" name="orderStatusList" class="input_radio"><span></span>
+											<span data-i18n="order.option.status.RESERVATION_READY">예약대기</span>
+										</label>
+										<label for="RESERVATION_SUCCESS" class="label_padding"><input type="radio" value="RESERVATION_SUCCESS" id="RESERVATION_SUCCESS" name="orderStatusList" class="input_radio"><span></span>
+											<span data-i18n="order.option.status.RESERVATION_SUCESS">예약완료</span>
+										</label>
+										<label for="SERVICE_READY" class="label_padding"><input type="radio" value="SERVICE_READY" id="SERVICE_READY" name="orderStatusList" class="input_radio"><span></span>
+											<span data-i18n="order.option.status.SERVICE_READY">서비스대기</span>
+										</label>
+										<label for="ON_SERVICE"><input type="radio" value="ON_SERVICE" id="ON_SERVICE" name="orderStatusList" class="input_radio"><span></span>
+											<span data-i18n="order.option.status.ON_SERVICE">서비스중</span>
+										</label>
+										<label for="SERVICE_COMPLETE"><input type="radio" value="SERVICE_COMPLETE" id="SERVICE_COMPLETE" name="orderStatusList" class="input_radio"><span></span>
+										 	<span data-i18n="order.option.status.SERVICE_COMPLETE">서비스완료</span>
+										</label>
+										<label for="COMPLETE_SERVICE"><input type="radio" value="COMPLETE_SERVICE" id="COMPLETE_SERVICE" name="orderStatusList" class="buyConf"><span></span>
+										 	<span data-i18n="order.option.status.COMPLETE_SERVICE">서비스확정</span>
+										</label>
+									</div>
+								</div>
+					</div>
+					<!-- content_box -->
+					<div class="btn_wrap center">
+						<a href="#" class="btn btn_white">초기화</a><a href="#" class="btn btn_blue ml15">조회</a>
+					</div>
+			</div>
+			<ul class="select_views con_box">
+					<li class="all_list">전체<span> 0 </span>건</li>
+					<li class="search_select">
+						<select name="selectPageSize" id="selectPageSize" class="basic_select">
+							<option value="10" data-i18n="common.button.condition.selectPageSize.10">10건씩 조회</option>
+							<option value="20" data-i18n="common.button.condition.selectPageSize.20">20건씩 조회</option>
+							<option value="30" data-i18n="common.button.condition.selectPageSize.30">30건씩 조회</option>
+							<option value="50" data-i18n="common.button.condition.selectPageSize.50">50건씩 조회</option>
+							<option value="100" data-i18n="common.button.condition.selectPageSize.100">100건씩 조회</option>
+						</select>
+					</li>
+				</ul>
+				<div class="table_layout type01 mb30">
+						<div class="table-responsive">
+							<table class="shipment_table">
+								<colgroup>
+									<col width="">
+									<col width="">
+									<col width="">
+									<col width="">
+									<col width="">
+									<col width="">
+									<col width="">
+									<col width="">
+									<col width="">
+									<col width="">
+									<col width="">
+									<col width="">
+									<col width="">
+									<col width="">
+									<col width="">
+									<col width="">
+								</colgroup>
+								<thead>
+									<tr>
+										<th data-i18n="order.label.orderNumber">주문번호</th>
+										<th data-i18n="order.option.status.orderStatus">진행상태</th>
+										<th data-i18n="order.label.orderName">주문자명</th>
+										<th data-i18n="order.label.orderId">주문자Id</th>
+										<th data-i18n="order.label.orderPhone">주문자연락처</th>
+										<th data-i18n="order.title.productInformation">상품정보</th>
+										<th data-i18n="order.label.quantity">수량</th>
+										<th data-i18n="order.label.payment">결제금액</th>
+										<th data-i18n="order.label.paymentMethod">결제방식</th>
+										<th data-i18n="order.label.paymentDate">결제일시</th>
+										<th data-i18n="order.label.recipientName">수취인명</th>
+										<th data-i18n="order.label.recipientContact">수취인연락처</th>
+										<th data-i18n="order.label.shippingAddress">배송지</th>
+										<th data-i18n="company.label.zipCode">우편번호</th>
+										<th>배송메시지</th>
+										<th data-i18n="sales.table.label.deliveryPrice">배송비</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><a href="#" class="color_blue">THmp28111277</a></td>
+										<td>서비스완료</td>
+										<td>정*혁</td>
+										<td>07**...</td>
+										<td>010</td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+				</div>
+			<!-- 본문 끝 -->
+		</div>
+		<!-- #wrap 끝 -->
+	</body>
+</html>
